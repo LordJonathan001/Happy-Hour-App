@@ -23,6 +23,6 @@
     <string name="new_location">Select a New Location</string>
     <string name="new_search">New Search</string>
     <string name="no_result">There are no results for your search or your search has been misspelled. Please select from the options below.</string>
-    
+    <string name="new_searchpage">You are on the New Search Page</string>
 
 </resources>
