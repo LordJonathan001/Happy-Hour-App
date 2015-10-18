@@ -862,3 +862,1720 @@ Contains: Could not delete: I:\Android programs\LocationExample\.classpath.
 !MESSAGE Problems encountered while deleting files.
 !SUBENTRY 4 org.eclipse.core.filesystem 4 273 2015-10-17 16:11:30.870
 !MESSAGE Could not delete: I:\Android programs\LocationExample\.classpath.
+
+!ENTRY org.eclipse.jdt.core 4 4 2015-10-17 21:08:24.899
+!MESSAGE JavaBuilder handling CoreException while cleaning: LocationExample
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:293)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:318)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete '/LocationExample/bin/classes/cl'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:293)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:318)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\BuildConfig.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces\LocationListenerHandler.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\ItemList.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location\ActiveLocationManagerActivity.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$2.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$3.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$4.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\Map.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NewSearch.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$2.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$array.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$attr.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$dimen.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$drawable.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$id.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$layout.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$menu.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$string.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$style.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SingleItem.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2015-10-17 21:08:24.900
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2015-10-17 21:08:24.900
+!MESSAGE Could not delete '/LocationExample/bin/classes/cl'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:293)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:318)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\BuildConfig.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces\LocationListenerHandler.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\ItemList.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location\ActiveLocationManagerActivity.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$2.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$3.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$4.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\Map.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NewSearch.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$2.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$array.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$attr.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$dimen.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$drawable.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$id.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$layout.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$menu.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$string.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$style.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SingleItem.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2015-10-17 21:08:24.900
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.900
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.900
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\BuildConfig.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.900
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces\LocationListenerHandler.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.900
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.900
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\ItemList.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.900
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location\ActiveLocationManagerActivity.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.901
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.901
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$1.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.901
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$2.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.901
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$3.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.901
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$4.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.901
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.925
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\Map.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.925
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NewSearch.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.925
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$1.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.925
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$2.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.925
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.925
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$array.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.925
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$attr.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.925
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$dimen.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.925
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$drawable.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.925
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$id.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.925
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$layout.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.926
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$menu.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.926
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$string.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.926
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$style.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.926
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.926
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SingleItem.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.926
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen$1.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.926
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.926
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.926
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.926
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl.
+
+!ENTRY org.eclipse.core.resources 4 2 2015-10-17 21:08:24.930
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:769)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.clean(PostCompilerBuilder.java:158)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:318)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete 'I:\Android programs\LocationExample\bin\.gitignore'.
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:131)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1979)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:769)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.clean(PostCompilerBuilder.java:158)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:318)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: I:\Android programs\LocationExample\bin\.gitignore.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2015-10-17 21:08:24.930
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2015-10-17 21:08:24.931
+!MESSAGE Could not delete 'I:\Android programs\LocationExample\bin\.gitignore'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:131)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1979)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:769)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.clean(PostCompilerBuilder.java:158)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:318)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: I:\Android programs\LocationExample\bin\.gitignore.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.931
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.931
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\.gitignore.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2015-10-17 21:08:24.931
+!MESSAGE Could not delete 'I:\Android programs\LocationExample\bin\.gitignore'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:131)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1979)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:769)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.clean(PostCompilerBuilder.java:158)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:318)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: I:\Android programs\LocationExample\bin\.gitignore.
+!SUBENTRY 2 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.931
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:24.931
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\.gitignore.
+
+!ENTRY org.eclipse.core.resources 4 75 2015-10-17 21:08:25.565
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 com.android.ide.eclipse.adt 4 75 2015-10-17 21:08:25.566
+!MESSAGE Errors running builder 'Android Package Builder' on project 'LocationExample'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:769)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.clean(PostCompilerBuilder.java:158)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:318)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete 'I:\Android programs\LocationExample\bin\.gitignore'.
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:131)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1979)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:769)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.clean(PostCompilerBuilder.java:158)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:318)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: I:\Android programs\LocationExample\bin\.gitignore.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2015-10-17 21:08:25.566
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2015-10-17 21:08:25.566
+!MESSAGE Could not delete 'I:\Android programs\LocationExample\bin\.gitignore'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:131)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1979)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:769)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.clean(PostCompilerBuilder.java:158)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:318)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: I:\Android programs\LocationExample\bin\.gitignore.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:25.566
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:25.566
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\.gitignore.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2015-10-17 21:08:25.566
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2015-10-17 21:08:25.566
+!MESSAGE Could not delete 'I:\Android programs\LocationExample\bin\.gitignore'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:131)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1979)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:769)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.clean(PostCompilerBuilder.java:158)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:318)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: I:\Android programs\LocationExample\bin\.gitignore.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:25.566
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:25.566
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\.gitignore.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-10-17 21:08:25.791
+!MESSAGE Failed to create BuildConfig class
+!STACK 0
+java.io.FileNotFoundException: I:\Android programs\LocationExample\gen\cl\telematica\locationexample\BuildConfig.java (The media is write protected)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at com.android.sdklib.internal.build.BuildConfigGenerator.writeFile(BuildConfigGenerator.java:124)
+	at com.android.sdklib.internal.build.BuildConfigGenerator.generate(BuildConfigGenerator.java:93)
+	at com.android.ide.eclipse.adt.internal.build.builders.PreCompilerBuilder.handleBuildConfig(PreCompilerBuilder.java:945)
+	at com.android.ide.eclipse.adt.internal.build.builders.PreCompilerBuilder.build(PreCompilerBuilder.java:653)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jdt.core 4 4 2015-10-17 21:08:27.631
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: LocationExample
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:175)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete '/LocationExample/bin/classes/cl'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:175)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\BuildConfig.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces\LocationListenerHandler.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\ItemList.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location\ActiveLocationManagerActivity.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$2.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$3.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$4.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\Map.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NewSearch.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$2.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$array.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$attr.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$dimen.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$drawable.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$id.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$layout.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$menu.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$string.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$style.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SingleItem.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2015-10-17 21:08:27.631
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2015-10-17 21:08:27.631
+!MESSAGE Could not delete '/LocationExample/bin/classes/cl'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:175)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\BuildConfig.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces\LocationListenerHandler.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\ItemList.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location\ActiveLocationManagerActivity.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$2.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$3.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$4.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\Map.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NewSearch.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$2.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$array.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$attr.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$dimen.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$drawable.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$id.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$layout.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$menu.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$string.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$style.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SingleItem.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2015-10-17 21:08:27.632
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.632
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.632
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\BuildConfig.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.632
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces\LocationListenerHandler.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.632
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.632
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\ItemList.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.632
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location\ActiveLocationManagerActivity.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.632
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.632
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$1.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.632
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$2.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.632
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$3.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.632
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$4.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.632
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.632
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\Map.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.632
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NewSearch.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.632
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$1.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.632
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$2.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.632
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.632
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$array.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.632
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$attr.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.632
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$dimen.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.633
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$drawable.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.633
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$id.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.633
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$layout.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.633
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$menu.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.633
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$string.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.633
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$style.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.633
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.633
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SingleItem.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.633
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen$1.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.633
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.633
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.633
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:08:27.633
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl.
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2015-10-17 21:09:29.620
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Core Exception [code 273] Problems encountered while deleting resources.
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:50)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5358)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.perform(DynamicValidationStateChange.java:116)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.access$0(DynamicValidationStateChange.java:1)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange$1.run(DynamicValidationStateChange.java:113)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5358)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.perform(DynamicValidationStateChange.java:116)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: Could not delete 'I:\Android programs\LocationExample\bin\classes.dex'.
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:131)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1979)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:168)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.access$0(DynamicValidationStateChange.java:1)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange$1.run(DynamicValidationStateChange.java:113)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5358)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.perform(DynamicValidationStateChange.java:116)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.access$0(DynamicValidationStateChange.java:1)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange$1.run(DynamicValidationStateChange.java:113)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5358)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.perform(DynamicValidationStateChange.java:116)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes.dex.
+Caused by: org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:168)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.access$0(DynamicValidationStateChange.java:1)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange$1.run(DynamicValidationStateChange.java:113)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5358)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.perform(DynamicValidationStateChange.java:116)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.access$0(DynamicValidationStateChange.java:1)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange$1.run(DynamicValidationStateChange.java:113)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5358)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.perform(DynamicValidationStateChange.java:116)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: Could not delete 'I:\Android programs\LocationExample\bin\classes.dex'.
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:131)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1979)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:168)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.access$0(DynamicValidationStateChange.java:1)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange$1.run(DynamicValidationStateChange.java:113)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5358)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.perform(DynamicValidationStateChange.java:116)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.access$0(DynamicValidationStateChange.java:1)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange$1.run(DynamicValidationStateChange.java:113)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5358)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.perform(DynamicValidationStateChange.java:116)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes.dex.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2015-10-17 21:09:29.625
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2015-10-17 21:09:29.625
+!MESSAGE Could not delete 'I:\Android programs\LocationExample\bin\classes.dex'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:131)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1979)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:168)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.access$0(DynamicValidationStateChange.java:1)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange$1.run(DynamicValidationStateChange.java:113)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5358)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.perform(DynamicValidationStateChange.java:116)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.access$0(DynamicValidationStateChange.java:1)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange$1.run(DynamicValidationStateChange.java:113)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5358)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.perform(DynamicValidationStateChange.java:116)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes.dex.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:29.625
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:29.625
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes.dex.
+
+!ENTRY org.eclipse.jdt.core 4 4 2015-10-17 21:09:43.488
+!MESSAGE JavaBuilder handling CoreException while cleaning: LocationExample
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:293)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:318)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete '/LocationExample/bin/classes/cl'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:293)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:318)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\BuildConfig.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces\LocationListenerHandler.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\ItemList.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location\ActiveLocationManagerActivity.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$2.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$3.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$4.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\Map.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NewSearch.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$2.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$array.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$attr.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$dimen.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$drawable.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$id.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$layout.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$menu.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$string.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$style.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SingleItem.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2015-10-17 21:09:43.489
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2015-10-17 21:09:43.489
+!MESSAGE Could not delete '/LocationExample/bin/classes/cl'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:293)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:318)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\BuildConfig.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces\LocationListenerHandler.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\ItemList.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location\ActiveLocationManagerActivity.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$2.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$3.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$4.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\Map.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NewSearch.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$2.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$array.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$attr.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$dimen.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$drawable.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$id.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$layout.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$menu.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$string.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$style.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SingleItem.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2015-10-17 21:09:43.489
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.489
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.489
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\BuildConfig.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.489
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces\LocationListenerHandler.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.489
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.489
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\ItemList.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.489
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location\ActiveLocationManagerActivity.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.489
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.489
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$1.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.489
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$2.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.489
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$3.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.489
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$4.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.489
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.489
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\Map.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.489
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NewSearch.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.489
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$1.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.489
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$2.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.490
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.490
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$array.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.490
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$attr.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.490
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$dimen.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.490
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$drawable.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.490
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$id.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.490
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$layout.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.490
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$menu.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.490
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$string.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.490
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$style.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.490
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.490
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SingleItem.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.490
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen$1.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.490
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.490
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.490
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.490
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl.
+
+!ENTRY org.eclipse.core.resources 4 2 2015-10-17 21:09:43.495
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:769)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.clean(PostCompilerBuilder.java:158)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:318)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete 'I:\Android programs\LocationExample\bin\.gitignore'.
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:131)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1979)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:769)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.clean(PostCompilerBuilder.java:158)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:318)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: I:\Android programs\LocationExample\bin\.gitignore.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2015-10-17 21:09:43.495
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2015-10-17 21:09:43.495
+!MESSAGE Could not delete 'I:\Android programs\LocationExample\bin\.gitignore'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:131)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1979)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:769)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.clean(PostCompilerBuilder.java:158)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:318)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: I:\Android programs\LocationExample\bin\.gitignore.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.495
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.496
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\.gitignore.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2015-10-17 21:09:43.496
+!MESSAGE Could not delete 'I:\Android programs\LocationExample\bin\.gitignore'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:131)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1979)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:769)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.clean(PostCompilerBuilder.java:158)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:318)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: I:\Android programs\LocationExample\bin\.gitignore.
+!SUBENTRY 2 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.496
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.496
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\.gitignore.
+
+!ENTRY org.eclipse.core.resources 4 75 2015-10-17 21:09:43.747
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 com.android.ide.eclipse.adt 4 75 2015-10-17 21:09:43.747
+!MESSAGE Errors running builder 'Android Package Builder' on project 'LocationExample'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:769)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.clean(PostCompilerBuilder.java:158)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:318)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete 'I:\Android programs\LocationExample\bin\.gitignore'.
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:131)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1979)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:769)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.clean(PostCompilerBuilder.java:158)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:318)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: I:\Android programs\LocationExample\bin\.gitignore.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2015-10-17 21:09:43.747
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2015-10-17 21:09:43.747
+!MESSAGE Could not delete 'I:\Android programs\LocationExample\bin\.gitignore'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:131)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1979)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:769)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.clean(PostCompilerBuilder.java:158)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:318)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: I:\Android programs\LocationExample\bin\.gitignore.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.747
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.747
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\.gitignore.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2015-10-17 21:09:43.747
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2015-10-17 21:09:43.747
+!MESSAGE Could not delete 'I:\Android programs\LocationExample\bin\.gitignore'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:131)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1979)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:769)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.clean(PostCompilerBuilder.java:158)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:496)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:318)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: I:\Android programs\LocationExample\bin\.gitignore.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.748
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.748
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\.gitignore.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-10-17 21:09:43.944
+!MESSAGE Failed to create BuildConfig class
+!STACK 0
+java.io.FileNotFoundException: I:\Android programs\LocationExample\gen\cl\telematica\locationexample\BuildConfig.java (The media is write protected)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at com.android.sdklib.internal.build.BuildConfigGenerator.writeFile(BuildConfigGenerator.java:124)
+	at com.android.sdklib.internal.build.BuildConfigGenerator.generate(BuildConfigGenerator.java:93)
+	at com.android.ide.eclipse.adt.internal.build.builders.PreCompilerBuilder.handleBuildConfig(PreCompilerBuilder.java:945)
+	at com.android.ide.eclipse.adt.internal.build.builders.PreCompilerBuilder.build(PreCompilerBuilder.java:653)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jdt.core 4 4 2015-10-17 21:09:43.967
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: LocationExample
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:175)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete '/LocationExample/bin/classes/cl'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:175)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\BuildConfig.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces\LocationListenerHandler.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\ItemList.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location\ActiveLocationManagerActivity.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$2.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$3.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$4.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\Map.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NewSearch.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$2.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$array.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$attr.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$dimen.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$drawable.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$id.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$layout.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$menu.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$string.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$style.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SingleItem.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2015-10-17 21:09:43.968
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2015-10-17 21:09:43.968
+!MESSAGE Could not delete '/LocationExample/bin/classes/cl'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:175)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\BuildConfig.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces\LocationListenerHandler.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\ItemList.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location\ActiveLocationManagerActivity.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$2.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$3.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$4.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\Map.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NewSearch.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$2.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$array.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$attr.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$dimen.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$drawable.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$id.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$layout.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$menu.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$string.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$style.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SingleItem.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen$1.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen.class.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica.
+Contains: Could not delete: I:\Android programs\LocationExample\bin\classes\cl.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2015-10-17 21:09:43.968
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.968
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.968
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\BuildConfig.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.968
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces\LocationListenerHandler.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.968
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\interfaces.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.968
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\ItemList.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.968
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location\ActiveLocationManagerActivity.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.968
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\location.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.968
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$1.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.968
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$2.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.969
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$3.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.969
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity$4.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.969
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\MainActivity.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.969
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\Map.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.969
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NewSearch.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.969
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$1.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.969
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults$2.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.969
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\NoResults.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.970
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$array.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.970
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$attr.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.970
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$dimen.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.970
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$drawable.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.970
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$id.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.970
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$layout.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.970
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$menu.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.970
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$string.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.970
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R$style.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.970
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\R.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.970
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SingleItem.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.970
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen$1.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.970
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample\SplashScreen.class.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.970
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica\locationexample.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.970
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl\telematica.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-10-17 21:09:43.970
+!MESSAGE Could not delete: I:\Android programs\LocationExample\bin\classes\cl.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2015-10-17 22:13:40.921
+!MESSAGE Failed to render set of icons for TabHost
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-10-17 22:13:40.929
+!MESSAGE Could not create tab content because could not find view with id -1
+!STACK 0
+java.lang.RuntimeException: Could not create tab content because could not find view with id -1
+	at android.widget.TabHost$ViewIdContentStrategy.<init>(TabHost.java:663)
+	at android.widget.TabHost$ViewIdContentStrategy.<init>(TabHost.java:654)
+	at android.widget.TabHost$TabSpec.setContent(TabHost.java:503)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.setupTabHost(RenderSessionImpl.java:1145)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.postInflateProcess(RenderSessionImpl.java:897)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.postInflateProcess(RenderSessionImpl.java:973)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.postInflateProcess(RenderSessionImpl.java:973)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.inflate(RenderSessionImpl.java:235)
+	at com.android.layoutlib.bridge.Bridge.createSession(Bridge.java:426)
+	at com.android.ide.common.rendering.LayoutLibrary.createSession(LayoutLibrary.java:349)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.RenderService.createRenderSession(RenderService.java:519)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.PreviewIconFactory.render(PreviewIconFactory.java:273)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.PreviewIconFactory.initColors(PreviewIconFactory.java:595)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.PreviewIconFactory.getBackgroundColor(PreviewIconFactory.java:570)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.PaletteControl.reloadPalette(PaletteControl.java:437)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.reloadPalette(GraphicalEditorPart.java:1327)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.changed(GraphicalEditorPart.java:771)
+	at com.android.ide.eclipse.adt.internal.editors.layout.configuration.ConfigurationChooser.onDeviceChange(ConfigurationChooser.java:1411)
+	at com.android.ide.eclipse.adt.internal.editors.layout.configuration.DeviceMenuListener.widgetSelected(DeviceMenuListener.java:68)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2015-10-17 22:13:40.942
+!MESSAGE Failed to render set of icons for TabWidget
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-10-17 22:13:40.943
+!MESSAGE Could not create tab content because could not find view with id -1
+!STACK 0
+java.lang.RuntimeException: Could not create tab content because could not find view with id -1
+	at android.widget.TabHost$ViewIdContentStrategy.<init>(TabHost.java:663)
+	at android.widget.TabHost$ViewIdContentStrategy.<init>(TabHost.java:654)
+	at android.widget.TabHost$TabSpec.setContent(TabHost.java:503)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.setupTabHost(RenderSessionImpl.java:1145)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.postInflateProcess(RenderSessionImpl.java:897)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.postInflateProcess(RenderSessionImpl.java:973)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.postInflateProcess(RenderSessionImpl.java:973)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.inflate(RenderSessionImpl.java:235)
+	at com.android.layoutlib.bridge.Bridge.createSession(Bridge.java:426)
+	at com.android.ide.common.rendering.LayoutLibrary.createSession(LayoutLibrary.java:349)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.RenderService.createRenderSession(RenderService.java:519)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.PreviewIconFactory.render(PreviewIconFactory.java:273)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.PreviewIconFactory.initColors(PreviewIconFactory.java:595)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.PreviewIconFactory.getBackgroundColor(PreviewIconFactory.java:570)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.PaletteControl.reloadPalette(PaletteControl.java:437)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.reloadPalette(GraphicalEditorPart.java:1327)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.changed(GraphicalEditorPart.java:771)
+	at com.android.ide.eclipse.adt.internal.editors.layout.configuration.ConfigurationChooser.onDeviceChange(ConfigurationChooser.java:1411)
+	at com.android.ide.eclipse.adt.internal.editors.layout.configuration.DeviceMenuListener.widgetSelected(DeviceMenuListener.java:68)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2015-10-17 22:13:56.319
+!MESSAGE Failed to render set of icons for TabHost
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-10-17 22:13:56.320
+!MESSAGE Could not create tab content because could not find view with id -1
+!STACK 0
+java.lang.RuntimeException: Could not create tab content because could not find view with id -1
+	at android.widget.TabHost$ViewIdContentStrategy.<init>(TabHost.java:663)
+	at android.widget.TabHost$ViewIdContentStrategy.<init>(TabHost.java:654)
+	at android.widget.TabHost$TabSpec.setContent(TabHost.java:503)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.setupTabHost(RenderSessionImpl.java:1145)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.postInflateProcess(RenderSessionImpl.java:897)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.postInflateProcess(RenderSessionImpl.java:973)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.postInflateProcess(RenderSessionImpl.java:973)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.inflate(RenderSessionImpl.java:235)
+	at com.android.layoutlib.bridge.Bridge.createSession(Bridge.java:426)
+	at com.android.ide.common.rendering.LayoutLibrary.createSession(LayoutLibrary.java:349)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.RenderService.createRenderSession(RenderService.java:519)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.PreviewIconFactory.render(PreviewIconFactory.java:273)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.PreviewIconFactory.initColors(PreviewIconFactory.java:595)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.PreviewIconFactory.getBackgroundColor(PreviewIconFactory.java:570)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.PaletteControl.reloadPalette(PaletteControl.java:437)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.reloadPalette(GraphicalEditorPart.java:1327)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.changed(GraphicalEditorPart.java:771)
+	at com.android.ide.eclipse.adt.internal.editors.layout.configuration.ConfigurationChooser.onDeviceChange(ConfigurationChooser.java:1411)
+	at com.android.ide.eclipse.adt.internal.editors.layout.configuration.DeviceMenuListener.widgetSelected(DeviceMenuListener.java:68)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2015-10-17 22:13:56.329
+!MESSAGE Failed to render set of icons for TabWidget
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-10-17 22:13:56.330
+!MESSAGE Could not create tab content because could not find view with id -1
+!STACK 0
+java.lang.RuntimeException: Could not create tab content because could not find view with id -1
+	at android.widget.TabHost$ViewIdContentStrategy.<init>(TabHost.java:663)
+	at android.widget.TabHost$ViewIdContentStrategy.<init>(TabHost.java:654)
+	at android.widget.TabHost$TabSpec.setContent(TabHost.java:503)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.setupTabHost(RenderSessionImpl.java:1145)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.postInflateProcess(RenderSessionImpl.java:897)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.postInflateProcess(RenderSessionImpl.java:973)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.postInflateProcess(RenderSessionImpl.java:973)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.inflate(RenderSessionImpl.java:235)
+	at com.android.layoutlib.bridge.Bridge.createSession(Bridge.java:426)
+	at com.android.ide.common.rendering.LayoutLibrary.createSession(LayoutLibrary.java:349)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.RenderService.createRenderSession(RenderService.java:519)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.PreviewIconFactory.render(PreviewIconFactory.java:273)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.PreviewIconFactory.initColors(PreviewIconFactory.java:595)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.PreviewIconFactory.getBackgroundColor(PreviewIconFactory.java:570)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.PaletteControl.reloadPalette(PaletteControl.java:437)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.reloadPalette(GraphicalEditorPart.java:1327)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.changed(GraphicalEditorPart.java:771)
+	at com.android.ide.eclipse.adt.internal.editors.layout.configuration.ConfigurationChooser.onDeviceChange(ConfigurationChooser.java:1411)
+	at com.android.ide.eclipse.adt.internal.editors.layout.configuration.DeviceMenuListener.widgetSelected(DeviceMenuListener.java:68)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)

@@ -1,0 +1,44 @@
+package cl.telematica.locationexample;
+
+import android.location.Location;
+import android.os.Bundle;
+import android.widget.TextView;
+import cl.telematica.locationexample.interfaces.LocationListenerHandler;
+import cl.telematica.locationexample.location.ActiveLocationManagerActivity;
+
+public class NewSearch extends ActiveLocationManagerActivity {
+	
+	public TextView citylat;
+	public TextView citylong;
+	public TextView yourlat;
+	public TextView yourlong;
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_new_search);
+		
+		yourlat = (TextView) findViewById(R.id.yourLat);
+		yourlong = (TextView) findViewById(R.id.yourLong);
+		//yourlat.setText("Your Latitude: "+ MainActivity.latitudText);
+		//yourlong.setText("Your Longitude: " + MainActivity.longitudText);
+		
+		citylat = (TextView) findViewById(R.id.cityLong);
+		citylong = (TextView) findViewById(R.id.cityLat);
+		citylat.setText("City Latitude: "+ MainActivity.citylatitudText);
+		citylong.setText("City Longitude: " + MainActivity.citylongitudText);
+		
+		
+		//yourlat = (TextView) findViewById(R.id.cityLong);
+		//yourlong = (TextView) findViewById(R.id.cityLat);
+		listener = new LocationListenerHandler() {
+			@Override
+			public void OnLocationReceived(Location loc) {
+				yourlat.setText("Your Latitude: " + loc.getLatitude());
+				yourlong.setText("Your Longitude: " + loc.getLongitude());
+			}
+        };
+		
+		
+	}
+
+}

@@ -10,7 +10,7 @@
     tools:ignore="HardcodedText" >
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/cityLong"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
@@ -37,7 +37,7 @@
     
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/cityLat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
