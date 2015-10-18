@@ -4,9 +4,11 @@ import cl.telematica.locationexample.interfaces.LocationListenerHandler;
 import cl.telematica.locationexample.location.ActiveLocationManagerActivity;
 
 
+import android.content.Context;
 import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Menu;
 import android.view.View;
 import android.view.WindowManager;
@@ -19,11 +21,11 @@ import android.widget.Toast;
 
 public class MainActivity extends ActiveLocationManagerActivity {
 	
-	public static String citylatitudeText;
-	public static String citylongitudeText;
-	public static TextView latitudeText;
-	public static TextView longitudeText;
-	public static String locationSet;
+	public static String citylongitudeText, citylatitudeText, locationSet, yourLat, yourLong;
+	public static TextView latitudeText,longitudeText;
+	private Handler handler;
+	private Runnable delayRunnable;	
+		
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +33,8 @@ public class MainActivity extends ActiveLocationManagerActivity {
 		setContentView(R.layout.activity_main);
 		this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 		
-		Button b = (Button)findViewById(R.id.btnTestNoResults);
-		Button c = (Button)findViewById(R.id.btnGPSSearch);
+		Button c = (Button)findViewById(R.id.btnTestNoResults);
+		Button b = (Button)findViewById(R.id.btnGPSSearch);
 		Button d = (Button)findViewById(R.id.btnSetCity);
 				
 		final Spinner spinner = (Spinner)findViewById(R.id.spinner1);
@@ -44,14 +46,37 @@ public class MainActivity extends ActiveLocationManagerActivity {
 			
 			@Override
 			public void onClick(View v) {
-				startActivity(new Intent(MainActivity.this, NoResults.class));
-			};
-		});
+			/*	Context context = getApplicationContext();
+				CharSequence text = "Please wait while we retrieve your GPS";
+				int duration = Toast.LENGTH_LONG;
+
+				Toast toast = Toast.makeText(context, text, duration);
+				toast.show();	
+				
+				handler = new Handler();
+				delayRunnable = new Runnable() {
+
+				     @Override
+				     public void run() {
+				    // TODO Auto-generated method stub  
+
+				    	 Intent i = (new Intent(MainActivity.this, NewSearch.class));
+				           startActivity(i);
+				    }
+				};      
+				handler.postDelayed(delayRunnable, 4000);
+				
+			};*/
+		
+							
+					startActivity(new Intent(MainActivity.this, NewSearch.class));
+				};
+			});
 		c.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {			
-				startActivity(new Intent(MainActivity.this, NewSearch.class));
+				startActivity(new Intent(MainActivity.this, NoResults.class));
 			};
 		});
 		
@@ -61,7 +86,7 @@ public class MainActivity extends ActiveLocationManagerActivity {
 			@Override
 			public void onClick(View v) {
 				
-				String locationSet = String.valueOf(spinner.getSelectedItem());
+				locationSet = String.valueOf(spinner.getSelectedItem());
 				if( locationSet.equals("Washington D.C.") )
 				{ citylatitudeText = "38.9047";
 				citylongitudeText = "-77.0164";
@@ -177,12 +202,13 @@ public class MainActivity extends ActiveLocationManagerActivity {
 		
 		latitudeText = (TextView) findViewById(R.id.cityLong);
 		longitudeText = (TextView) findViewById(R.id.cityLat);
-		
+		//yourLat = latitudeText.getText().toString();
+		//yourLong = longitudeText.getText().toString();
 		listener = new LocationListenerHandler() {
 			@Override
 			public void OnLocationReceived(Location loc) {
-				latitudeText.setText("" + loc.getLatitude());
-				longitudeText.setText("" + loc.getLongitude());
+				//latitudeText.setText("" + loc.getLatitude());
+				//longitudeText.setText("" + loc.getLongitude());
 			}
         };
 	}

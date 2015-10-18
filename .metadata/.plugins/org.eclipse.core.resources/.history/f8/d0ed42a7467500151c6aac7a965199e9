@@ -1,0 +1,40 @@
+package cl.telematica.locationexample;
+
+import cl.telematica.locationexample.interfaces.LocationListenerHandler;
+import cl.telematica.locationexample.location.ActiveLocationManagerActivity;
+
+import android.location.Location;
+import android.os.Bundle;
+import android.widget.TextView;
+import cl.telematica.locationexample.interfaces.LocationListenerHandler;
+import cl.telematica.locationexample.location.ActiveLocationManagerActivity;
+public class NewSearch extends ActiveLocationManagerActivity {
+	
+	public TextView citylat;
+	public TextView citylong;
+	public TextView yourlat;
+	public TextView yourlong;
+	
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_new_search);
+		
+		yourlat = (TextView) findViewById(R.id.yourLat);
+		yourlong = (TextView) findViewById(R.id.yourLong);
+		yourlat.setText("Your Latitude: "+ MainActivity.latitudeText);
+		yourlong.setText("Your Longitude: " + MainActivity.longitudeText);
+		
+		citylat = (TextView) findViewById(R.id.cityLong);
+		citylong = (TextView) findViewById(R.id.cityLat);
+		citylat.setText("City Latitude: "+ MainActivity.citylatitudeText);
+		citylong.setText("City Longitude: " + MainActivity.citylongitudeText);
+		
+		
+		//yourlat = (TextView) findViewById(R.id.cityLong);
+		//yourlong = (TextView) findViewById(R.id.cityLat);
+		
+		
+	}
+
+}
