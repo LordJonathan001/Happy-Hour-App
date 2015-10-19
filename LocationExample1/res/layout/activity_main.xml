@@ -10,14 +10,6 @@
     tools:ignore="HardcodedText" >
 
     <TextView
-        android:id="@+id/longitudeText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:text="@string/empty_text"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
         android:id="@+id/select_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -33,16 +25,6 @@
         android:layout_below="@+id/select_location"
         android:layout_centerHorizontal="true"
         android:entries="@array/locations" />
-
-    
-
-    <TextView
-        android:id="@+id/latitudeText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:text="@string/empty_text"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
         android:id="@+id/btnGPSSearch"
@@ -72,5 +54,27 @@
         android:layout_centerHorizontal="true"
         android:text="@string/set_city"
         android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/longText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSetCity"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="47dp"
+        android:text="@string/empty_text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/latText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGPSSearch"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="86dp"
+        android:layout_toRightOf="@+id/longitudeText"
+        android:text="@string/empty_text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

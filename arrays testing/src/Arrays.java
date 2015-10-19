@@ -77,11 +77,11 @@ public class Arrays {
 		}
 				
 		System.out.println(phoneList);
-		System.out.println(howMany);
-		/*System.out.println(laptopList);
+		//System.out.println(howMany);
+		System.out.println(laptopList);
 		System.out.println(desktopList);
 		System.out.println(carList);
 		System.out.println(dvdList);
-		System.out.println(consoleList);*/
+		System.out.println(consoleList);
 	}
 }

@@ -5,26 +5,6 @@
     android:orientation="vertical" >
 
 	<TextView
-	    android:id="@+id/yourLat"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_below="@+id/yourLong"
-	    android:layout_marginTop="79dp"
-	    android:layout_toLeftOf="@+id/cityLat"
-	    android:text="@string/empty_text"
-	    android:textAppearance="?android:attr/textAppearanceMedium" />
-
-	<TextView
-	    android:id="@+id/yourLong"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_above="@+id/cityLat"
-	    android:layout_marginBottom="99dp"
-	    android:layout_toRightOf="@+id/yourLat"
-	    android:text="@string/empty_text"
-	    android:textAppearance="?android:attr/textAppearanceMedium" />
-
-	<TextView
 	    android:id="@+id/cityLat"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
@@ -41,6 +21,26 @@
 	    android:layout_alignBottom="@+id/yourLong"
 	    android:layout_centerHorizontal="true"
 	    android:layout_marginBottom="25dp"
+	    android:text="@string/empty_text"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<TextView
+	    android:id="@+id/yourLong"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/yourLat"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="167dp"
+	    android:text="@string/empty_text"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<TextView
+	    android:id="@+id/yourLat"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="45dp"
+	    android:layout_toLeftOf="@+id/cityLong"
 	    android:text="@string/empty_text"
 	    android:textAppearance="?android:attr/textAppearanceMedium" />
 	

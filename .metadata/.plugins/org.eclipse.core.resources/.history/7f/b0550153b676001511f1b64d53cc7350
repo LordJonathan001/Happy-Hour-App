@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<TextView
+	    android:id="@+id/yourLat"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/yourLong"
+	    android:layout_marginTop="79dp"
+	    android:layout_toLeftOf="@+id/cityLat"
+	    android:text="@string/empty_text"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<TextView
+	    android:id="@+id/yourLong"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/cityLat"
+	    android:layout_marginBottom="99dp"
+	    android:layout_toRightOf="@+id/yourLat"
+	    android:text="@string/empty_text"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<TextView
+	    android:id="@+id/cityLat"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/cityLong"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="214dp"
+	    android:text="@string/empty_text"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<TextView
+	    android:id="@+id/cityLong"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/yourLong"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginBottom="25dp"
+	    android:text="@string/empty_text"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+</RelativeLayout>
