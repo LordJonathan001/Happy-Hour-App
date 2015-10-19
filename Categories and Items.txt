@@ -1,0 +1,107 @@
+Cell Phones
+	iPhone 5s gold
+	iPhone 5s white
+	iPhone 6 black
+	iPhone 6 white
+	iPhone 6 Plus white
+	iPhone 6 Plus gold
+	iPhone 6s white
+	iPhone 6s Plus black
+	Galaxy s5 white
+	Galaxy s6 white
+	Galaxy s6 Edge white
+	Galaxy Note 3 charcoal
+	Galaxy Note 4 white
+	LG g3 black
+Computer, Laptop
+	Dell Studio 17
+	Dell Latitude
+	HP Envy
+	HP Pavilion
+	Apple Macbook Pro
+	Apple Macbook Air
+	Asus Chromebook
+	Lenovo G50
+	Toshiba Satellite S70
+Computer, Desktop	
+	Dell Inspiron
+	Dell Optiplex
+	HP Pavilion
+	HP 280
+	Apple iMac
+	Compaq
+	Custom Built
+	Gateway
+Furniture
+	Queen Mattress and Box Spring
+	Oak Computer Desk
+	Leather Couch and Loveseat
+	LA-Z-BOY Recliner
+	Kitchen Table
+	Dresser
+	Entertainment Stand
+Car
+	2002 Chevy Malibu
+	1998 Dodge Neon
+	2001 Ford Mustang
+	2012 Toyota Camry
+	1996 Hyundai Accent
+	2005 Honda Civic
+	2002 Chrysler Sebring Lxi
+	2011 Jeep Grand Cherokee
+	2013 Audi R8
+Appliances
+	Washer
+	Dryer
+	Oven
+	Refrigerator
+	Dish Washer
+	Microwave
+	Coffee Maker
+	Toaster
+Musical Instrument
+	Guitar, Acoustic
+	Guitar, Electric
+	Drums
+	Piano
+	Keyboard
+	Flute
+	Trumpet
+	Trombone
+	Harp
+	Saxophone
+	Clarinet
+Jewelry
+	Necklace
+	Ring
+	Earrings
+	Bracelet
+Electronics
+	XM Radio
+	Samsung LED TV
+	Projector
+	Surround Sound System
+	DVD Player
+	Digital Picture Frame
+Books
+	Harry Potter Series
+	Great Gatsby
+	The Martian
+	50 Shades of Grey
+	App Design for Dummies
+DVD
+	Magic Mike
+	Saving Private Ryan
+	Avengers: Age of Ultron
+	Hitch
+	Milk
+	Fight Club
+Video Gaming
+	Xbox One
+	Xbox One White
+	PS4
+	PS3
+	Xbox 360 R2D2
+	Witcher 3, Xbox One
+	Until Dawn, PS4
+	Turtle Beach X12 Headset

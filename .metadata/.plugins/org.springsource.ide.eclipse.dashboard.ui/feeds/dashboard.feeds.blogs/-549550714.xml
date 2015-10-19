@@ -5,7 +5,21 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2015-10-16T22:03:15Z</updated>
+  <updated>2015-10-19T13:01:00Z</updated>
+  <entry>
+    <title>SpringOne2GX 2015 Replay: Spring Cloud at Netflix</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-spring-cloud-at-netflix" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>null</name>
+    </author>
+    <id>tag:spring.io,2015-10-19:2262</id>
+    <updated>2015-10-19T13:01:00Z</updated>
+    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2015.&lt;/p&gt;
+&lt;p&gt;Speakers: Jon Schneider, Taylor Wicksell - Netflix&lt;/p&gt;
+&lt;p&gt;Web / JavaScript Track&lt;/p&gt;
+&lt;p&gt; Slides: &lt;a href="http://www.slideshare.net/SpringCentral/spring-cloud-at-netflix"&gt;http://www.slideshare.net/SpringCentral/spring-cloud-at-netflix&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Cloud Native Track&lt;br/&gt;Spring Cloud Netflix allows you to quickly take your existing Spring Boot application and transform it into a fully cloud-ready service (even if you are operating out of a private data center).&lt;br/&gt;This talk will be largely live coded, taking a simple Spring Boot app and progressively augmenting it with more and more production-ready features.&lt;br/&gt;1. Service discovery &amp;ndash; how we have extended Spring Cloud to integrate more seamlessly with Eureka.&lt;br/&gt;2. Real-time Metrics &amp;ndash; Spectator/Atlas integration, including how we fold Spring Boot Actuator metrics into Spectator. We will show you how to use the Atlas stack language to generate real-time metrics graphics.&lt;br/&gt;3. Inter-service Communication/Loading Balancing - When should you choose client-side load balancing (Ribbon) over traditional server-side load balancing? We will explain how Netflix OSS can contain both a client side load balancer in Ribbon and a software router in Zuul and when to use each.&lt;br/&gt;4. Managing Failure - Provide a demo of Hystrix/Spring integration with Turbine.&lt;br/&gt;5. Analytics - How Spring Cloud Netflix makes Spring XD an even more powerful real-time analytics platform with real-time operational insights.&lt;br/&gt;&lt;p&gt;&lt;br/&gt; &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/6wvVANQ6EJ8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;br/&gt;&lt;/p&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Spring IO Platform 1.1.4 released</title>
     <link rel="alternate" href="https://spring.io/blog/2015/10/16/spring-io-platform-1-1-4-released" />
@@ -1286,30 +1300,5 @@ You coded a new UpdateDialog for each employee shown on the list.&#xD;
   &lt;li&gt;Makes it dirt simple to plugin persistence solutions like Spring Data&lt;/li&gt;
   &lt;li&gt;Is armed with an arsenal of plugins to grow into real applications&lt;/li&gt;
 &lt;/ul&gt;&lt;p&gt;Check out this newly minted guide and have fun!&lt;/p&gt;&lt;h4&gt;&lt;a href="#more-guides-coming" class="anchor" name="more-guides-coming"&gt;&lt;/a&gt;More guides coming&lt;/h4&gt;&lt;p&gt;As a follow up to SpringOne 2GX, we have identified some more guides that need to be written. The story of cloud native is sweeping the development community, and people are asking for more solutions. Our job shouldn&amp;rsquo;t be racking and stacking servers or building infrastructure. Instead, we should focus on smooth and easy solutions. Coding things &lt;strong&gt;cloud native&lt;/strong&gt; makes that possible. With Spring Boot and Spring Cloud this has become easier than ever.&lt;/p&gt;&lt;p&gt;Stay tuned!&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring for Apache Hadoop 2.3 Milestone 3 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/09/22/spring-for-apache-hadoop-2-3-milestone-3-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Thomas Risberg</name>
-    </author>
-    <id>tag:spring.io,2015-09-22:2241</id>
-    <updated>2015-09-22T16:05:00Z</updated>
-    <content type="html">&lt;p&gt;We are pleased to announce the Spring for Apache Hadoop 2.3 M3 milestone release.&lt;/p&gt;&lt;p&gt;The most important enhancements in this release: &lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Update build to use Spring Framework 4.2.1, Boot 1.3.0.M5, Batch 3.0.5 &lt;a href="https://jira.spring.io/browse/SHDP-509"&gt;[SHDP-509]&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Move annotation config to separate sub-project to reduce dependencies for spring-data-hadoop-boot &lt;a href="https://jira.spring.io/browse/SHDP-525"&gt;[SHDP-525]&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Add additional properties to Spark Tasklet &lt;a href="https://jira.spring.io/browse/SHDP-397"&gt;[SHDP-397]&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Upgrade build to use to Spark 1.5.0 &lt;a href="https://jira.spring.io/browse/SHDP-521"&gt;[SHDP-521]&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;See the release &lt;a href="http://docs.spring.io/spring-hadoop/docs/2.3.0.M3/changelog.txt"&gt;changelog&lt;/a&gt; for details.&lt;/p&gt;&lt;p&gt;We continue to provide version specific artifacts with their respective transitive dependencies in the Spring IO milestone repository:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;2.3.0.M3 (default - Apache Hadoop stable 2.7.1)&lt;/li&gt;
-  &lt;li&gt;2.3.0.M3-hadoop26 (Apache Hadoop 2.6.0)&lt;/li&gt;
-  &lt;li&gt;2.3.0.M3-phd30 (Pivotal HD 3.0)&lt;/li&gt;
-  &lt;li&gt;2.3.0.M3-phd21 (Pivotal HD 2.1)&lt;/li&gt;
-  &lt;li&gt;2.3.0.M3-cdh5 (Cloudera CDH 5.4)&lt;/li&gt;
-  &lt;li&gt;2.3.0.M3-hdp23 (Hortonworks HDP 2.3)&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;Please provide feedback so we can prioritize the work on new features scheduled for 2.3 (see previous &lt;a href="https://spring.io/blog/2015/05/21/spring-for-apache-hadoop-2-2-rc1-released"&gt;blog post&lt;/a&gt; for a list) and any additional feature requests. You can use JIRA issues or GitHub issues (see project page for links).&lt;/p&gt;&lt;p&gt;The project page is at - &lt;a href="http://projects.spring.io/spring-hadoop/"&gt;http://projects.spring.io/spring-hadoop/&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
