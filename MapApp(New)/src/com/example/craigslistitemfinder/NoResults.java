@@ -47,8 +47,3 @@ public class NoResults extends Activity {
 		map.animateCamera(update);
 	}
 }
-
-
-
-
-
