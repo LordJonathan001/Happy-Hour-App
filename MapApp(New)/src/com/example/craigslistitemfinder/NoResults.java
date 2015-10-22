@@ -1,5 +1,7 @@
 package com.example.craigslistitemfinder;
 
+import java.util.Random;
+
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -18,6 +20,10 @@ import android.support.v4.app.Fragment;
 
 public class NoResults extends Activity {
 	private final LatLng LOCATION_ONE = new LatLng(34.0500, -118.2500);
+	private LatLng RANDOM_LOCATION;
+	private double randomLat, minLat, maxLat, randomLng, minLng, maxLng;
+	
+	Random randomDouble  = new Random();
 	
 	private GoogleMap map;
 	
@@ -28,6 +34,11 @@ public class NoResults extends Activity {
 		setContentView(R.layout.activity_no_results);
 		Button b = (Button)findViewById(R.id.btnGPS);
 		Button c = (Button)findViewById(R.id.btnNewSearch);
+		
+		minLat = 34.046038;
+		maxLat = 34.053656;
+		minLng = -118.245416;
+		maxLng = -118.254776;
 		
 		b.setOnClickListener(new OnClickListener() {
 			
@@ -42,7 +53,17 @@ public class NoResults extends Activity {
 		map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
 		
 		map.addMarker(new MarkerOptions().position(LOCATION_ONE).title("SEXY LOCATION NUMBER ONE"));
+		
+		for(int i=1; i<10; i++){
+			randomLat = minLat + (maxLat - minLat) * randomDouble.nextDouble();
+			randomLng = minLng + (maxLng - minLng)* randomDouble.nextDouble();
+			RANDOM_LOCATION = new LatLng(randomLat, randomLng);
+			map.addMarker(new MarkerOptions().position(RANDOM_LOCATION).title("This os one of the random markers created by the for loop."));
+		}
+		
+
 		map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+		
 		CameraUpdate update = CameraUpdateFactory.newLatLngZoom(LOCATION_ONE, 9);
 		map.animateCamera(update);
 	}
