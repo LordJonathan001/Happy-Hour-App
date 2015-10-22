@@ -34,6 +34,7 @@ public class NoResults extends Activity {
 		setContentView(R.layout.activity_no_results);
 		Button b = (Button)findViewById(R.id.btnGPS);
 		Button c = (Button)findViewById(R.id.btnNewSearch);
+		String selectedLocation = getIntent().getExtras().getString("key");
 		
 		minLat = 34.046038;
 		maxLat = 34.053656;
@@ -58,7 +59,7 @@ public class NoResults extends Activity {
 			randomLat = minLat + (maxLat - minLat) * randomDouble.nextDouble();
 			randomLng = minLng + (maxLng - minLng)* randomDouble.nextDouble();
 			RANDOM_LOCATION = new LatLng(randomLat, randomLng);
-			map.addMarker(new MarkerOptions().position(RANDOM_LOCATION).title("This os one of the random markers created by the for loop."));
+			map.addMarker(new MarkerOptions().position(RANDOM_LOCATION).title(selectedLocation));
 		}
 		
 
@@ -68,3 +69,13 @@ public class NoResults extends Activity {
 		map.animateCamera(update);
 	}
 }
+
+
+
+/* 
+ * REMINDER JONATHAN!!!
+ * look up if there is some kind of onclick method for the markers
+ * also try to see if you can pass entire arrays through with the putExtra method instead of just one variable
+ * ^^^^ pretty sure you can try looking here: http://developer.android.com/reference/android/content/Intent.html#putExtra(java.lang.String, java.lang.String)
+ * ^^^^use the control+F to find the stuff by entering putExtra
+ */

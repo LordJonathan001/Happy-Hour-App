@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.Spinner;
 
 public class MainActivity extends Activity {
 
@@ -17,6 +18,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+
 		
 		Button b = (Button)findViewById(R.id.btnTestNoResults);
 		b.setOnClickListener(new OnClickListener() {
@@ -24,11 +26,17 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				startActivity(new Intent(MainActivity.this, NoResults.class));
-			};
+				Intent intent = new Intent(MainActivity.this, NoResults.class);
+				intent.putExtra("key", getSelectedLocation());
+				startActivity(intent);
+			}; 
 		});
-		
-		
+	}
+	
+	public String getSelectedLocation(){
+		Spinner locationSpinner=(Spinner) findViewById(R.id.locationSpinner);
+		String text = locationSpinner.getSelectedItem().toString();
+		return text;
 	}
 
 	@Override
