@@ -1,0 +1,43 @@
+package cl.telematica.locationexample;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+import android.content.Context;
+import android.location.Location;
+import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.TextView;
+import android.widget.Toast;
+import cl.telematica.locationexample.interfaces.LocationListenerHandler;
+import cl.telematica.locationexample.location.ActiveLocationManagerActivity;
+
+public class CategoryList extends ActiveLocationManagerActivity {
+
+	public TextView citylat;
+	public TextView citylong;
+	public TextView gpslat;
+	public TextView gpslong;
+	
+
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_category_list);
+		
+		gpslat = (TextView) findViewById(R.id.yourLat);
+		gpslong = (TextView) findViewById(R.id.yourLong);
+		gpslat.setText("" + MainActivity.yourLat);
+		gpslong.setText("" + MainActivity.yourLong);
+
+		citylat = (TextView) findViewById(R.id.cityLong);
+		citylong = (TextView) findViewById(R.id.cityLat);
+		citylat.setText("City Latitude: "+ MainActivity.citylatitudeText);
+		citylong.setText("City Longitude: " + MainActivity.citylongitudeText);
+			
+		}
+				
+	}
+
+
+

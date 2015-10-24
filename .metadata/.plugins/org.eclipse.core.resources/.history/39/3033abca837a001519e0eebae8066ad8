@@ -1,0 +1,16 @@
+package cl.telematica.locationexample;
+
+import android.os.Bundle;
+import android.widget.ArrayAdapter;
+
+public class CategoryList {
+	protected void onCreate(Bundle savesInstanceState){
+		
+	super.onCreate(savedInstanceState);
+	
+	String[] categories ={"Cell Phones", "Laptop Computers", "Desktop Computers",
+			"Cars", "Video Game Consoles", "Dvds"}; 
+		
+	setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, categories));		
+}
+}

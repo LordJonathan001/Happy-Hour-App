@@ -1,0 +1,7 @@
+package cl.telematica.locationexample;
+
+import android.app.ListActivity;
+
+public class CategoryList extends ListActivity {
+
+}

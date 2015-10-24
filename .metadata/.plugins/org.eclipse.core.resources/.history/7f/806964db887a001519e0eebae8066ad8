@@ -1,0 +1,47 @@
+package cl.telematica.locationexample;
+
+import android.app.ListActivity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+
+public class CategoryList extends ListActivity {
+
+		protected void onCreate(Bundle savedInstanceState){
+			super.onCreate(savedInstanceState);
+			String[] categories ={"Cell Phones", "Laptop Computers", "Desktop Computers",
+					"Cars", "Video Game Consoles", "Dvds"}; 
+				
+			setListAdapter(new ArrayAdapter<String>(this, android.R.layout.activity_list_item, categories));		
+		}
+		protected void onListItemClick(ListView l, View v, int position, long id){
+			switch(position){
+			case 0:
+				
+				break;
+			case 1:
+				
+				break;
+			case 2:
+				
+				break;
+			case 3:
+				
+				break;
+			case 4:
+				
+				break;
+			case 5:
+				
+				break;
+			}
+			
+		}
+		public boolean onCreateOptionsMenu(Menu menu) {
+			getMenuInflater().inflate(R.menu.main, menu);;
+			return true;
+		}
+}

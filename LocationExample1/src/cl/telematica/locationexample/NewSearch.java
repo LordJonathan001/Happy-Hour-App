@@ -3,27 +3,23 @@ package cl.telematica.locationexample;
 import java.util.ArrayList;
 import java.util.Random;
 
-import android.content.Context;
-import android.location.Location;
+import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
-import cl.telematica.locationexample.interfaces.LocationListenerHandler;
-import cl.telematica.locationexample.location.ActiveLocationManagerActivity;
 
-public class NewSearch extends ActiveLocationManagerActivity {
-
-	public TextView citylat;
-	public TextView citylong;
-	public TextView gpslat;
-	public TextView gpslong;
+public class NewSearch extends ListActivity {
+	public static ArrayList<String> categoryList = new ArrayList<>();
 	public static ArrayList<String> phoneList = new ArrayList<>();
 	public static ArrayList<String> laptopList = new ArrayList<>();
 	public static ArrayList<String> desktopList = new ArrayList<>();
 	public static ArrayList<String> carList = new ArrayList<>();
 	public static ArrayList<String> dvdList = new ArrayList<>();
 	public static ArrayList<String> consoleList = new ArrayList<>();
-
+		
 	public static String[] phones ={"iPhone 5s", "iPhone 6", "iPhone 6s",
 		"Galaxy s5", "Galaxy s6", "Galaxy Note 3", "Galaxy Note 4", "LG g3",
 		"Samsung Centura", "iPhone 4", "Droid Max"}; 
@@ -55,36 +51,39 @@ public class NewSearch extends ActiveLocationManagerActivity {
 	public static int[] priceOfConsoles={80, 150, 100, 250, 300, 325, 350, 375, 400, 99, 125};
 	public static int[] priceOfDvds={5, 9, 10, 12, 15, 20, 1, 3, 4, 7, 11};
 	public static int i;
-
-	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
+	public TextView citylat;
+	public TextView citylong;
+	public TextView gpslat;
+	public TextView gpslong;
+	
+	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_new_search);
-
-		gpslat = (TextView) findViewById(R.id.yourLat);
-		gpslong = (TextView) findViewById(R.id.yourLong);
-		gpslat.setText("" + MainActivity.yourLat);
-		gpslong.setText("" + MainActivity.yourLong);
-
-		citylat = (TextView) findViewById(R.id.cityLong);
-		citylong = (TextView) findViewById(R.id.cityLat);
-		citylat.setText("City Latitude: "+ MainActivity.citylatitudeText);
-		citylong.setText("City Longitude: " + MainActivity.citylongitudeText);
-
-
+		 
+		String[] categories ={"Click the type of item you would like to search for", 
+				"Cell Phones", "Laptop Computers", "Desktop Computers",
+				"Cars", "Video Game Consoles", "Dvds"};
+		setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, categories));
 		Random randomNumber = new Random();
 		int howMany = randomNumber.nextInt(20);
-		String holding, itemGps;	
+		String holding;	
+		
+		//gpslat = (TextView) findViewById(R.id.yourLat);
+		//gpslong = (TextView) findViewById(R.id.yourLong);
+		//gpslat.setText("" + MainActivity.yourLat);
+		//gpslong.setText("" + MainActivity.yourLong);
+
+		//citylat = (TextView) findViewById(R.id.cityLong);
+		//citylong = (TextView) findViewById(R.id.cityLat);
+		//citylat.setText("City Latitude: "+ MainActivity.citylatitudeText);
+		//citylong.setText("City Longitude: " + MainActivity.citylongitudeText);
 
 		for (i=0; i <= howMany; i++){
 			int itemRandNum = randomNumber.nextInt(11);//for all Item Categories
 			int priceRandNum = randomNumber.nextInt(11);//Prices for all categories
 
 			holding = phones[itemRandNum]+" $"+ priceOfPhones[priceRandNum];
-			//itemGps = 
 			phoneList.add(holding);
-			//phoneList.add(itemGps);
-
+			
 			holding = laptops[itemRandNum]+" $"+ priceOfLaptops[priceRandNum]; 
 			laptopList.add(holding);
 
@@ -99,20 +98,41 @@ public class NewSearch extends ActiveLocationManagerActivity {
 
 			holding = consoles[itemRandNum]+" $"+ priceOfConsoles[priceRandNum]; 
 			consoleList.add(holding);
-
-
+			
+		}
+	}
+	protected void onListItemClick(ListView l, View v, int position, long id){
+		switch(position){
+		case 0:
+			//categoryList = phoneList;
+			//startActivity(new Intent(NewSearch.this, Map.class));
+			break;
+		case 1:
+			categoryList = laptopList;
+			startActivity(new Intent(NewSearch.this, Map.class));
+			break;
+		case 2:
+			categoryList = desktopList;
+			startActivity(new Intent(NewSearch.this, Map.class));
+			break;
+		case 3:
+			categoryList = carList;
+			startActivity(new Intent(NewSearch.this, Map.class));
+			break;
+		case 4:
+			categoryList = dvdList;
+			startActivity(new Intent(NewSearch.this, Map.class));
+			break;
+		case 5:
+			categoryList = consoleList;
+			startActivity(new Intent(NewSearch.this, Map.class));
+			break;
+		case 6:
+			categoryList = consoleList;
+			startActivity(new Intent(NewSearch.this, Map.class));
+			break;
 		}
 
-		/*System.out.println(phoneList);
-		System.out.println(howMany);
-		System.out.println(laptopList);
-		System.out.println(desktopList);
-		System.out.println(carList);
-		System.out.println(dvdList);
-		System.out.println(consoleList);*/
-	//	latitudeText.setText("Your Latitude: " + loc.getLatitude());
-		//latitudeText = (TextView) findViewById(R.id.latText);
 	}
-
-
+	
 }

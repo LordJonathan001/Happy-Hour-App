@@ -31,6 +31,7 @@
         <activity android:name=".NewSearch"></activity>
         <activity android:name=".SingleItem"></activity>
         <activity android:name=".Map"></activity>
+        <activity android:name=".CategoryList"></activity>
     </application>
 
 </manifest>

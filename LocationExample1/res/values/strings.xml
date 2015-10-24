@@ -47,5 +47,6 @@
     <string name="new_search">New Search</string>
     <string name="no_result">There are no results for your search or your search has been misspelled. Please select from the options below.</string>
     <string name="new_searchpage">You are on the New Search Page</string>
-
+    <string name="category_list">Select a category from the list below</string>
+	<string name="map_test">Map Page</string>
 </resources>
