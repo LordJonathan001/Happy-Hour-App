@@ -79,7 +79,8 @@ public class MainActivity extends ActiveLocationManagerActivity {
 
 			@Override
 			public void onClick(View v) {
-
+				// gives a GPS point for the center of the city chosen and assigns
+				//it to the strings "citylatitudeText" and "citylongitudeText"
 				locationSet = String.valueOf(spinner.getSelectedItem());
 				if( locationSet.equals("Washington D.C.") )
 				{ citylatitudeText = "38.9047";
@@ -211,7 +212,7 @@ public class MainActivity extends ActiveLocationManagerActivity {
 				handler.postDelayed(delayRunnable, 7000);
 			};				
 		});
-
+		//Determines the current GPS location of the device running the app.
 		latitudeText = (TextView) findViewById(R.id.latText);
 		longitudeText = (TextView) findViewById(R.id.longText);
 
