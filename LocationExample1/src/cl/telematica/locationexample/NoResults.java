@@ -33,7 +33,6 @@ public class NoResults extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_no_results);
 		Button b = (Button)findViewById(R.id.btnGPS);
-		//Button c = (Button)findViewById(R.id.btnNewSearch);
 		String selectedLocation = getIntent().getExtras().getString("key");
 		
 		minLat = MainActivity.citylatitudeText - 0.02;
