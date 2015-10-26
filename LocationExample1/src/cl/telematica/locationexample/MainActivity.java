@@ -20,11 +20,11 @@ import android.widget.Toast;
 
 public class MainActivity extends ActiveLocationManagerActivity {
 
-	public static String citylongitudeText, citylatitudeText, locationSet,
-	yourLat, yourLong;
+	public static String locationSet, yourLat, yourLong;
 	public static TextView latitudeText, longitudeText;
 	private Handler handler;
 	private Runnable delayRunnable;
+	public static double citylongitudeText, citylatitudeText;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -83,112 +83,112 @@ public class MainActivity extends ActiveLocationManagerActivity {
 				//it to the strings "citylatitudeText" and "citylongitudeText"
 				locationSet = String.valueOf(spinner.getSelectedItem());
 				if( locationSet.equals("Washington D.C.") )
-				{ citylatitudeText = "38.9047";
-				citylongitudeText = "-77.0164";
+				{ citylatitudeText = 38.9047;
+				citylongitudeText = -77.0164;
 				}
 				else if (locationSet.equals("Mansfield, PA"))
-				{citylatitudeText = "41.8061";
-				citylongitudeText = "-77.0756";			
+				{citylatitudeText = 41.8061;
+				citylongitudeText = -77.0756;			
 				}
 				else if (locationSet.equals( "New York, NY"))
-				{citylatitudeText = "40.7127";
-				citylongitudeText = "-74.0059";			
+				{citylatitudeText = 40.7127;
+				citylongitudeText = -74.0059;			
 				}
 				else if (locationSet.equals( "Juneau, AL"))
-				{citylatitudeText = "58.3000";
-				citylongitudeText = "-134.4167";			
+				{citylatitudeText = 58.3000;
+				citylongitudeText = -134.4167;			
 				}
 				else if (locationSet.equals("Phoenix, AZ"))
-				{citylatitudeText = "33.4500";
-				citylongitudeText = "-112.0667";			
+				{citylatitudeText = 33.4500;
+				citylongitudeText = -112.0667;			
 				}
 				else if (locationSet.equals("Tucson, AZ"))
-				{citylatitudeText = "32.2217";
-				citylongitudeText = "-110.9264";			
+				{citylatitudeText = 32.2217;
+				citylongitudeText = -110.9264;			
 				}
 				else if (locationSet.equals( "Sacramento, CA"))
-				{citylatitudeText = "38.5556";
-				citylongitudeText = "-121.4689";			
+				{citylatitudeText = 38.5556;
+				citylongitudeText = -121.4689;			
 				}
 				else if (locationSet.equals("San Diego, CA"))
-				{citylatitudeText = "32.7150";
-				citylongitudeText = "-117.1625";			
+				{citylatitudeText = 32.7150;
+				citylongitudeText = -117.1625;			
 				}
 				else if (locationSet.equals("Los Angeles, CA"))
-				{citylatitudeText = "34.0500";
-				citylongitudeText = "-118.2500";			
+				{citylatitudeText = 34.0500;
+				citylongitudeText = -118.2500;			
 				}
 				else if (locationSet.equals("Denver, CO"))
-				{citylatitudeText = "39.7392";
-				citylongitudeText = "-104.9903";			
+				{citylatitudeText = 39.7392;
+				citylongitudeText = -104.9903;			
 				}
 				else if (locationSet.equals("Jacksonville, FL"))
-				{citylatitudeText = "30.3369";
-				citylongitudeText = "-81.6614";			
+				{citylatitudeText = 30.3369;
+				citylongitudeText = -81.6614;			
 				}
 				else if (locationSet.equals("Orlando, FL"))
-				{citylatitudeText = "28.4158";
-				citylongitudeText = "-81.2989";			
+				{citylatitudeText = 28.4158;
+				citylongitudeText = -81.2989;			
 				}
 				else if (locationSet.equals("Atlanta, GA"))
-				{citylatitudeText = "33.7550";
-				citylongitudeText = "-84.3900";			
+				{citylatitudeText = 33.7550;
+				citylongitudeText = -84.3900;			
 				}
 				else if (locationSet.equals("Boise, ID"))
-				{citylatitudeText = "43.6167";
-				citylongitudeText = "-116.2000";			
+				{citylatitudeText = 43.6167;
+				citylongitudeText = -116.2000;			
 				}
 				else if (locationSet.equals("Chicago, IL"))
-				{citylatitudeText = "41.8369";
-				citylongitudeText = "-87.6847";			
+				{citylatitudeText = 41.8369;
+				citylongitudeText = -87.6847;			
 				}
 				else if (locationSet.equals("Indianapolis, IN"))
-				{citylatitudeText = "39.7910";
-				citylongitudeText = "-86.1480";			
+				{citylatitudeText = 39.7910;
+				citylongitudeText = -86.1480;			
 				}
 				else if (locationSet.equals("Des Moines, IA"))
-				{citylatitudeText = "41.5908";
-				citylongitudeText = "-93.6208";			
+				{citylatitudeText = 41.5908;
+				citylongitudeText = -93.6208;			
 				}
 				else if (locationSet.equals("Kansas City, KS"))
-				{citylatitudeText = "39.1067";
-				citylongitudeText = "-94.6764";			
+				{citylatitudeText = 39.1067;
+				citylongitudeText = -94.6764;			
 				}
 				else if (locationSet.equals("Louisville, KY"))
-				{citylatitudeText = "38.2500";
-				citylongitudeText = "-85.7667";			
+				{citylatitudeText = 38.2500;
+				citylongitudeText = -85.7667;			
 				}
 				else if (locationSet.equals("New Orleans, LA"))
-				{citylatitudeText = "29.9500";
-				citylongitudeText = "-90.0667";			
+				{citylatitudeText = 29.9500;
+				citylongitudeText = -90.0667;			
 				}
 				else if (locationSet.equals("Portland, ME"))
-				{citylatitudeText = "43.6667";
-				citylongitudeText = "-70.2667";			
+				{citylatitudeText = 43.6667;
+				citylongitudeText = -70.2667;			
 				}
 				else if (locationSet.equals("Baltimore, MD"))
-				{citylatitudeText = "39.2833";
-				citylongitudeText = "-76.6167";			
+				{citylatitudeText = 39.2833;
+				citylongitudeText = -76.6167;			
 				}
 				else if (locationSet.equals("Boston, MA"))
-				{citylatitudeText = "42.3601";
-				citylongitudeText = "-71.0589";			
+				{citylatitudeText = 42.3601;
+				citylongitudeText = -71.0589;			
 				}
 				else if (locationSet.equals("Detroit, MI"))
-				{citylatitudeText = "42.3314";
-				citylongitudeText = "-83.0458";			
+				{citylatitudeText = 42.3314;
+				citylongitudeText = -83.0458;			
 				}
 				else if (locationSet.equals("Minneapolis, MN"))
-				{citylatitudeText = "44.9778";
-				citylongitudeText = "-93.2650";			
+				{citylatitudeText = 44.9778;
+				citylongitudeText = -93.2650;			
 				}
 				else if (locationSet.equals("Seattle, WA"))
-				{citylatitudeText = "47.6097";
-				citylongitudeText = "-122.3331";			
+				{citylatitudeText = 47.6097;
+				citylongitudeText = -122.3331;			
 				}
 				else
-				{citylatitudeText = "39.9500";
-				citylongitudeText = "-75.1667";			
+				{citylatitudeText = 39.9500;
+				citylongitudeText = -75.1667;			
 				}				
 				
 				
