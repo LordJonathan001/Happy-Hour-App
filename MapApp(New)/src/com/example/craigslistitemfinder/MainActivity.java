@@ -32,16 +32,16 @@ public class MainActivity extends ActiveLocationManagerActivity {
 		setContentView(R.layout.activity_main);
 		this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
-		Button c = (Button)findViewById(R.id.btnTestNoResults);
-		Button b = (Button)findViewById(R.id.btnGPSSearch);
-		Button d = (Button)findViewById(R.id.btnSetCity);
+		Button noResultsBtn = (Button)findViewById(R.id.btnTestNoResults);
+		Button useCurrentGPSBtn = (Button)findViewById(R.id.btnGPSSearch);
+		Button useSelectedCityBtn = (Button)findViewById(R.id.btnSetCity);
 
 		final Spinner spinner = (Spinner)findViewById(R.id.spinner1);
 		ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item);
 		dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spinner.setOnItemSelectedListener(new CustomOnItemSelectedListener());
 
-		b.setOnClickListener(new OnClickListener() {
+		useCurrentGPSBtn.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
@@ -66,7 +66,7 @@ public class MainActivity extends ActiveLocationManagerActivity {
 			};
 
 		});
-		c.setOnClickListener(new OnClickListener() {
+		noResultsBtn.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {			
@@ -74,7 +74,7 @@ public class MainActivity extends ActiveLocationManagerActivity {
 			};
 		});
 
-		d.setOnClickListener(new OnClickListener() {
+		useSelectedCityBtn.setOnClickListener(new OnClickListener() {
 
 
 			@Override
