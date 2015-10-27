@@ -5,7 +5,22 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2015-10-22T14:48:00Z</updated>
+  <updated>2015-10-27T21:03:28Z</updated>
+  <entry>
+    <title>Spring Integration Maintenance Releases Available</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/10/27/spring-integration-maintenance-releases-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Gary Russell</name>
+    </author>
+    <id>tag:spring.io,2015-10-27:2286</id>
+    <updated>2015-10-27T21:03:28Z</updated>
+    <content type="html">&lt;p&gt;We are pleased to announce the following release versions are now available. These versions include important bug fixes and users should upgrade as soon as possible. Click the version to see the appropriate JIRA release notes.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10121&amp;version=15324"&gt;4.2.1.RELEASE&lt;/a&gt;&lt;br/&gt;&lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10121&amp;version=15242"&gt;4.1.7.RELEASE&lt;/a&gt;&lt;br/&gt;&lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10121&amp;version=14991"&gt;4.0.8.RELEASE&lt;/a&gt;&lt;br/&gt;&lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10121&amp;version=14992"&gt;3.0.8.RELEASE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Please note that, unless some compelling reason arises, it is anticipated that the 4.1.7 and 4.0.8 releases will be the last in those lines; 4.x users are encouraged to upgrade to 4.2.1, which is the current release for the 4.x line.&lt;/p&gt;
+&lt;p&gt;We expect to continue to make available further 3.0.x releases to address important bug fixes, as necessary, at least through the end of 2016.&lt;/p&gt;
+&lt;p&gt;Please refer to the &lt;a href="http://projects.spring.io/spring-integration/"&gt;project page&lt;/a&gt; for links to documentation, downloads etc.&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>SpringOne2GX 2015 replay: Developer Experience with Spring Cloud</title>
     <link rel="alternate" href="https://spring.io/blog/2015/10/22/springone2gx-2015-replay-developer-experience-with-spring-cloud" />
@@ -302,18 +317,5 @@
     <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2015.&lt;/p&gt;
 &lt;p&gt;Speakers: Jeff Brown, OCI Web&lt;/p&gt;
 &lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/microservice-architecture-with-grails-3"&gt;http://www.slideshare.net/SpringCentral/microservice-architecture-with-grails-3&lt;/a&gt;&lt;/p&gt;&lt;p&gt;For some web applications it does not make sense to have 1 monolithing process which handles all of the requirements of the application. More and more often Grails is showing up in microservice architectures where instead of building 1 monolithing web application which is responsible for all of the pieces of the application puzzle, microservice applications are being assembled which collectively solve the requirements of the larger application. Grails is very well suited for this type of architecture. A microservice based architecture can result in applications which are easier to build, easier to test, easier to extend and are easier to adapt to changing business requirements.&lt;br/&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/SxukqBZmWsM" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2015 replay: Grails 3.x update</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/10/19/springone2gx-2015-replay-grails-3-x-update" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>null</name>
-    </author>
-    <id>tag:spring.io,2015-10-20:2265</id>
-    <updated>2015-10-19T18:18:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2015.&lt;/p&gt;
-&lt;p&gt;Speakers: Graeme Rocher&lt;/p&gt;
-&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/whats-new-in-grails-3"&gt;http://www.slideshare.net/SpringCentral/whats-new-in-grails-3&lt;/a&gt;&lt;/p&gt;&lt;p&gt;In this talk, Grails project lead Graeme Rocher, will update you on the latest release of Grails and what is coming up during the course of the next year.&lt;/p&gt;&lt;p&gt;Covering all the new features of Grails 3 including the new plugin model, Gradle build and profiles support, this talk promise to be packed full of information for those interested in the latest and greatest from the Grails community.&lt;br/&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/U2C7iAGvLHQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;</content>
   </entry>
 </feed>

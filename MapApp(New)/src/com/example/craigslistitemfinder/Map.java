@@ -19,9 +19,10 @@ import android.widget.TextView;
 
 public class Map extends Activity {
 	public static TextView categoryList;
-	private final LatLng LOCATION_ONE = new LatLng(34.0500, -118.2500);
-	private LatLng RANDOM_LOCATION;
-	private double randomLat, minLat, maxLat, randomLng, minLng, maxLng;
+	private final LatLng CITY_LOCATION = new LatLng(MainActivity.citylatitudeText, MainActivity.citylongitudeText);
+	
+	private LatLng GPS_LOCATION, RANDOM_LOCATION,HOLDING_LOCATION;
+	private double randomLat, minLat, maxLat, randomLng, minLng, maxLng, gps_lat, gps_long;
 	
 	Random randomDouble  = new Random();
 	
@@ -29,6 +30,9 @@ public class Map extends Activity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		gps_lat = Double.parseDouble(MainActivity.yourLat);//location of user
+		gps_long = Double.parseDouble(MainActivity.yourLong);
+		GPS_LOCATION = new LatLng(gps_lat, gps_long);
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_map);
@@ -36,10 +40,28 @@ public class Map extends Activity {
 		Button c = (Button)findViewById(R.id.btnNewSearch);
 		//String selectedLocation = getIntent().getExtras().getString("key");
 		
+		if(MainActivity.citylatitudeText == 1000){
+			HOLDING_LOCATION = GPS_LOCATION;
+			minLat = gps_lat - 0.02;
+			maxLat = gps_lat + 0.02;
+			minLng = gps_long - 0.02;
+			maxLng = gps_long + 0.02;
+		}
+		else{
+			HOLDING_LOCATION = CITY_LOCATION;
+			minLat = MainActivity.citylatitudeText - 0.02;
+			maxLat = MainActivity.citylatitudeText + 0.02;
+			minLng = MainActivity.citylongitudeText - 0.02;
+			maxLng = MainActivity.citylongitudeText + 0.02;
+		}
+		
+		
+		/*
 		minLat = 34.046038;
 		maxLat = 34.053656;
 		minLng = -118.245416;
 		maxLng = -118.254776;
+		*/
 		
 		b.setOnClickListener(new OnClickListener() {
 			
@@ -53,8 +75,6 @@ public class Map extends Activity {
 		
 		map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
 		
-		map.addMarker(new MarkerOptions().position(LOCATION_ONE).title("SEXY LOCATION NUMBER ONE"));
-		
 		for(int i=1; i<10; i++){
 			randomLat = minLat + (maxLat - minLat) * randomDouble.nextDouble();
 			randomLng = minLng + (maxLng - minLng)* randomDouble.nextDouble();
@@ -66,7 +86,7 @@ public class Map extends Activity {
 
 		map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
 		
-		CameraUpdate update = CameraUpdateFactory.newLatLngZoom(LOCATION_ONE, 7);
+		CameraUpdate update = CameraUpdateFactory.newLatLngZoom(HOLDING_LOCATION,13);
 		map.animateCamera(update);
 	}
 }

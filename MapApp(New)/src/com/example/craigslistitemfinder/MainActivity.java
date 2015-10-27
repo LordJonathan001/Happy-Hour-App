@@ -22,6 +22,7 @@ public class MainActivity extends ActiveLocationManagerActivity {
 
 	public static String locationSet, yourLat, yourLong;
 	public static TextView latitudeText, longitudeText;
+	public static double gps_lat, gps_long;
 	private Handler handler;
 	private Runnable delayRunnable;
 	public static double citylongitudeText, citylatitudeText;
@@ -46,24 +47,35 @@ public class MainActivity extends ActiveLocationManagerActivity {
 			@Override
 			public void onClick(View v) {
 				Context context = getApplicationContext();
+				citylatitudeText = 1000;
+				citylongitudeText = 1000;
 				CharSequence text = "Please wait while we retrieve your GPS";
 				int duration = Toast.LENGTH_LONG;
-
-				Toast toast = Toast.makeText(context, text, duration);
-				toast.show();	
-
 				handler = new Handler();
 				delayRunnable = new Runnable() {
 
 					@Override
 					public void run() {
-
-						Intent i = (new Intent(MainActivity.this, NewSearch.class));
-						startActivity(i);
+						if(yourLat != null){
+							Intent i = (new Intent(MainActivity.this, NewSearch.class));
+							startActivity(i); 
+						}   
 					}
 				};      
-				handler.postDelayed(delayRunnable, 7000);
-			};
+				
+				Toast toast = Toast.makeText(context, text, duration);
+				
+				if(yourLat != null){
+					Intent i = (new Intent(MainActivity.this, NewSearch.class));
+					startActivity(i); 
+				}   
+				else{
+					toast.show();
+					for(int x=0; x<1; x++){
+						handler.postDelayed(delayRunnable, x + 000);
+					};				
+				}
+			}
 
 		});
 		noResultsBtn.setOnClickListener(new OnClickListener() {
@@ -215,14 +227,16 @@ public class MainActivity extends ActiveLocationManagerActivity {
 		//Determines the current GPS location of the device running the app.
 		latitudeText = (TextView) findViewById(R.id.latText);
 		longitudeText = (TextView) findViewById(R.id.longText);
+		
 
 		listener = new LocationListenerHandler() {
 			@Override
 			public void OnLocationReceived(Location loc) {
-				latitudeText.setText("Your Latitude: " + loc.getLatitude());
-				longitudeText.setText("Your Longitude: " + loc.getLongitude());
+				latitudeText.setText(""+ loc.getLatitude());
+				longitudeText.setText("" + loc.getLongitude());
 				yourLat = latitudeText.getText().toString();
 				yourLong = longitudeText.getText().toString();
+				
 			}
 		};
 	}

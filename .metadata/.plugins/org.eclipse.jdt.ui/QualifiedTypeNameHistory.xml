@@ -13,4 +13,6 @@
 <fullyQualifiedTypeName name="android.view.View"/>
 <fullyQualifiedTypeName name="android.widget.ListView"/>
 <fullyQualifiedTypeName name="cl.telematica.locationexample.R.id"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="cl.telematica.locationexample.location.ActiveLocationManagerActivity"/>
 </qualifiedTypeNameHistroy>
