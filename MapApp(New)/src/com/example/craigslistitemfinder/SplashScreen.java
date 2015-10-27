@@ -1,11 +1,11 @@
 package com.example.craigslistitemfinder;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import cl.telematica.locationexample.location.ActiveLocationManagerActivity;
  
-public class SplashScreen extends Activity {
+public class SplashScreen extends ActiveLocationManagerActivity {
  
     // Splash screen timer
     private static int SPLASH_TIME_OUT = 3000;
