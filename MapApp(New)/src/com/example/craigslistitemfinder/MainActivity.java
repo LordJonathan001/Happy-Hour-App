@@ -3,6 +3,8 @@ package com.example.craigslistitemfinder;
 import cl.telematica.locationexample.interfaces.LocationListenerHandler;
 import cl.telematica.locationexample.location.ActiveLocationManagerActivity;
 
+import java.util.concurrent.TimeUnit;
+
 import android.content.Context;
 import android.content.Intent;
 import android.location.Location;
@@ -33,7 +35,7 @@ public class MainActivity extends ActiveLocationManagerActivity {
 		setContentView(R.layout.activity_main);
 		this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
-		Button noResultsBtn = (Button)findViewById(R.id.btnTestNoResults);
+		
 		Button useCurrentGPSBtn = (Button)findViewById(R.id.btnGPSSearch);
 		Button useSelectedCityBtn = (Button)findViewById(R.id.btnSetCity);
 
@@ -49,35 +51,22 @@ public class MainActivity extends ActiveLocationManagerActivity {
 				Context context = getApplicationContext();
 				citylatitudeText = 1000;
 				citylongitudeText = 1000;
-				CharSequence text = "Please wait while we retrieve your GPS";
+				CharSequence text = "GPS not yet retrieved, please click again";
 				int duration = Toast.LENGTH_LONG;
-				handler = new Handler();
-				for(int x=0; x<20000; x+=1000){
-					delayRunnable = new Runnable() {
-	
-						@Override
-						public void run() {
-	
-								if(yourLat != null){
-									Intent i = (new Intent(MainActivity.this, NewSearch.class));
-									startActivity(i); 
-								}
-							
-						}
-					};
-					handler.postDelayed(delayRunnable, x);
-					Toast toast = Toast.makeText(context, text, duration);
+				Toast toast = Toast.makeText(context, text, duration);
+				//handler = new Handler();
+				
+				
+				if(yourLat == null){
+					toast.show();
+				}else{
+					Intent i = (new Intent(MainActivity.this, NewSearch.class));
+					startActivity(i); 
 				}
 			}
 
 		});
-		noResultsBtn.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View v) {			
-				startActivity(new Intent(MainActivity.this, NoResults.class));
-			};
-		});
+		
 
 		useSelectedCityBtn.setOnClickListener(new OnClickListener() {
 
@@ -198,23 +187,18 @@ public class MainActivity extends ActiveLocationManagerActivity {
 				
 				
 				Context context = getApplicationContext();
-				CharSequence text = "Please wait while we retrieve that GPS";
+				CharSequence text = "Your current GPS not yet retrieved, please click again";
 				int duration = Toast.LENGTH_LONG;
 
 				Toast toast = Toast.makeText(context, text, duration);
-				toast.show();	
-
-				handler = new Handler();
-				delayRunnable = new Runnable() {
-
-					@Override
-					public void run() {
-
-						Intent i = (new Intent(MainActivity.this, NewSearch.class));
-						startActivity(i);
-					}
-				};      
-				handler.postDelayed(delayRunnable, 7000);
+				
+				if(yourLat == null){
+					toast.show();
+				}else{
+					Intent i = (new Intent(MainActivity.this, NewSearch.class));
+					startActivity(i); 
+				}
+				
 			};				
 		});
 		//Determines the current GPS location of the device running the app.

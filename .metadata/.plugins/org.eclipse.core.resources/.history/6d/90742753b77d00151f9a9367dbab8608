@@ -1,0 +1,84 @@
+package com.example.craigslistitemfinder;
+
+import cl.telematica.locationexample.location.ActiveLocationManagerActivity;
+import java.util.*;
+import java.lang.*;
+import java.text.DecimalFormat;
+import java.io.*;
+public class SingleItem extends ActiveLocationManagerActivity {
+ 
+	//to calculate the distance between two GPS points
+	public static String convertLat1 = MainActivity.yourLat;//converting location of user to double
+	public static String convertLong1 = MainActivity.yourLong;
+	//public static double convertLat3 = MainActivity.citylatitudeText;//converting location of item to double
+	//public static double convertLong3 = MainActivity.citylongitudeText;
+		
+	
+		public static double distance() {
+			
+			double lat1 = Double.parseDouble(convertLat1);//location of user
+			double lon1 = Double.parseDouble(convertLong1);
+			//double lat2 = Double.parseDouble(convertLat2);//location of item
+			//double lon2 = Double.parseDouble(convertLong2);
+			//double lat3 = MainActivity.citylatitudeText;
+			//double lon3 = MainActivity.citylongitudeText;
+			
+
+			double lat2 = MainActivity.citylatitudeText;//converting location of item to double
+			double lon2 = MainActivity.citylongitudeText;
+			
+			/*
+			if(lat3 != 1000 && lon3 != 1000){
+				double theta = lon1 - lon3;
+				double dist = Math.sin(deg2rad(lat1)) * Math.sin(deg2rad(lat3)) + Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat3)) * Math.cos(deg2rad(theta));
+				dist = Math.acos(dist);
+				dist = rad2deg(dist);
+				dist = dist * 60 * 1.1515;
+				int distance = (int) dist;
+				
+				return (distance);
+			}else{
+				double theta = lon1 - lon2;
+				double dist = Math.sin(deg2rad(lat1)) * Math.sin(deg2rad(lat2)) + Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * Math.cos(deg2rad(theta));
+				dist = Math.acos(dist);
+				dist = rad2deg(dist);
+				dist = dist * 60 * 1.1515;
+				int distance = (int) dist;
+				
+				return (distance);
+			}
+			*/
+			
+			
+			double theta = lon1 - lon2;
+			double dist = Math.sin(deg2rad(lat1)) * Math.sin(deg2rad(lat2)) + Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * Math.cos(deg2rad(theta));
+			dist = Math.acos(dist);
+			dist = rad2deg(dist);
+			dist = dist * 60 * 1.1515;
+			//int distance = (int) dist;
+			DecimalFormat df = new DecimalFormat("#.##");
+			df.format(dist);
+			
+			return (dist);
+			
+		}
+
+		/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+		/*::	This function converts decimal degrees to radians						 
+		/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+		private static double deg2rad(double deg) {
+			return (deg * Math.PI / 180.0);
+		}
+
+		/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+		/*::	This function converts radians to decimal degrees						 
+		/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+		private static double rad2deg(double rad) {
+			return (rad * 180 / Math.PI);
+		}
+	}
+
+
+ 
+ 
+

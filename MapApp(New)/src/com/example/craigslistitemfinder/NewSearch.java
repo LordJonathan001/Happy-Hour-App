@@ -12,6 +12,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class NewSearch extends ListActivity {
+	public static int howMany, totalMany;
 	public static ArrayList<String> categoryList = new ArrayList<String>();
 	public static ArrayList<String> phoneList = new ArrayList<String>();
 	public static ArrayList<String> laptopList = new ArrayList<String>();
@@ -19,6 +20,7 @@ public class NewSearch extends ListActivity {
 	public static ArrayList<String> carList = new ArrayList<String>();
 	public static ArrayList<String> dvdList = new ArrayList<String>();
 	public static ArrayList<String> consoleList = new ArrayList<String>();
+	public static ArrayList<String> allList = new ArrayList<String>();
 		
 	public static String[] phones ={"iPhone 5s", "iPhone 6", "iPhone 6s",
 		"Galaxy s5", "Galaxy s6", "Galaxy Note 3", "Galaxy Note 4", "LG g3",
@@ -41,8 +43,8 @@ public class NewSearch extends ListActivity {
 		"Playstation Vita", "PSP"}; 
 
 	public static String[] dvds ={"Magic Mike","Saving Private Ryan", "Iron Man",
-		"Hitch", "Milk", "Fight Club", "Saving Private Ryan", "Avengers", "Big Hero 6", 
-		"MegaMind", "Rent"}; 
+		"Hitch", "Mulan", "Fight Club", "Saving Private Ryan", "Avengers", "Big Hero 6", 
+		"MegaMind", "Wicked"}; 
 
 	public static int[] priceOfPhones={250, 300, 325, 350, 375, 400, 450, 475, 500, 550, 600};
 	public static int[] priceOfLaptops={250, 300, 699, 350, 799, 400, 450, 475, 500, 550, 600};
@@ -61,21 +63,12 @@ public class NewSearch extends ListActivity {
 		 
 		String[] categories ={"Click the type of item you would like to search for", 
 				"Cell Phones", "Laptop Computers", "Desktop Computers",
-				"Cars", "Video Game Consoles", "Dvds"};
+				"Cars", "Video Game Consoles", "Dvds", "See All Items"};
 		setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, categories));
 		Random randomNumber = new Random();
-		int howMany = randomNumber.nextInt(20);
+		howMany = randomNumber.nextInt(30)+10;
+		totalMany=0;
 		String holding;	
-		
-		//gpslat = (TextView) findViewById(R.id.yourLat);
-		//gpslong = (TextView) findViewById(R.id.yourLong);
-		//gpslat.setText("" + MainActivity.yourLat);
-		//gpslong.setText("" + MainActivity.yourLong);
-
-		//citylat = (TextView) findViewById(R.id.cityLong);
-		//citylong = (TextView) findViewById(R.id.cityLat);
-		//citylat.setText("City Latitude: "+ MainActivity.citylatitudeText);
-		//citylong.setText("City Longitude: " + MainActivity.citylongitudeText);
 
 		for (i=0; i <= howMany; i++){
 			int itemRandNum = randomNumber.nextInt(11);//for all Item Categories
@@ -83,44 +76,54 @@ public class NewSearch extends ListActivity {
 
 			holding = phones[itemRandNum]+" $"+ priceOfPhones[priceRandNum];
 			phoneList.add(holding);
+			allList.add(holding);
+			totalMany++;
 			
 			holding = laptops[itemRandNum]+" $"+ priceOfLaptops[priceRandNum]; 
 			laptopList.add(holding);
+			allList.add(holding);
+			totalMany++;
 
 			holding = desktops[itemRandNum]+" $"+ priceOfDesktops[priceRandNum]; 
 			desktopList.add(holding);
+			allList.add(holding);
+			totalMany++;
 
 			holding = cars[itemRandNum]+" $"+ priceOfCars[priceRandNum]; 
 			carList.add(holding);
+			allList.add(holding);
+			totalMany++;
 
 			holding = dvds[itemRandNum]+" $"+ priceOfDvds[priceRandNum]; 
 			dvdList.add(holding);
+			allList.add(holding);
+			totalMany++;
 
 			holding = consoles[itemRandNum]+" $"+ priceOfConsoles[priceRandNum]; 
 			consoleList.add(holding);
+			allList.add(holding);
+			totalMany++;
 			
 		}
 	}
 	protected void onListItemClick(ListView l, View v, int position, long id){
 		switch(position){
 		case 0:
-			//categoryList = phoneList;
-			//startActivity(new Intent(NewSearch.this, Map.class));
 			break;
 		case 1:
-			categoryList = laptopList;
+			categoryList = phoneList;
 			startActivity(new Intent(NewSearch.this, Map.class));
 			break;
 		case 2:
-			categoryList = desktopList;
+			categoryList = laptopList;
 			startActivity(new Intent(NewSearch.this, Map.class));
 			break;
 		case 3:
-			categoryList = carList;
+			categoryList = desktopList;
 			startActivity(new Intent(NewSearch.this, Map.class));
 			break;
 		case 4:
-			categoryList = dvdList;
+			categoryList = carList;
 			startActivity(new Intent(NewSearch.this, Map.class));
 			break;
 		case 5:
@@ -128,7 +131,12 @@ public class NewSearch extends ListActivity {
 			startActivity(new Intent(NewSearch.this, Map.class));
 			break;
 		case 6:
-			categoryList = consoleList;
+			categoryList = dvdList;
+			startActivity(new Intent(NewSearch.this, Map.class));
+			break;
+		case 7:
+			categoryList = allList;
+			howMany=totalMany;
 			startActivity(new Intent(NewSearch.this, Map.class));
 			break;
 		}
