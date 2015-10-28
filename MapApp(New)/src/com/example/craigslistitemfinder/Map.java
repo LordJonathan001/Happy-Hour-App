@@ -1,5 +1,6 @@
 package com.example.craigslistitemfinder;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 import com.google.android.gms.maps.CameraUpdate;
@@ -18,11 +19,11 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class Map extends Activity {
-	public static TextView categoryList;
+	//public static TextView categoryList;
 	private final LatLng CITY_LOCATION = new LatLng(MainActivity.citylatitudeText, MainActivity.citylongitudeText);
-	
 	private LatLng GPS_LOCATION, RANDOM_LOCATION,HOLDING_LOCATION;
 	private double randomLat, minLat, maxLat, randomLng, minLng, maxLng, gps_lat, gps_long;
+	public static ArrayList<String> categoryList = NewSearch.categoryList;
 	
 	Random randomDouble  = new Random();
 	
@@ -55,14 +56,6 @@ public class Map extends Activity {
 			maxLng = MainActivity.citylongitudeText + 0.02;
 		}
 		
-		
-		/*
-		minLat = 34.046038;
-		maxLat = 34.053656;
-		minLng = -118.245416;
-		maxLng = -118.254776;
-		*/
-		
 		b.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -79,8 +72,8 @@ public class Map extends Activity {
 			randomLat = minLat + (maxLat - minLat) * randomDouble.nextDouble();
 			randomLng = minLng + (maxLng - minLng)* randomDouble.nextDouble();
 			RANDOM_LOCATION = new LatLng(randomLat, randomLng);
-			//map.addMarker(new MarkerOptions().position(RANDOM_LOCATION).title(selectedLocation));
-			map.addMarker(new MarkerOptions().position(RANDOM_LOCATION).title("This is a marker"));
+			map.addMarker(new MarkerOptions().position(RANDOM_LOCATION).title(categoryList.get(i)));
+			
 		}
 		
 

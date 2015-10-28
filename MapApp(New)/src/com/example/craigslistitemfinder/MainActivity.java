@@ -52,28 +52,21 @@ public class MainActivity extends ActiveLocationManagerActivity {
 				CharSequence text = "Please wait while we retrieve your GPS";
 				int duration = Toast.LENGTH_LONG;
 				handler = new Handler();
-				delayRunnable = new Runnable() {
-
-					@Override
-					public void run() {
-						if(yourLat != null){
-							Intent i = (new Intent(MainActivity.this, NewSearch.class));
-							startActivity(i); 
-						}   
-					}
-				};      
-				
-				Toast toast = Toast.makeText(context, text, duration);
-				
-				if(yourLat != null){
-					Intent i = (new Intent(MainActivity.this, NewSearch.class));
-					startActivity(i); 
-				}   
-				else{
-					toast.show();
-					for(int x=0; x<1; x++){
-						handler.postDelayed(delayRunnable, x + 000);
-					};				
+				for(int x=0; x<20000; x+=1000){
+					delayRunnable = new Runnable() {
+	
+						@Override
+						public void run() {
+	
+								if(yourLat != null){
+									Intent i = (new Intent(MainActivity.this, NewSearch.class));
+									startActivity(i); 
+								}
+							
+						}
+					};
+					handler.postDelayed(delayRunnable, x);
+					Toast toast = Toast.makeText(context, text, duration);
 				}
 			}
 
