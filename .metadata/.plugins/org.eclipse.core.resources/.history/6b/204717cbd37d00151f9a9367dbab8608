@@ -7,7 +7,6 @@ import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -87,16 +86,14 @@ public class Map extends Activity {
 				randomLng = minLng + (maxLng - minLng) * randomDouble.nextDouble();
 				RANDOM_LOCATION = new LatLng(randomLat, randomLng);
 				map.addMarker(new MarkerOptions().position(RANDOM_LOCATION).title(
-						categoryList.get(i) + " This item is for sale in your area").icon(BitmapDescriptorFactory
-						        .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+						categoryList.get(i) + " This item is for sale in your area"));
 			}
 			else{
 			randomLat = minLat + (maxLat - minLat) * randomDouble.nextDouble();
 			randomLng = minLng + (maxLng - minLng) * randomDouble.nextDouble();
 			RANDOM_LOCATION = new LatLng(randomLat, randomLng);
 			map.addMarker(new MarkerOptions().position(RANDOM_LOCATION).title(
-					categoryList.get(i) + " Distance: " + SingleItem.distance() + " miles from your current location").icon(BitmapDescriptorFactory
-					        .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+					categoryList.get(i) + " Distance: " + SingleItem.distance() + " miles from your current location"));
 			}
 		}
 
