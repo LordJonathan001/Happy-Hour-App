@@ -5,7 +5,188 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2016-02-09T16:46:00Z</updated>
+  <updated>2016-02-10T19:05:00Z</updated>
+  <entry>
+    <title>We have adopted a Contributor Code of Conduct!</title>
+    <link rel="alternate" href="https://spring.io/blog/2016/02/10/we-have-adopted-a-contributor-code-of-conduct" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Chelsea Troy</name>
+    </author>
+    <id>tag:spring.io,2016-02-04:2368</id>
+    <updated>2016-02-10T19:05:00Z</updated>
+    <content type="html">&lt;p&gt;We have an exciting announcement to make!&lt;/p&gt;
+&lt;p&gt;The Spring projects are about developing fast, flexible Java apps. &lt;/p&gt;
+&lt;p&gt;But there&amp;rsquo;s a driving force behind the technology—its people. We open-source our projects to welcome our community into making Spring the best it can be.&lt;/p&gt;
+&lt;p&gt;Now we are taking another step in that direction. Each of the active Spring projects has adopted a Contributor Code of Conduct! &lt;a href="https://github.com/spring-projects/spring-framework/blob/master/CODE_OF_CONDUCT.adoc"&gt;You can look at the contributor code of conduct right here&lt;/a&gt;, and you&amp;rsquo;ll find a copy in each of our repositories on Github. &lt;/p&gt;
+&lt;p&gt;We want people from minority groups in tech to feel welcome to contribute to Spring. Contributor codes of conduct improve the experience of open source participation for people in those groups.&lt;/p&gt;
+&lt;p&gt;That is why we have committed to making participation in the Spring projects a harassment-free experience for everyone, regardless of level of experience, gender, gender identity or expression, sexual orientation, disability, personal appearance, body size, race, ethnicity, age, religion, or nationality. &lt;/p&gt;
+&lt;p&gt;We also have a place for contributors to direct their concerns if they feel that the code of conduct has been breached. If you notice or experience discrimination or hurtful comments while participating in any Spring project, you can reach out to us at &lt;a href="mailto:&amp;#x73;&amp;#112;&amp;#114;&amp;#105;&amp;#110;&amp;#103;&amp;#x2d;&amp;#x63;&amp;#111;&amp;#100;&amp;#101;&amp;#45;&amp;#x6f;&amp;#102;&amp;#45;&amp;#99;&amp;#x6f;&amp;#110;&amp;#100;&amp;#x75;&amp;#99;&amp;#x74;&amp;#x40;&amp;#x70;&amp;#x69;&amp;#118;&amp;#x6f;&amp;#116;&amp;#97;l&amp;#46;&amp;#x69;&amp;#x6f;"&gt;&amp;#x73;&amp;#112;&amp;#114;&amp;#105;&amp;#110;&amp;#103;&amp;#x2d;&amp;#x63;&amp;#111;&amp;#100;&amp;#101;&amp;#45;&amp;#x6f;&amp;#102;&amp;#45;&amp;#99;&amp;#x6f;&amp;#110;&amp;#100;&amp;#x75;&amp;#99;&amp;#x74;&amp;#x40;&amp;#x70;&amp;#x69;&amp;#118;&amp;#x6f;&amp;#116;&amp;#97;l&amp;#46;&amp;#x69;&amp;#x6f;&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Data Couchbase 2.0</title>
+    <link rel="alternate" href="https://spring.io/blog/2016/02/10/spring-data-couchbase-2-0" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2016-02-10:2376</id>
+    <updated>2016-02-10T12:35:46Z</updated>
+    <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;This is a cross-post blog from Simon BASLÉ from &lt;a href="http://www.couchbase.com"&gt;Couchbase&lt;/a&gt;. You can find him on twitter (&lt;a href="https://twitter.com/simonbasle"&gt;&lt;code&gt;@simonbasle&lt;/code&gt;&lt;/a&gt;) or &lt;a href=""&gt;github&lt;/a&gt;. Learn more about Couchbase and the Couchbase Java SDK on the &lt;a href="http://developer.couchbase.com/documentation/server/4.1/sdks/java-2.2/java-intro.html"&gt;developer portal&lt;/a&gt;. Thanks again, Simon and great job to you and your team! -Josh&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Spring Data Couchbase 2.0 is a rewrite of the original Spring Data Couchbase 1.4.x connector. It is based on the Couchbase Java 2.2 SDK and makes heavy use of the new query language N1QL (which was introduced in Couchbase Server 4.0) to offer more features for Spring Data users.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="http://blog.couchbase.com/2015/august/spring-data-couchbase-2.0-preview"&gt;first Milestone&lt;/a&gt; has been released last august, then a Release Candidate followed, and since then additional features (and bugfixes) were implemented a GA release can now be unleashed on the public.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s take a quick tour of what changed (with a ? to ??? notation of how awesome and significant we think each feature is &#x1f604;):&lt;/p&gt;&lt;h2&gt;&lt;a href="#new-features-in-spring-data-couchbase-2-0" class="anchor" name="new-features-in-spring-data-couchbase-2-0"&gt;&lt;/a&gt;New Features in Spring Data Couchbase 2.0&lt;/h2&gt;
+&lt;p&gt;The main differences between the 1.x generation of Spring Data Couchbase and its 2.x version are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Configuration elements are closer to the Couchbase reality: Environment, Cluster, Bucket (potentially allowing you to create &lt;code&gt;CouchbaseTemplate&lt;/code&gt;s that each connect to a different bucket, or even to different clusters!)&lt;/li&gt;
+  &lt;li&gt;Backing custom repository methods is not always done with views anymore, it is (by default) now done via N1QL, which is much more flexible and requires less server-side maintenance.&lt;/li&gt;
+  &lt;li&gt;Custom methods using views have been modified a little to better stick to the Spring Data philosophy. This reduces flexibility a little bit, but the implementations are generated from the method name (through &amp;ldquo;query derivation&amp;rdquo;).&lt;/li&gt;
+  &lt;li&gt;You can now do geospatial querying of your data (or multidimensional querying if you go beyond 3 dimensions) with views.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Of course you can still access the lower level API by using the &lt;code&gt;CouchbaseTemplate&lt;/code&gt; rather than the &lt;code&gt;CouchbaseRepository&lt;/code&gt; interface, and you can even access the underlying &lt;code&gt;Bucket&lt;/code&gt; from the SDK.&lt;/p&gt;&lt;h3&gt;&lt;a href="#repository-methods-through-n1ql" class="anchor" name="repository-methods-through-n1ql"&gt;&lt;/a&gt;Repository methods through N1QL&lt;/h3&gt;
+&lt;p&gt;???&lt;/p&gt;
+&lt;p&gt;The big new feature in Couchbase 4.0 is &lt;strong&gt;N1QL&lt;/strong&gt;, a SQL extension that works on JSON documents (so it added JSON-related specificities to SQL).&lt;/p&gt;
+&lt;p&gt;This is especially great for the &lt;code&gt;Repository&lt;/code&gt; pattern and query derivation in Spring Data, because the vast majority of query derivation keywords can be easily translated to N1QL.&lt;/p&gt;
+&lt;p&gt;N1QL is now the default backing Couchbase feature for Repository methods. You can also elect to use the @Query interface if you want to be explicit on the query executed.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;public interface UserRepository extends Repository&amp;lt;User, String&amp;gt; {&#xD;
+&#xD;
+  User findByUsernameEquals(String username);&#xD;
+&#xD;
+  List&amp;lt;User&amp;gt; findByUsernameContains(String contains);&#xD;
+&#xD;
+  @Query //optional for N1QL query derivation but more explicit&#xD;
+  List&amp;lt;User&amp;gt; findByAgeBetween(int minAge, int maxAge);&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;&lt;a href="#repository-methods-through-views" class="anchor" name="repository-methods-through-views"&gt;&lt;/a&gt;Repository methods through Views&lt;/h3&gt;
+&lt;p&gt;??&lt;/p&gt;
+&lt;p&gt;One big change in this version is that now, Repository Queries (aka custom repository methods) that are based on views are more in line with the Spring Data philosophy. They also have to be annotated explicitly with &lt;code&gt;@View(viewName=&amp;quot;something&amp;quot;)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This means that nothing Couchbase-specific should leak into your repository interface. Instead, what you can do is use query derivation mechanisms for most of the queries.&lt;/p&gt;
+&lt;p&gt;Query derivation is also possible to a small extent, with a few keywords being accepted in a view-backed method.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;public interface UserRepository extends Repository&amp;lt;User, String&amp;gt; {&#xD;
+&#xD;
+  @Override&#xD;
+  @View(designDocument = &amp;quot;user&amp;quot;, viewName = &amp;quot;customFindAllView&amp;quot;)&#xD;
+  Iterable&amp;lt;User&amp;gt; findAll();&#xD;
+&#xD;
+  @View(viewName = &amp;quot;customFindByNameView&amp;quot;)&#xD;
+  User findByUsernameIs(String lowKey);&#xD;
+&#xD;
+  @View(viewName = &amp;quot;customFindByNameView&amp;quot;)&#xD;
+  List&amp;lt;User&amp;gt; findByUsernameBetween(String lowKey, String highKey);&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;&lt;a href="#using-reduce-function-from-views" class="anchor" name="using-reduce-function-from-views"&gt;&lt;/a&gt;Using reduce function from Views&lt;/h3&gt;
+&lt;p&gt;?&lt;/p&gt;
+&lt;p&gt;Another new thing that wasn&amp;rsquo;t previously supported is the execution of the reduce function if you have one. Now, in order to execute it, you simply set the &lt;code&gt;reduce&lt;/code&gt; flag to true in the &lt;code&gt;@View&lt;/code&gt; annotation.&lt;/p&gt;
+&lt;p&gt;You could also prefix your method with &amp;ldquo;count&amp;rdquo; instead of &amp;ldquo;find&amp;rdquo; if that is meaningful to you (ie. you actually use the &amp;ldquo;count&amp;rdquo; reduce function).&lt;/p&gt;
+&lt;p&gt;Note that the reduce function in Couchbase can be something else than the preexisting _count one, and could even return something else than a long like a &lt;code&gt;JsonObject&lt;/code&gt;, like for built-in &lt;code&gt;_stats&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Similarly, adding the variation &amp;ldquo;topX&amp;rdquo; or &amp;ldquo;firstX&amp;rdquo; in a method name will result in an additional limit being set on the request (eg. &lt;code&gt;findFirst5ByLastName&lt;/code&gt; will limit the list to 5 results).&lt;/p&gt;&lt;h3&gt;&lt;a href="#configuring-consistency-read-your-own-writes" class="anchor" name="configuring-consistency-read-your-own-writes"&gt;&lt;/a&gt;Configuring consistency, Read Your Own Writes&lt;/h3&gt;
+&lt;p&gt;???&lt;/p&gt;
+&lt;p&gt;One thing that comes up often when using asynchronously populated secondary indexes like views and GSI (the new secondary index engine backing N1QL), is the need to immediately read the modifications from your previous write operations.&lt;/p&gt;
+&lt;p&gt;This implies that the view/N1QL shouldn&amp;rsquo;t answer as long as the data is still in the process of being indexed, so this sacrifices some performance in favor of consistency.&lt;/p&gt;
+&lt;p&gt;The opposite (and current default for Spring Data Couchbase) is to favor performance by accepting stale data to be returned.&lt;/p&gt;
+&lt;p&gt;We added global semantics for configuring all queries (view-based or N1QL-based) that are constructed by the framework through query derivation, by providing a small abstraction around the concept of Consistency.&lt;/p&gt;
+&lt;p&gt;This is done by overriding the &lt;code&gt;AbstractCouchbaseConfiguration&lt;/code&gt;&amp;rsquo;s &lt;code&gt;getDefaultConsistency()&lt;/code&gt; method. &lt;code&gt;Consistency&lt;/code&gt; is an enum that lets you choose between &lt;code&gt;READ_YOUR_OWN_WRITES&lt;/code&gt;, &lt;code&gt;STRONGLY_CONSISTENT&lt;/code&gt;, &lt;code&gt;UPDATE_AFTER&lt;/code&gt; and &lt;code&gt;EVENTUALLY_CONSISTENT&lt;/code&gt;. Please refer to the official documentation for more information on how they work exactly and what their impact is at query time.&lt;/p&gt;
+&lt;p&gt;You can also do that in XML by using the consistency attribute on the &lt;code&gt;&amp;lt;couchbase:template&amp;gt;&lt;/code&gt; tag.&lt;/p&gt;
+&lt;p&gt;Since GA, CRUD methods in repositories now also take the default configured consistency into account.&lt;/p&gt;&lt;h3&gt;&lt;a href="#changing-the-type-information-field-in-stored-json" class="anchor" name="changing-the-type-information-field-in-stored-json"&gt;&lt;/a&gt;Changing the type information field in stored JSON&lt;/h3&gt;
+&lt;p&gt;?&lt;/p&gt;
+&lt;p&gt;Some users have reported issues with Spring Data and the Couchbase Mobile side of things, with the Sync Gateway rejecting documents containing fields prefixed by an underscore.&lt;/p&gt;
+&lt;p&gt;This is problematic for Spring Data, since by default it stores the type information in a &lt;code&gt;_class&lt;/code&gt; field :(&lt;/p&gt;
+&lt;p&gt;The solution is to allow, through the configuration, to modify the name of that type information field. You can do so by overriding the &lt;code&gt;typeKey()&lt;/code&gt; method in &lt;code&gt;AbstractCouchbaseConfiguration&lt;/code&gt;. For instance, you can use the constant &lt;code&gt;MappingCouchbaseConverter.TYPEKEY_SYNCGATEWAY_COMPATIBLE&lt;/code&gt; (which is &amp;ldquo;&lt;code&gt;javaClass&lt;/code&gt;&amp;rdquo;).&lt;/p&gt;
+&lt;p&gt;This field is the one used by generated N1QL queries to filter only documents corresponding to the repository&amp;rsquo;s entity.&lt;/p&gt;&lt;h3&gt;&lt;a href="#support-for-code-pageable-code-code-pagerequest-code-in-n1ql-derived-queries" class="anchor" name="support-for-code-pageable-code-code-pagerequest-code-in-n1ql-derived-queries"&gt;&lt;/a&gt;Support for &lt;code&gt;Pageable&lt;/code&gt;/&lt;code&gt;PageRequest&lt;/code&gt; in N1QL derived queries&lt;/h3&gt;
+&lt;p&gt;??&lt;/p&gt;
+&lt;p&gt;Using N1QL, for queries that are generated through query derivation, &lt;code&gt;Pageable&lt;/code&gt; and &lt;code&gt;Sort&lt;/code&gt; parameters are now supported.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Support for &lt;code&gt;PagingAndSortingRepository&lt;/code&gt; based on N1QL.&lt;/li&gt;
+  &lt;li&gt;Adds two &lt;code&gt;findAll&lt;/code&gt; methods that rely on N1QL for paging and/or sorting. Uses the default configured consistency.&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#geospatial-and-multi-dimensional-querying-using-spatial-views" class="anchor" name="geospatial-and-multi-dimensional-querying-using-spatial-views"&gt;&lt;/a&gt;GeoSpatial and Multi-Dimensional querying using Spatial Views&lt;/h3&gt;
+&lt;p&gt;???&lt;/p&gt;
+&lt;p&gt;Query Couchbase using coordinates! Provided your entity has a &lt;code&gt;Point&lt;/code&gt; (or &lt;code&gt;x&lt;/code&gt; and &lt;code&gt;y&lt;/code&gt;) location, you can find it using:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;a bounding box: &lt;code&gt;findByLocationWithin(Box area)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;a circle: &lt;code&gt;findByLocationWithin(Circle area)&lt;/code&gt;, &lt;code&gt;findByLocationWithin(Point center, Distance radius)&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;a polygon: &lt;code&gt;findByLocationWithin(Polygon area)&lt;/code&gt;, &lt;code&gt;findByLocationWithin(Point[] polygon)&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;a distance &lt;code&gt;findByLocationNear(Point near, Distance maxDistance)&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Circle and polygon-like queries are performed fast as bounding box approximations on the server then the false positives are eliminated by the framework before presenting results.&lt;/p&gt;
+&lt;p&gt;You can take advantage of the multidimensional aspect of Couchbase Spatial Views to add extra dimensions to your queries (e.g. stores that open late at night within a city&amp;hellip;).&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;public interface DimensionalPartyRepository extends CrudRepository&amp;lt;Party, String&amp;gt; {&#xD;
+&#xD;
+  @Dimensional(designDocument = &amp;quot;partyGeo&amp;quot;, spatialViewName = &amp;quot;byLocation&amp;quot;)&#xD;
+  List&amp;lt;Party&amp;gt; findByLocationNear(Point p, Distance d);&#xD;
+&#xD;
+  @Dimensional(designDocument = &amp;quot;partyGeo&amp;quot;, spatialViewName = &amp;quot;byLocation&amp;quot;)&#xD;
+  List&amp;lt;Party&amp;gt; findByLocationWithin(Box boundingBox);&#xD;
+&#xD;
+  @Dimensional(designDocument = &amp;quot;partyGeo&amp;quot;, spatialViewName = &amp;quot;byLocation&amp;quot;)&#xD;
+  List&amp;lt;Party&amp;gt; findByLocationWithin(Polygon zone);&#xD;
+  &#xD;
+  @Dimensional(designDocument = &amp;quot;partyGeo&amp;quot;, spatialViewName = &amp;quot;byLocationAndAttendees&amp;quot;, dimensions = 3)&#xD;
+  List&amp;lt;Party&amp;gt; findByLocationWithinAndAttendeesGreaterThan(Polygon zone, double minAttendees);&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note: if you want to reuse annotations, you can do that too (works for &lt;code&gt;@View&lt;/code&gt; and &lt;code&gt;@Query&lt;/code&gt; too):&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;public interface DimensionalPartyRepository extends CrudRepository&amp;lt;Party, String&amp;gt; {&#xD;
+&#xD;
+  //define your own meta-annotation&#xD;
+  @Dimensional(designDocument = &amp;quot;partyGeo&amp;quot;, spatialViewName = &amp;quot;byLocation&amp;quot;, dimensions = 2)&#xD;
+  @Retention(RetentionPolicy.RUNTIME)&#xD;
+  @interface IndexedByLocation { }&#xD;
+  &#xD;
+  //use it :)&#xD;
+  @IndexedByLocation&#xD;
+  List&amp;lt;Party&amp;gt; findByLocationNear(Point p, Distance d);&#xD;
+&#xD;
+  @IndexedByLocation&#xD;
+  List&amp;lt;Party&amp;gt; findByLocationWithin(Box boundingBox);&#xD;
+&#xD;
+  @IndexedByLocation&#xD;
+  List&amp;lt;Party&amp;gt; findByLocationWithin(Polygon zone);&#xD;
+  &#xD;
+  //here we use a variation with 3 dimensions, so we need to revert to @Dimensional&#xD;
+  @Dimensional(designDocument = &amp;quot;partyGeo&amp;quot;, spatialViewName = &amp;quot;byLocationAndAttendees&amp;quot;, dimensions = 3)&#xD;
+  List&amp;lt;Party&amp;gt; findByLocationWithinAndAttendeesGreaterThan(Polygon zone, double minAttendees);&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;&lt;a href="#inline-code-n1ql-code-code-query-code-now-have-spel-support" class="anchor" name="inline-code-n1ql-code-code-query-code-now-have-spel-support"&gt;&lt;/a&gt;Inline &lt;code&gt;N1QL&lt;/code&gt; &lt;code&gt;@Query&lt;/code&gt; now have SpEL support&lt;/h3&gt;
+&lt;p&gt;???&lt;/p&gt;
+&lt;p&gt;Inline queries can use SpEL notation to:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;ensure that correct selection and filtering is applied to the statement in order to construct and return entities: use &lt;code&gt;#{#n1ql.selectEntity}&lt;/code&gt; to generate a &lt;code&gt;SELECT ... FROM ...&lt;/code&gt; clause, and &lt;code&gt;#{#n1ql.filter}&lt;/code&gt; in the &lt;code&gt;WHERE&lt;/code&gt; clause to limit query to the correct entity.&lt;/li&gt;
+  &lt;li&gt;compute values or retrieve data from external SpEL value provides configured in the Spring context.&lt;/li&gt;
+&lt;/ol&gt;&lt;h3&gt;&lt;a href="#repository-ldquo-main-rdquo-indexes-creation-can-be-automatically-triggered" class="anchor" name="repository-ldquo-main-rdquo-indexes-creation-can-be-automatically-triggered"&gt;&lt;/a&gt;Repository &amp;ldquo;main&amp;rdquo; indexes creation can be automatically triggered&lt;/h3&gt;
+&lt;p&gt;??&lt;/p&gt;
+&lt;p&gt;?? &lt;strong&gt;&lt;em&gt;IMPORTANT: this is considered as an aid during development/testing and discouraged in production&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In order to make sure that N1QL indexing of the entities in a given repository is activated in a dev or pre-production environment, one can annotate it with &lt;code&gt;@N1qlPrimaryIndexed&lt;/code&gt; (which enables bucket-wide freeform querying) and &lt;code&gt;@N1qlSecondaryIndexed&lt;/code&gt; (which will index only the documents corresponding to the entity type, similarly to the WHERE clause produced by SpEL &lt;code&gt;#{#n1ql.filter}&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Also, the backing view for CRUD operation can be automatically created by annotating the repository with &lt;code&gt;@ViewIndexed&lt;/code&gt; (you&amp;rsquo;ll need to provide the design document name, which should correspond to the entity&amp;rsquo;s simple class name with a lowercase first letter).&lt;/p&gt;
+&lt;p&gt;This feature must additionally be opted-in by redefining the &lt;code&gt;indexManager&lt;/code&gt; bean in the &lt;code&gt;AbstractCouchbaseConfiguration&lt;/code&gt;.&lt;/p&gt;&lt;h3&gt;&lt;a href="#simple-return-types-primitives-and-code-string-code-are-now-supported-when-using-a-single-row-projection" class="anchor" name="simple-return-types-primitives-and-code-string-code-are-now-supported-when-using-a-single-row-projection"&gt;&lt;/a&gt;Simple return types (primitives and &lt;code&gt;String&lt;/code&gt;) are now supported when using a single-row projection&lt;/h3&gt;
+&lt;p&gt;??&lt;/p&gt;
+&lt;p&gt;This is especially targeted at inline N1QL queries with aggregation functions like &lt;code&gt;COUNT(*)&lt;/code&gt;, &lt;code&gt;AVG(field)&lt;/code&gt;, etc&amp;hellip; The query must return a single row with a single projection.&lt;/p&gt;&lt;h3&gt;&lt;a href="#support-named-parameters-in-n1ql-inline-queries" class="anchor" name="support-named-parameters-in-n1ql-inline-queries"&gt;&lt;/a&gt;Support named parameters in N1QL inline queries&lt;/h3&gt;
+&lt;p&gt;??&lt;/p&gt;
+&lt;p&gt;Use either named parameters or positional parameter, but not both. Syntax for named parameters is &lt;code&gt;$paramName&lt;/code&gt;, requiring that each method parameter be annotated with &lt;code&gt;@Param(&amp;quot;paramName&amp;quot;)&lt;/code&gt;.&lt;/p&gt;&lt;h3&gt;&lt;a href="#other-features" class="anchor" name="other-features"&gt;&lt;/a&gt;Other Features&lt;/h3&gt;
+&lt;p&gt;?&lt;/p&gt;
+&lt;p&gt;Other features include:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fix bean naming so that all beans created by Spring Data Couchbase are prefixed with &amp;ldquo;&lt;code&gt;couchbase&lt;/code&gt;&amp;rdquo;, in order to avoid clashes with other stores.&lt;/li&gt;
+  &lt;li&gt;Changing the base class for all repositories is now supported (following the process documented in the common Spring Data documentation)&lt;/li&gt;
+  &lt;li&gt;In case indexes are stale, deleted documents are eliminated from find methods in the &lt;code&gt;CouchbaseTemplate&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Expiry can be set on a &lt;code&gt;@Document&lt;/code&gt;, as a &lt;code&gt;long&lt;/code&gt; + &lt;code&gt;timeUnit&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A few bugfixes and improvements over RC1 have also been implemented.&lt;/p&gt;&lt;h2&gt;&lt;a href="#documentation" class="anchor" name="documentation"&gt;&lt;/a&gt;Documentation&lt;/h2&gt;
+&lt;p&gt;???&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://docs.spring.io/spring-data/couchbase/docs/2.0.0.RELEASE/reference/html/"&gt;Documentation&lt;/a&gt; has also been improved, adding Couchbase-oriented examples on how to add the implementation of a custom method to a repository, how to change the base class of all repositories, how to deal with SpEL in inline queries, &amp;hellip;&lt;/p&gt;&lt;h2&gt;&lt;a href="#a-note-about-spring-cache" class="anchor" name="a-note-about-spring-cache"&gt;&lt;/a&gt;A note about Spring Cache&lt;/h2&gt;
+&lt;p&gt;The Spring Cache support has been moved out of the Spring Data repository. It is still there and we plan on improving on it. You can for now find it on a Couchbase &lt;a href="https://github.com/couchbaselabs/couchbase-spring-cache"&gt;repository&lt;/a&gt; on github but it should soon reintegrate the official Spring family of projects.&lt;/p&gt;&lt;h2&gt;&lt;a href="#getting-spring-data-couchbase" class="anchor" name="getting-spring-data-couchbase"&gt;&lt;/a&gt;Getting Spring Data Couchbase&lt;/h2&gt;
+&lt;p&gt;You can add the following to your project&amp;rsquo;s &lt;code&gt;pom.xml&lt;/code&gt; to get this GA Release (in the &lt;code&gt;dependencies&lt;/code&gt; section:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;!--&amp;lt;dependencies&amp;gt;--&amp;gt;&#xD;
+  &amp;lt;dependency&amp;gt;&#xD;
+    &amp;lt;groupId&amp;gt;org.springframework.data&amp;lt;/groupId&amp;gt;&#xD;
+    &amp;lt;artifactId&amp;gt;spring-data-couchbase&amp;lt;/artifactId&amp;gt;&#xD;
+    &amp;lt;version&amp;gt;2.0.0.RELEASE&amp;lt;/version&amp;gt;&#xD;
+  &amp;lt;/dependency&amp;gt;&#xD;
+&amp;lt;!--&amp;lt;/dependencies&amp;gt;--&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We hope you enjoy this release and all the new features it brings to the table. Next step will be to re-attach to the &lt;code&gt;Hopper&lt;/code&gt; release train with a version &lt;code&gt;2.1&lt;/code&gt; expected before Summer.&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - February 9th, 2016</title>
     <link rel="alternate" href="https://spring.io/blog/2016/02/09/this-week-in-spring-february-9th-2016" />
@@ -28,7 +209,7 @@
   &lt;li&gt;the Heroku documentation have &lt;a href="https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku"&gt;recently updated to include a expanded discussion on deploying Spring Boot applications&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Our pal Michael Simmons has &lt;a href="https://github.com/michael-simons/wro4j-spring-boot-starter"&gt;developed a very useful-looking WRO4J Spring Boot starter&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Dan Vega&amp;rsquo;s just put together a nice little &lt;a href="https://www.youtube.com/watch?v=MgOdvqvF6gk"&gt;video on how to send email with Spring Boot&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;our pal Petri Kainulainen&amp;rsquo;s back at it again with a nice post on getting the &lt;a href="http://www.petrikainulainen.net/programming/spring-framework/spring-batch-tutorial-getting-the-required-dependencies-with-gradle/"&gt;required dependencies from Maven for a Spring Batch application&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;our pal Petri Kainulainen&amp;rsquo;s back at it again with a nice post on getting the &lt;a href="http://www.petrikainulainen.net/programming/spring-framework/spring-batch-tutorial-getting-the-required-dependencies-with-gradle/"&gt;required dependencies from Gradle for a Spring Batch application&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;I like this Japanese-language post &lt;a href="https://matsumana.info/blog/2016/02/06/spring-boot-hikaricp-metrics/"&gt;on using the HikariCP from a Spring Boot application and on exposing its metrics&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;I &lt;em&gt;love&lt;/em&gt; this post from our very own &lt;a href="http://twitter.com/mkheck"&gt;Mark Heckler&lt;/a&gt; &lt;a href="http://www.thehecklers.org/2016/02/01/spring-boot-for-iot-developers-getting-started/"&gt;on Spring Boot for IoT developers&lt;/a&gt;. This is the first in a series, so stay tuned!&lt;/li&gt;
   &lt;li&gt;great post from &lt;a href="http://www.broadleafcommerce.com/blog/Preventing-Session-Hijacking-With-Spring"&gt;Broadleaf Commerce on preventing session hijacking with Spring&lt;/a&gt;&lt;/li&gt;
@@ -587,56 +768,5 @@ eval(&amp;#39;x=1} } };alert(1)//&amp;#39;);&#xD;
   &lt;li&gt;I really dug our pal Nicolas Frankel&amp;rsquo;s post &lt;a href="https://blog.frankel.ch/playing-with-spring-boot-vaadin-and-kotlin"&gt;on using Spring Boot and Vaadin together with the Kotlin programming language&lt;/a&gt;. Kotlin&amp;rsquo;s a very nice language and this post covers some issues you&amp;rsquo;ll encounter in your first steps using Spring and Kotlin together. Very handy!&lt;/li&gt;
   &lt;li&gt;Groovy is &lt;em&gt;also&lt;/em&gt; a very nice programming language and if you want further proof then you need look &lt;a href="https://dzone.com/articles/grails-goodness-using-spring-cloud-config-server"&gt;no further than this post which demonstrates standing up a Spring Cloud Config Server in almost no code at all!&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 1.3.2 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2016/01/22/spring-boot-1-3-2-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Phil Webb</name>
-    </author>
-    <id>tag:spring.io,2016-01-22:2355</id>
-    <updated>2016-01-22T03:26:14Z</updated>
-    <content type="html">&lt;p&gt;Spring Boot 1.3.2 has been released and is available now from &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.springframework.boot%22"&gt;Maven Central&lt;/a&gt;. &lt;/p&gt;
-&lt;p&gt;This maintenance release includes a &lt;a href="https://github.com/spring-projects/spring-boot/issues?q=milestone%3A1.3.2+is%3Aclosed"&gt;number of fixes&lt;/a&gt; and 3rd party dependency updates.&lt;/p&gt;
-&lt;p&gt;If you are upgrading from 1.3.1 there is one potentially breaking change; we now only search for &lt;code&gt;messages.properties&lt;/code&gt; (and not &lt;code&gt;messages*.properties&lt;/code&gt;) to enable auto-configuration of a message source. If you previously had a message file of the form &lt;code&gt;messages_en.properties&lt;/code&gt; and you didn&amp;rsquo;t include a default &lt;code&gt;messages.properties&lt;/code&gt; file, you will now need to add one.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Pivotal Academy Launches Updated Spring Classes</title>
-    <link rel="alternate" href="https://spring.io/blog/2016/01/21/pivotal-academy-launches-updated-spring-classes" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Paul</name>
-    </author>
-    <id>tag:spring.io,2015-11-17:2299</id>
-    <updated>2016-01-21T01:01:07Z</updated>
-    <content type="html">&lt;p&gt;It has been 7 years now since I taught my first Spring class. At that time almost everything was XML and configuring JPA or Spring Security, for example, could be a lot of hard work. Spring has matured a great deal in the meantime with component-scanning, Java Configuration and Spring Boot making it much more fun to use.&lt;/p&gt;
-&lt;p&gt;At every stage we have updated our Spring courses to reflect these changes and I am pleased to announce that our most popular Spring training courses - Core Spring, Spring Web and Enterprise Spring - have been revised to align with the latest Spring 4.2 release. These courses include much more &lt;a href="http://projects.spring.io/spring-boot"&gt;Spring Boot&lt;/a&gt; material and expanded coverage of features like &lt;a href="http://projects.spring.io/spring-data"&gt;Spring Data&lt;/a&gt;, &lt;a href="http://projects.spring.io/spring-hateoas"&gt;Spring HATEOAS&lt;/a&gt;, &lt;a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/websocket.html"&gt;Spring MVC Websockets&lt;/a&gt;, &lt;a href="http://projects.spring.io/spring-xd"&gt;Spring XD&lt;/a&gt;, &lt;a href="http://projects.spring.io/spring-cloud"&gt;Spring Cloud&lt;/a&gt; and microservices.&lt;/p&gt;
-&lt;p&gt;These courses are the perfect opportunity to enhance your skill-set and become &lt;em&gt;Spring Certified&lt;/em&gt;. You can learn more about our curriculum below and I encourage you to visit &lt;em&gt;The Pivotal Academy&lt;/em&gt; at &lt;a href="https://pivotal.io/academy"&gt;https://pivotal.io/academy&lt;/a&gt; to schedule your class today.&lt;/p&gt;&lt;h1&gt;&lt;a href="#core-spring" class="anchor" name="core-spring"&gt;&lt;/a&gt;Core Spring&lt;/h1&gt;
-&lt;p&gt;Designed for developers and architects, Core Spring is a 4-day class that explores all the basics of using Spring. The content is broken down into three sections: the Spring Container, Data Management and building Web Applications&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Container&lt;/strong&gt;: configuration using Java Config, Spring annotations like @Autowired, XML bean-files, Aspect Oriented programming and Spring based integration testing.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Data Management&lt;/strong&gt;: &lt;code&gt;JdbcTemplate&lt;/code&gt;, caching using &lt;code&gt;@Cachable&lt;/code&gt;, in-memory embedded databases for testing, Spring managed transactions, JPA and Spring Data&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Web Applications&lt;/strong&gt;: writing Spring MVC Controllers, using Spring Boot, implementing REST using Spring MVC, Spring Security and Cloud Native applications (Spring Cloud)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The course has been overhauled to use Spring 4.2 and covers several features introduced in Spring 4 such as &lt;code&gt;@Optional&lt;/code&gt; parameters, &lt;code&gt;@Sql&lt;/code&gt; for database testing and &lt;code&gt;@RestController&lt;/code&gt;,&lt;br/&gt;Note that as this is a fundamentals course many of the new features in 4.x are beyond its scope.&lt;/p&gt;
-&lt;p&gt;Another big change to the course is expanding coverage of web applications to include Spring Boot and Building Microservices with Spring Cloud. And for those of you who may have taken or were familiar with Core Spring 3.x, the course and labs have been fully revamped to use Annotations and Java Configuration.&lt;/p&gt;
-&lt;p&gt;To learn more about our updated Core Spring course, to view the complete course datasheet and to register for class, visit the &lt;a href="https://pivotal.io/academy#core-spring"&gt;course page&lt;/a&gt; at the Pivotal Academy.&lt;/p&gt;&lt;h1&gt;&lt;a href="#spring-web" class="anchor" name="spring-web"&gt;&lt;/a&gt;Spring Web&lt;/h1&gt;
-&lt;p&gt;Looking for a deep-dive into Spring MVC and related technologies? Our 4-days Spring web course teaches you how to create enterprise web applications across four key areas:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Basics&lt;/strong&gt;: Spring MVC Controllers, layout management, defining views, using multiple view technologies and form handling&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Internals&lt;/strong&gt;: Configuring a Spring MVC application using web.xml or Servlet 3 Java configuration, understanding Handler Mappers, Handler Adapters, View Resolvers and Interceptors, Internationalization, Resource handling including CORS support, &lt;a href="https://spring.io/blog/2013/11/01/exception-handling-in-spring-mvc"&gt;exception handling&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Enterprise&lt;/strong&gt;: implementing REST, using the &lt;code&gt;RestTemplate&lt;/code&gt;, Spring Security, Testing with the MockMvc framework, Spring Boot simplification, using Web Sockets&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This course has also been overhauled to use Spring 4.2 and Java 8 covering Spring 4 features such as &lt;code&gt;@RestControllers&lt;/code&gt;, &lt;code&gt;AsyncRestTemplate&lt;/code&gt;, &lt;code&gt;ResponseBodyAdvice&lt;/code&gt;, the resource handling pipeline, Web Sockets and &lt;code&gt;@CrossOrigin&lt;/code&gt; (CORS). The course also explores Spring Boot since it makes writing Spring MVC applications quick and easy. However, while this is beneficial, many of the labs do not require Spring Boot as we want attendees to learn how to use MVC fully and be able to override Spring Boot defaults with configurations of their own. &lt;/p&gt;
-&lt;p&gt;Pivotal Academy recommends students that are new to Spring attend the Core Spring class prior to attending Spring Web. However, if you have a good working knowledge of Spring and your primary interest is building web-applications, our Spring Web course is the right fit for you. &lt;/p&gt;
-&lt;p&gt;To learn more about our updated Spring Web course, to view the complete course datasheet and to register for class, visit the &lt;a href="https://pivotal.io/academy#spring-web"&gt;course page&lt;/a&gt; at the Pivotal Academy.&lt;/p&gt;&lt;h1&gt;&lt;a href="#enterprise-spring" class="anchor" name="enterprise-spring"&gt;&lt;/a&gt;Enterprise Spring&lt;/h1&gt;
-&lt;p&gt;Use Spring to build loosely coupled event-driven architectures composed from communicating components and processes. A microservices architecture might be one example of this approach.&lt;/p&gt;
-&lt;p&gt;Based in part on the popular &lt;a href="http://www.enterpriseintegrationpatterns.com/"&gt;Enterprise Integration Patterns&lt;/a&gt; book, the course covers inter-process communications using Web Services (REST) and Messaging (JMS, AMQP) and then builds on this foundation to cover Spring Integration, Spring Batch and Spring XD.&lt;/p&gt;
-&lt;p&gt;Revised for Spring 4.2 the course has expanded coverage of REST and covers new features such as &lt;code&gt;UriComponentsBuilder&lt;/code&gt;, &lt;code&gt;@JmsListener&lt;/code&gt;, our Java DSL for configuring Spring Integration, and an entirely new section on building integration pipelines using Spring XD.&lt;/p&gt;
-&lt;p&gt;A reasonable familiarity with Spring and Spring Boot is assumed. We recommend that students that are new to Spring attend the Core Spring class prior to attending Enterprise Spring.&lt;/p&gt;
-&lt;p&gt;To learn more about our updated Enterprise Spring course, to view the complete course datasheet and to register for class, visit the &lt;a href="https://pivotal.io/academy#enterprise-spring"&gt;course page&lt;/a&gt; at the Pivotal Academy.&lt;/p&gt;&lt;h1&gt;&lt;a href="#more-information" class="anchor" name="more-information"&gt;&lt;/a&gt;More Information&lt;/h1&gt;
-&lt;p&gt;For more information and to view our complete portfolio of Application Framework, Cloud Native and Big Data Suite classes, visit us at the &lt;a href="https://pivotal.io/academy"&gt;Pivotal Academy&lt;/a&gt;.&lt;/p&gt;</content>
   </entry>
 </feed>
