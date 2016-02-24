@@ -1,0 +1,22 @@
+package com.example.newhappyappy;
+
+import com.orm.dsl.Table;
+
+@Table
+public class Database {
+  private Long id;
+private String title;
+private String edition;
+
+  public Database(){
+  }
+
+  public Database(String title, String edition){
+     this.title = title;
+     this.edition = edition;
+  }
+
+  public Long getId() {
+      return id;
+  }
+}

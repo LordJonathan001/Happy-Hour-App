@@ -5,7 +5,6 @@
 <fullyQualifiedTypeName name="android.widget.Toast"/>
 <fullyQualifiedTypeName name="android.content.Context"/>
 <fullyQualifiedTypeName name="android.os.Handler"/>
-<fullyQualifiedTypeName name="android.R"/>
 <fullyQualifiedTypeName name="cl.telematica.locationexample.R.menu"/>
 <fullyQualifiedTypeName name="android.os.Bundle"/>
 <fullyQualifiedTypeName name="android.widget.ArrayAdapter"/>
@@ -15,4 +14,6 @@
 <fullyQualifiedTypeName name="cl.telematica.locationexample.R.id"/>
 <fullyQualifiedTypeName name="android.widget.TextView"/>
 <fullyQualifiedTypeName name="cl.telematica.locationexample.location.ActiveLocationManagerActivity"/>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="com.orm.dsl.Table"/>
 </qualifiedTypeNameHistroy>
