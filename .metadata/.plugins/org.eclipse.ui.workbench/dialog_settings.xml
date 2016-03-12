@@ -24,11 +24,17 @@
 		<item value="8" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="ImportExportAction">
-		<item value="com.android.ide.eclipse.adt.project.ImportProjectWizard" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<item value="org.eclipse.ui.wizards.import.ZipFile" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
 		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>
 			<item value="com.android.ide.eclipse.wizards.category"/>
 			<item value="org.eclipse.egit.ui.internal.clone.gitclonecategory"/>
+		</list>
+	</section>
+	<section name="ZipFileImportWizard">
+		<item value="true" key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
+		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\Jesi\Desktop\AndroidSQLiteTutorial.zip"/>
 		</list>
 	</section>
 </section>

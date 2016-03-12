@@ -16,4 +16,6 @@
 <fullyQualifiedTypeName name="cl.telematica.locationexample.location.ActiveLocationManagerActivity"/>
 <fullyQualifiedTypeName name="android.R"/>
 <fullyQualifiedTypeName name="com.orm.dsl.Table"/>
+<fullyQualifiedTypeName name="android.database.sqlite.SQLiteOpenHelper"/>
+<fullyQualifiedTypeName name="android.database.sqlite.SQLiteDatabase"/>
 </qualifiedTypeNameHistroy>
