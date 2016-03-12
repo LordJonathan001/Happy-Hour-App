@@ -1,9 +1,12 @@
 package com.example.fourth;
 
 import android.support.v7.app.ActionBarActivity;
+
+import java.io.IOException;
+
 import android.app.AlertDialog;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
+import android.database.SQLException;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,69 +21,90 @@ public class MainActivity extends ActionBarActivity {
 	Button btnAddData, btnViewAll;
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
 		myDB = new DBHelper(this);
 
-		editBarName = (EditText) findViewById(R.id.editBarName);
-		editBarCity = (EditText) findViewById(R.id.editBarCity);
-		editDrinkName = (EditText) findViewById(R.id.editDrinkName);
-		btnAddData = (Button) findViewById(R.id.btnAddData);
+		try {
+
+			myDB.createDataBase();
+
+		} catch (IOException ioe) {
+
+			throw new Error("Unable to create database");
+
+		}
+
+		try {
+
+			myDB.openDataBase();
+
+		} catch (SQLException sqle) {
+
+			throw sqle;
+		}
+
+		/*
+		 * editBarName = (EditText) findViewById(R.id.editBarName); editBarCity
+		 * = (EditText) findViewById(R.id.editBarCity); editDrinkName =
+		 * (EditText) findViewById(R.id.editDrinkName); btnAddData = (Button)
+		 * findViewById(R.id.btnAddData);
+		 */
 		btnViewAll = (Button) findViewById(R.id.btnViewAll);
-		AddData();
+
+		// AddData();
+
 		ViewAll();
 	}
 
-	public void AddData() {
-		btnAddData.setOnClickListener(new View.OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				boolean isInsterted = myDB.insertData(editBarName.getText().toString(),
-						editBarCity.getText().toString(), editDrinkName.getText().toString());
-				if (isInsterted == true)
-					Toast.makeText(MainActivity.this, "Data Inserted", Toast.LENGTH_LONG).show();
-				else
-					Toast.makeText(MainActivity.this, "Data Not Inserted", Toast.LENGTH_LONG).show();
-			}
-		});
-	}
-
+	/*
+	 * public void AddData() { btnAddData.setOnClickListener(new
+	 * View.OnClickListener() {
+	 * 
+	 * @Override public void onClick(View v) { boolean isInsterted =
+	 * myDB.insertData(editBarName.getText().toString(),
+	 * editBarCity.getText().toString(), editDrinkName.getText().toString()); if
+	 * (isInsterted == true) Toast.makeText(MainActivity.this, "Data Inserted",
+	 * Toast.LENGTH_LONG).show(); else Toast.makeText(MainActivity.this,
+	 * "Data Not Inserted", Toast.LENGTH_LONG).show(); } }); }
+	 */
 	public void ViewAll() {
 		btnViewAll.setOnClickListener(new View.OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
 				Cursor res = myDB.getAllData();
-				if(res.getCount() ==0){
-					// show message 
+				if (res.getCount() == 0) {
+					// show message
 					showMessage("Error", "No Data Found");
 					return;
 				}
-				
+
 				StringBuffer buffer = new StringBuffer();
-				while (res.moveToNext()){
-					buffer.append("ID :"+ res.getString(0)+ "\n");
-					buffer.append("Bar Name :"+ res.getString(1)+ "\n");
-					buffer.append("Bar City :"+ res.getString(2)+ "\n");
-					buffer.append("Drink Name :"+ res.getString(3)+ "\n\n");
-					
+				while (res.moveToNext()) {
+					buffer.append("ID :" + res.getString(0) + "\n");
+					buffer.append("Bar Name :" + res.getString(1) + "\n");
+					buffer.append("Bar City :" + res.getString(2) + "\n");
+					buffer.append("Drink Name :" + res.getString(3) + "\n\n");
+
 				}
-				//Show All Data
+				// Show All Data
 				showMessage("Data", buffer.toString());
 			}
 		});
 	}
 
-	public void showMessage(String title, String message){
+	public void showMessage(String title, String message) {
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		builder.setCancelable(true);
 		builder.setTitle(title);
 		builder.setMessage(message);
 		builder.show();
-		
+
 	}
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
