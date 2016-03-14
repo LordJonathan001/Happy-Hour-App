@@ -5,7 +5,7 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2016-03-14T13:11:43Z</updated>
+  <updated>2016-03-14T13:11:00Z</updated>
   <entry>
     <title>Spring for Apache Kafka Milestone 1 Available</title>
     <link rel="alternate" href="https://spring.io/blog/2016/03/14/spring-for-apache-kafka-milestone-1-available" />
@@ -14,11 +14,12 @@
       <name>Gary Russell</name>
     </author>
     <id>tag:spring.io,2016-03-08:2418</id>
-    <updated>2016-03-14T13:11:43Z</updated>
+    <updated>2016-03-14T13:11:00Z</updated>
     <content type="html">&lt;p&gt;I am pleased to announce that the &lt;code&gt;spring-kafka&lt;/code&gt; (Spring for Apache Kafka) first milestone is now available (&lt;code&gt;1.0.0.M1&lt;/code&gt;).&lt;/p&gt;
 &lt;p&gt;The existing &lt;code&gt;spring-integration-kafka&lt;/code&gt; &lt;a href="https://github.com/spring-projects/spring-integration-kafka"&gt;extension project&lt;/a&gt; - currently at version &lt;code&gt;1.3.0.RELEASE&lt;/code&gt; supports Kafka &lt;a href="http://kafka.apache.org/082/documentation.html"&gt;0.8.x.x&lt;/a&gt; and is used in &lt;a href="http://projects.spring.io/spring-xd/"&gt;Spring XD&lt;/a&gt; (Kafka &lt;code&gt;MessageBus&lt;/code&gt;) and &lt;a href="http://cloud.spring.io/spring-cloud-stream/"&gt;Spring Cloud Stream&lt;/a&gt; (Kafka &lt;code&gt;Binder&lt;/code&gt;).&lt;/p&gt;
 &lt;p&gt;This new project (&lt;code&gt;spring-kafka&lt;/code&gt;) breaks out the core components into a separate project. It is based on the new &lt;a href="http://kafka.apache.org/documentation.html"&gt;0.9.0.x&lt;/a&gt; pure Java Kafka clients.&lt;/p&gt;
-&lt;p&gt;Much like the other messaging projects in the Spring portfolio, it provides:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;spring-kafka&lt;/code&gt; brings the familiar Spring programming model to Apache Kafka for any Spring user, not just those using Spring Integration. An upcoming &lt;code&gt;spring-integration-kafka&lt;/code&gt; release will be a complete rewrite, utilizing the &lt;code&gt;spring-kafka&lt;/code&gt; project internally.&lt;/p&gt;
+&lt;p&gt;Much like the other messaging projects in the Spring portfolio, &lt;code&gt;spring-kafka&lt;/code&gt; provides:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Message Listener Container.&lt;/li&gt;
   &lt;li&gt;Annotations for POJO message listeners (&lt;code&gt;@KafkaListener&lt;/code&gt; - similar to &lt;code&gt;@JmsListener&lt;/code&gt; and &lt;code&gt;@RabbitListener&lt;/code&gt;).&lt;/li&gt;
@@ -62,7 +63,7 @@ public class Listener {&#xD;
 &lt;p&gt;In addition, the &lt;code&gt;spring-kafka-test&lt;/code&gt; artifact is available, containing support for testing, including an embedded Kafka broker, hamcrest &lt;code&gt;Matcher&lt;/code&gt;s etc.&lt;/p&gt;
 &lt;p&gt;Both artifacts are available in the &lt;code&gt;repo.spring.io/milestone&lt;/code&gt; repository.&lt;/p&gt;
 &lt;p&gt;See the &lt;a href="http://docs.spring.io/spring-kafka/docs/1.0.0.M1/reference/htmlsingle/"&gt;milestone 1 reference manual&lt;/a&gt; for more information.&lt;/p&gt;
-&lt;p&gt;Many thanks to &lt;a href="https://github.com/sobychacko"&gt;Soby Chacko&lt;/a&gt; (for kicking off the initial Spring Integration Kafka extension), &lt;a href="https://spring.io/team/mbogoevici"&gt;Marius Bogoevici&lt;/a&gt; and &lt;a href="https://spring.io/team/artembilan"&gt;Artem Bilan&lt;/a&gt; for their help with this importatnt project.&lt;/p&gt;&lt;h1&gt;&lt;a href="#next-steps" class="anchor" name="next-steps"&gt;&lt;/a&gt;Next Steps:&lt;/h1&gt;
+&lt;p&gt;Many thanks to &lt;a href="https://github.com/sobychacko"&gt;Soby Chacko&lt;/a&gt; (for kicking off the initial Spring Integration Kafka extension), &lt;a href="https://spring.io/team/mbogoevici"&gt;Marius Bogoevici&lt;/a&gt; and &lt;a href="https://spring.io/team/artembilan"&gt;Artem Bilan&lt;/a&gt; for their help with this important project.&lt;/p&gt;&lt;h1&gt;&lt;a href="#next-steps" class="anchor" name="next-steps"&gt;&lt;/a&gt;Next Steps:&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;First milestone of &lt;code&gt;spring-integration-kafka&lt;/code&gt; (&lt;code&gt;2.0&lt;/code&gt;) based on &lt;code&gt;spring-kafka&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;A Spring Boot starter, with auto configuration support etc.&lt;/li&gt;
