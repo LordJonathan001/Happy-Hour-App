@@ -22,7 +22,9 @@ public class DBHelper extends SQLiteOpenHelper {
 	private SQLiteDatabase myDataBase;
 
 	private final Context myContext;
-	public static final String TABLE_NAME = "TABLE_NAME";
+	public static final String BARS = "BARS";
+	public static final String CHANGOS = "CHANGOS";
+	public static final String LANDOS = "LANDOS";
 
 	/**
 	 * Constructor Takes and keeps a reference of the passed context in order to
@@ -156,14 +158,21 @@ public class DBHelper extends SQLiteOpenHelper {
 
 	public Cursor getAllData() {
 		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor res = db.rawQuery("select * from " + TABLE_NAME, null);
+		Cursor res = db.rawQuery("select * from " + BARS, null);
 		return res;
 	}
 
-	// Add your public helper methods to access and get content from the
-	// database.
-	// You could return cursors by doing "return myDataBase.query(....)" so it'd
-	// be easy
-	// to you to create adapters for your views.
+	public Cursor getChangos() {
+		SQLiteDatabase db = this.getWritableDatabase();
+		Cursor res = db.rawQuery("select * from " + CHANGOS, null);
+		return res;
+	}
+	public Cursor getLandos() {
+		SQLiteDatabase db = this.getWritableDatabase();
+		Cursor res = db.rawQuery("select * from " + LANDOS, null);
+		return res;
+	}
+
+	
 
 }

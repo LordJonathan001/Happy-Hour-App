@@ -18,13 +18,13 @@ import android.widget.Toast;
 public class MainActivity extends ActionBarActivity {
 	DBHelper myDB;
 	EditText editBarName, editBarCity, editDrinkName;
-	Button btnAddData, btnViewAll;
+	Button btnLandos, btnChangos, btnViewAll;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
+
 		myDB = new DBHelper(this);
 
 		try {
@@ -46,30 +46,15 @@ public class MainActivity extends ActionBarActivity {
 			throw sqle;
 		}
 
-		/*
-		 * editBarName = (EditText) findViewById(R.id.editBarName); editBarCity
-		 * = (EditText) findViewById(R.id.editBarCity); editDrinkName =
-		 * (EditText) findViewById(R.id.editDrinkName); btnAddData = (Button)
-		 * findViewById(R.id.btnAddData);
-		 */
-		btnViewAll = (Button) findViewById(R.id.btnViewAll);
-
-		// AddData();
+		btnViewAll = (Button) findViewById(R.id.btnViewAllBars);
+		btnLandos = (Button) findViewById(R.id.btnLandos);
+		btnChangos = (Button) findViewById(R.id.btnChangos);
 
 		ViewAll();
+		ViewLandos();
+		ViewChangos();
 	}
 
-	/*
-	 * public void AddData() { btnAddData.setOnClickListener(new
-	 * View.OnClickListener() {
-	 * 
-	 * @Override public void onClick(View v) { boolean isInsterted =
-	 * myDB.insertData(editBarName.getText().toString(),
-	 * editBarCity.getText().toString(), editDrinkName.getText().toString()); if
-	 * (isInsterted == true) Toast.makeText(MainActivity.this, "Data Inserted",
-	 * Toast.LENGTH_LONG).show(); else Toast.makeText(MainActivity.this,
-	 * "Data Not Inserted", Toast.LENGTH_LONG).show(); } }); }
-	 */
 	public void ViewAll() {
 		btnViewAll.setOnClickListener(new View.OnClickListener() {
 
@@ -87,7 +72,56 @@ public class MainActivity extends ActionBarActivity {
 					buffer.append("ID :" + res.getString(0) + "\n");
 					buffer.append("Bar Name :" + res.getString(1) + "\n");
 					buffer.append("Bar City :" + res.getString(2) + "\n");
-					buffer.append("Drink Name :" + res.getString(3) + "\n\n");
+
+				}
+				// Show All Data
+				showMessage("Data", buffer.toString());
+			}
+		});
+	}
+
+	public void ViewLandos() {
+		btnLandos.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Cursor res = myDB.getLandos();
+				if (res.getCount() == 0) {
+					// show message
+					showMessage("Error", "No Data Found");
+					return;
+				}
+
+				StringBuffer buffer = new StringBuffer();
+				while (res.moveToNext()) {
+					buffer.append("ID :" + res.getString(0) + "\n");
+					buffer.append("Drink Name :" + res.getString(1) + "\n");
+					buffer.append("Drink Price :" + res.getString(2) + "\n");
+
+				}
+				// Show All Data
+				showMessage("Data", buffer.toString());
+			}
+		});
+	}
+
+	public void ViewChangos() {
+		btnChangos.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Cursor res = myDB.getChangos();
+				if (res.getCount() == 0) {
+					// show message
+					showMessage("Error", "No Data Found");
+					return;
+				}
+
+				StringBuffer buffer = new StringBuffer();
+				while (res.moveToNext()) {
+					buffer.append("ID :" + res.getString(0) + "\n");
+					buffer.append("Drink Name :" + res.getString(1) + "\n");
+					buffer.append("Drink Price :" + res.getString(2) + "\n");
 
 				}
 				// Show All Data
@@ -114,9 +148,7 @@ public class MainActivity extends ActionBarActivity {
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
+
 		int id = item.getItemId();
 		if (id == R.id.action_settings) {
 			return true;

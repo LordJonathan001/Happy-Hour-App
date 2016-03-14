@@ -9,81 +9,31 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.fourth.MainActivity" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:text="Bar Name"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView1"
-        android:text="Bar City"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView2"
-        android:text="Drink Name"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <EditText
-        android:id="@+id/editBarName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/textView2"
-        android:layout_alignLeft="@+id/btnAddData"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:ems="10" />
-
-    <EditText
-        android:id="@+id/editBarCity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/textView3"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/textView1"
-        android:ems="10" />
-
-    <EditText
-        android:id="@+id/editDrinkName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btnAddData"
-        android:layout_alignLeft="@+id/editBarCity"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/textView3"
-        android:ems="10" >
-
-        <requestFocus />
-    </EditText>
-
     <Button
-        android:id="@+id/btnAddData"
+        android:id="@+id/btnLandos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/textView3"
         android:layout_centerVertical="true"
-        android:text="Add Data" />
+        android:layout_marginRight="36dp"
+        android:text="Landos" />
 
     <Button
-        android:id="@+id/btnViewAll"
+        android:id="@+id/btnViewAllBars"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/btnAddData"
-        android:layout_alignBottom="@+id/btnAddData"
-        android:layout_marginLeft="40dp"
-        android:layout_toRightOf="@+id/btnAddData"
-        android:text="View All" />
+        android:layout_above="@+id/btnLandos"
+        android:layout_alignLeft="@+id/btnLandos"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="68dp"
+        android:text="View All Bars" />
+
+    <Button
+        android:id="@+id/btnChangos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="42dp"
+        android:text="Changos" />
 
 </RelativeLayout>

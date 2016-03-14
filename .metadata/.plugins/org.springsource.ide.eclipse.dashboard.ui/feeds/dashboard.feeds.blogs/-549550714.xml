@@ -5,7 +5,72 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2016-03-11T09:38:00Z</updated>
+  <updated>2016-03-14T13:11:43Z</updated>
+  <entry>
+    <title>Spring for Apache Kafka Milestone 1 Available</title>
+    <link rel="alternate" href="https://spring.io/blog/2016/03/14/spring-for-apache-kafka-milestone-1-available" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Gary Russell</name>
+    </author>
+    <id>tag:spring.io,2016-03-08:2418</id>
+    <updated>2016-03-14T13:11:43Z</updated>
+    <content type="html">&lt;p&gt;I am pleased to announce that the &lt;code&gt;spring-kafka&lt;/code&gt; (Spring for Apache Kafka) first milestone is now available (&lt;code&gt;1.0.0.M1&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;The existing &lt;code&gt;spring-integration-kafka&lt;/code&gt; &lt;a href="https://github.com/spring-projects/spring-integration-kafka"&gt;extension project&lt;/a&gt; - currently at version &lt;code&gt;1.3.0.RELEASE&lt;/code&gt; supports Kafka &lt;a href="http://kafka.apache.org/082/documentation.html"&gt;0.8.x.x&lt;/a&gt; and is used in &lt;a href="http://projects.spring.io/spring-xd/"&gt;Spring XD&lt;/a&gt; (Kafka &lt;code&gt;MessageBus&lt;/code&gt;) and &lt;a href="http://cloud.spring.io/spring-cloud-stream/"&gt;Spring Cloud Stream&lt;/a&gt; (Kafka &lt;code&gt;Binder&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;This new project (&lt;code&gt;spring-kafka&lt;/code&gt;) breaks out the core components into a separate project. It is based on the new &lt;a href="http://kafka.apache.org/documentation.html"&gt;0.9.0.x&lt;/a&gt; pure Java Kafka clients.&lt;/p&gt;
+&lt;p&gt;Much like the other messaging projects in the Spring portfolio, it provides:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Message Listener Container.&lt;/li&gt;
+  &lt;li&gt;Annotations for POJO message listeners (&lt;code&gt;@KafkaListener&lt;/code&gt; - similar to &lt;code&gt;@JmsListener&lt;/code&gt; and &lt;code&gt;@RabbitListener&lt;/code&gt;).&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;KafkaTemplate&lt;/code&gt; for sync and async sending to Kafka topics:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;@Configuration&#xD;
+@EnableKafka&#xD;
+public class KafkaConfig {&#xD;
+     // Infrastructure @Beans omitted. &#xD;
+     // See Reference Manual and tests for comprehensive sample&#xD;
+&#xD;
+     @Bean&#xD;
+     public Listener listener() {&#xD;
+        return new Listener();&#xD;
+     }&#xD;
+&#xD;
+}&#xD;
+&#xD;
+public class Listener {&#xD;
+&#xD;
+     @KafkaListener(topics = &amp;quot;myTopic&amp;quot;)&#xD;
+     public void handleFromKakfa(String payload) {&#xD;
+       ...&#xD;
+    }&#xD;
+&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Using maven or gradle: &lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;dependencies&amp;gt;&#xD;
+    &amp;lt;dependency&amp;gt;&#xD;
+        &amp;lt;groupId&amp;gt;org.springframework.kafka&amp;lt;/groupId&amp;gt;&#xD;
+        &amp;lt;artifactId&amp;gt;spring-kafka&amp;lt;/artifactId&amp;gt;&#xD;
+        &amp;lt;version&amp;gt;1.0.0.M1&amp;lt;/version&amp;gt;&#xD;
+    &amp;lt;/dependency&amp;gt;&#xD;
+&amp;lt;/dependencies&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;dependencies {&#xD;
+    compile &amp;#39;org.springframework.kafka:spring-kafka:1.0.0.M1&amp;#39;&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In addition, the &lt;code&gt;spring-kafka-test&lt;/code&gt; artifact is available, containing support for testing, including an embedded Kafka broker, hamcrest &lt;code&gt;Matcher&lt;/code&gt;s etc.&lt;/p&gt;
+&lt;p&gt;Both artifacts are available in the &lt;code&gt;repo.spring.io/milestone&lt;/code&gt; repository.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href="http://docs.spring.io/spring-kafka/docs/1.0.0.M1/reference/htmlsingle/"&gt;milestone 1 reference manual&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;Many thanks to &lt;a href="https://github.com/sobychacko"&gt;Soby Chacko&lt;/a&gt; (for kicking off the initial Spring Integration Kafka extension), &lt;a href="https://spring.io/team/mbogoevici"&gt;Marius Bogoevici&lt;/a&gt; and &lt;a href="https://spring.io/team/artembilan"&gt;Artem Bilan&lt;/a&gt; for their help with this importatnt project.&lt;/p&gt;&lt;h1&gt;&lt;a href="#next-steps" class="anchor" name="next-steps"&gt;&lt;/a&gt;Next Steps:&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;First milestone of &lt;code&gt;spring-integration-kafka&lt;/code&gt; (&lt;code&gt;2.0&lt;/code&gt;) based on &lt;code&gt;spring-kafka&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;A Spring Boot starter, with auto configuration support etc.&lt;/li&gt;
+  &lt;li&gt;A new &lt;code&gt;Binder&lt;/code&gt; implementation for &lt;code&gt;spring-cloud-stream&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Flesh out the documentation, set up a project page etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the meantime, you can follow progress, report issues, etc, in the &lt;a href="https://github.com/spring-projects/spring-kafka"&gt;github repo&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Reactor Core 2.5 becomes a unified Reactive Foundation on Java 8</title>
     <link rel="alternate" href="https://spring.io/blog/2016/03/11/reactor-core-2-5-becomes-a-unified-reactive-foundation-on-java-8" />
@@ -422,17 +487,5 @@ public class FooService {&#xD;
     <updated>2016-03-01T09:00:00Z</updated>
     <content type="html">&lt;p&gt;Guest Speaker: Micah Silverman, Java Developer Evangelist, Stormpath&lt;br/&gt;Slides: &lt;a href="http://www.slideshare.net/stormpath/spring-boot-authenticationand-more"&gt;http://www.slideshare.net/stormpath/spring-boot-authenticationand-more&lt;/a&gt;&lt;br/&gt;Join Stormpath Java Developer Evangelist Micah Silverman for a technical overview of the common pain points with Java authentication. We&amp;rsquo;ll cover how to solve them with Stormpath in a Spring Boot application, and demonstrate how to quickly add a complete user management system to your Spring Boot app. By the end of this webinar, you’ll be on your way to a fully functioning Spring Boot app backed by Stormpath. Topics Covered: Authentication Pain Points in Java Stormpath, Spring Boot, and Your Architecture Demo: Auth in Spring Boot, with these features: A complete user registration and login system Pre-built login screens Password reset workflows Group-based authorization Advanced user features: API authentication, Single Sign-On, social login, and more Technical Q&amp;amp;A&lt;/p&gt;
 &lt;iframe width="420" height="315" src="https://www.youtube.com/embed/1jwrK9ehYdw" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Security 4.0.4 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2016/02/26/spring-security-4-0-4-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Rob Winch</name>
-    </author>
-    <id>tag:spring.io,2016-02-26:2403</id>
-    <updated>2016-02-26T14:08:25Z</updated>
-    <content type="html">&lt;p&gt;I&amp;rsquo;m pleased to announce the release of Spring Security 4.0.4.RELEASE. This release is the fourth maintenance release of the 4.0 line. It provides minor fixes along with a fix for backwards compatibility of Spring Framework 4.1.x. For complete details on the release, refer to the &lt;a href="https://github.com/spring-projects/spring-security/issues?utf8=%E2%9C%93&amp;q=milestone%3A4.0.4"&gt;Change Log&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-security/"&gt;Project Site&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-security/site/docs/4.0.4.RELEASE/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-security/site/docs/4.0.4.RELEASE/guides/html5/"&gt;Guides&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
