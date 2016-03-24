@@ -11,16 +11,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="@string/select_location"
+        android:text="@string/select_bar"
         android:textSize="30sp" />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/select_location"
-        android:layout_centerHorizontal="true"
-        android:entries="@array/locations" />
 
     <Button
         android:id="@+id/btnSelectBar"
@@ -30,5 +22,14 @@
         android:layout_centerHorizontal="true"
         android:text="@string/set_city"
         android:textSize="30sp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/select_location"
+        android:layout_marginTop="30dp"
+        android:entries="@array/locations" />
    
 </RelativeLayout>

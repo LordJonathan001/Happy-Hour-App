@@ -1,0 +1,31 @@
+package com.example.sixth;
+
+import android.app.Activity;
+import android.content.Context;
+import android.os.Bundle;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+public class Bar extends Activity{
+	String setBarTest = MainActivity.setBar;
+	String barNameHolder, picHolder ; 
+	int imageInt, textInt1;
+	TextView setBarName, setBarContact;
+	ImageView barPic;
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_bar);
+		String picHolder = "drawable/"+setBarTest;
+		barPic = (ImageView) findViewById(R.id.barPic);
+		int imageInt = getResources().getIdentifier(picHolder, null, getPackageName());
+		barPic.setImageResource(imageInt);
+		
+		setBarName = (TextView)findViewById(R.id.barName);
+		String barNameHolder = "@string/"+setBarTest;
+		int textInt1 = getResources().getIdentifier(barNameHolder, null, getPackageName());
+		setBarName.setText(textInt1);
+	}
+	public static int getImageId(Context context, String imageName) {
+	    return context.getResources().getIdentifier("drawable/" + imageName, null, context.getPackageName());
+	}
+}

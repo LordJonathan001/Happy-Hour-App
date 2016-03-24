@@ -19,7 +19,7 @@ public class DBHelper extends SQLiteOpenHelper {
 	private static String DB_PATH = "/data/data/com.example.sixth/databases/";
 	private static String DB_NAME = "BarSample.db";	
 	private final Context myContext;	
-	public static String tableName = "Bars";
+	public static String tableName = "BARS";
 	public static final String KEY_ROWID = "_id";
 	public static final String BARNAME = "Bar Name";
 	public static final String BARCITY = "Bar City";

@@ -8,20 +8,35 @@ import android.widget.TextView;
 
 public class Bar extends Activity{
 	String setBarTest = MainActivity.setBar;
-	TextView t1;
+	String barNameHolder, picHolder, barContactHolder, barPhoneHolder; 
+	int imageInt, textInt1,textInt2, textInt3;
+	TextView setBarName, setBarContact,setBarPhone;
 	ImageView barPic;
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_bar);
-		String r = "drawable/"+setBarTest;
-		barPic = (ImageView) findViewById(R.id.barPic);
-		//barPic.setImageResource(getImageId(this, setBarTest));
 		
-		int imageResource = getResources().getIdentifier(r, null, getPackageName());
-
-		barPic.setImageResource(imageResource);
+		barPic = (ImageView) findViewById(R.id.barPic);
+		String picHolder = "drawable/"+setBarTest;		
+		int imageInt = getResources().getIdentifier(picHolder, null, getPackageName());
+		barPic.setImageResource(imageInt);
+		
+		setBarName = (TextView)findViewById(R.id.barName);
+		String barNameHolder = "@string/"+setBarTest;
+		int textInt1 = getResources().getIdentifier(barNameHolder, null, getPackageName());
+		setBarName.setText(textInt1);
+		
+		setBarContact = (TextView)findViewById(R.id.barContact);
+		String barContactHolder = "@string/"+setBarTest+"Contact";
+		int textInt2 = getResources().getIdentifier(barContactHolder, null, getPackageName());
+		setBarContact.setText(textInt2);
+		
+		setBarPhone = (TextView)findViewById(R.id.barPhone);
+		String barPhoneHolder = "@string/"+setBarTest+"Phone";
+		int textInt3 = getResources().getIdentifier(barPhoneHolder, null, getPackageName());
+		setBarPhone.setText(textInt3);
 	}
-	public static int getImageId(Context context, String imageName) {
+	/*public static int getImageId(Context context, String imageName) {
 	    return context.getResources().getIdentifier("drawable/" + imageName, null, context.getPackageName());
-	}
+	}*/
 }
