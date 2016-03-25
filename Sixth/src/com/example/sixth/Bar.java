@@ -16,7 +16,8 @@ public class Bar extends Activity{
 	int imageInt, textInt1,textInt2, textInt3;
 	TextView setBarName, setBarContact,setBarPhone;
 	ImageView barPic;
-	Button viewAll, beer, wine, mixedDrinks;
+	Button viewAll, beer, wine, mixedDrinks, getTaxi;
+	static String setDrinkType;
 	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -26,6 +27,7 @@ public class Bar extends Activity{
 		Button beer = (Button)findViewById(R.id.btnBeer);
 		Button wine = (Button)findViewById(R.id.btnWine);
 		Button mixedDrinks = (Button)findViewById(R.id.btnMixedDrinks);
+		Button getTaxi = (Button)findViewById(R.id.btnTaxi);
 		
 		barPic = (ImageView) findViewById(R.id.barPic);
 		String picHolder = "drawable/"+setBarTest;		
@@ -75,6 +77,14 @@ public class Bar extends Activity{
 			@Override
 			public void onClick(View v) {
 				Intent i = (new Intent(Bar.this, NoResult.class));
+				startActivity(i); 			
+			}
+			
+		});
+		getTaxi.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = (new Intent(Bar.this, Taxi.class));
 				startActivity(i); 			
 			}
 			

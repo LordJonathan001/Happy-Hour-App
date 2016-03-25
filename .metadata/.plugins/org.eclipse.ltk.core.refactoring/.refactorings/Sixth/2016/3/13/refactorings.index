@@ -14,3 +14,5 @@
 1458866133465	Rename local variable 'barLabels'
 1458866167694	Rename method 'getDrinkLabels'
 1458866179205	Rename local variable 'drinkLabels'
+1458879590586	Rename field 'textView1'
+1458880911474	Rename field 'firstPart'

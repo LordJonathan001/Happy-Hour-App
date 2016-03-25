@@ -78,4 +78,14 @@
        android:layout_marginTop="25dp"
        android:text="@string/beer" />
 
+   <Button
+       android:id="@+id/btnTaxi"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginBottom="46dp"
+       android:text="@string/taxi" 
+       android:gravity="center"/>
+
 </RelativeLayout>
