@@ -10,3 +10,7 @@
 1458788622123	Rename resource 'BarSample.db.db'
 1458788811362	Rename resource 'BarSample.db'
 1458788966718	Rename resource 'BarSample.db.db'
+1458866118290	Rename method 'getBarLabels'
+1458866133465	Rename local variable 'barLabels'
+1458866167694	Rename method 'getDrinkLabels'
+1458866179205	Rename local variable 'drinkLabels'

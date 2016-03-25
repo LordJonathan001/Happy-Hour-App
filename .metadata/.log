@@ -1486,3 +1486,400 @@ Caused by: org.eclipse.core.internal.resources.ResourceException: Resource is ou
 	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
 	at com.android.ide.eclipse.adt.io.IFileWrapper.getContents(IFileWrapper.java:49)
 	... 18 more
+!SESSION 2016-03-24 17:50:47.579 -----------------------------------------------
+eclipse.buildId=3.7.3.201602250940-RELEASE-e45
+java.version=1.8.0_73
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-03-24 17:50:55.190
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-03-24 17:51:12.653
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Jesi'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2016-03-24 17:51:40.544
+!MESSAGE No repository found at http://www.ieclipse.cn/updates/adt-ext/.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 17:54:52.695
+!MESSAGE Error parsing C:\Users\Jesi\Desktop\Android\system-images\android-22\android-wear\armeabi-v7a\devices.xml
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 53; columnNumber: 15; cvc-complex-type.2.4.d: Invalid content was found starting with element 'd:skin'. No child element is expected at this point.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(Unknown Source)
+	at javax.xml.parsers.SAXParser.parse(Unknown Source)
+	at com.android.sdklib.devices.DeviceParser.parseImpl(DeviceParser.java:468)
+	at com.android.sdklib.devices.DeviceParser.parse(DeviceParser.java:441)
+	at com.android.sdklib.devices.DeviceManager.loadDevices(DeviceManager.java:673)
+	at com.android.sdklib.devices.DeviceManager.initSysImgDevices(DeviceManager.java:402)
+	at com.android.sdklib.devices.DeviceManager.initDevicesLists(DeviceManager.java:252)
+	at com.android.sdklib.devices.DeviceManager.getDevices(DeviceManager.java:232)
+	at com.android.ide.eclipse.adt.internal.editors.layout.configuration.ConfigurationChooser.initDevices(ConfigurationChooser.java:876)
+	at com.android.ide.eclipse.adt.internal.editors.layout.configuration.ConfigurationChooser.<init>(ConfigurationChooser.java:301)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.createPartControl(GraphicalEditorPart.java:419)
+	at org.eclipse.ui.part.MultiPageEditorPart.addPage(MultiPageEditorPart.java:244)
+	at org.eclipse.ui.forms.editor.FormEditor.addPage(FormEditor.java:325)
+	at org.eclipse.ui.part.MultiPageEditorPart.addPage(MultiPageEditorPart.java:214)
+	at org.eclipse.ui.forms.editor.FormEditor.addPage(FormEditor.java:308)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.addPage(AndroidXmlEditor.java:356)
+	at com.android.ide.eclipse.adt.internal.editors.layout.LayoutEditorDelegate.delegateCreateFormPages(LayoutEditorDelegate.java:281)
+	at com.android.ide.eclipse.adt.internal.editors.common.CommonXmlEditor.createFormPages(CommonXmlEditor.java:268)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.createAndroidPages(AndroidXmlEditor.java:319)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.addPages(AndroidXmlEditor.java:310)
+	at com.android.ide.eclipse.adt.internal.editors.common.CommonXmlEditor.addPages(CommonXmlEditor.java:285)
+	at org.eclipse.ui.forms.editor.FormEditor.createPages(FormEditor.java:138)
+	at org.eclipse.ui.part.MultiPageEditorPart.createPartControl(MultiPageEditorPart.java:363)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:151)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:99)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:341)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:898)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:879)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:121)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:345)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:264)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:104)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:971)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1306)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer$1.handleEvent(LazyStackRenderer.java:72)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:186)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4761)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:211)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:85)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:59)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:171)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer$9.widgetSelected(StackRenderer.java:1084)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1122)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:788)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3158)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1841)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:330)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 17:54:52.757
+!MESSAGE Error parsing C:\Users\Jesi\Desktop\Android\system-images\android-22\android-wear\x86\devices.xml
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 53; columnNumber: 15; cvc-complex-type.2.4.d: Invalid content was found starting with element 'd:skin'. No child element is expected at this point.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(Unknown Source)
+	at javax.xml.parsers.SAXParser.parse(Unknown Source)
+	at com.android.sdklib.devices.DeviceParser.parseImpl(DeviceParser.java:468)
+	at com.android.sdklib.devices.DeviceParser.parse(DeviceParser.java:441)
+	at com.android.sdklib.devices.DeviceManager.loadDevices(DeviceManager.java:673)
+	at com.android.sdklib.devices.DeviceManager.initSysImgDevices(DeviceManager.java:402)
+	at com.android.sdklib.devices.DeviceManager.initDevicesLists(DeviceManager.java:252)
+	at com.android.sdklib.devices.DeviceManager.getDevices(DeviceManager.java:232)
+	at com.android.ide.eclipse.adt.internal.editors.layout.configuration.ConfigurationChooser.initDevices(ConfigurationChooser.java:876)
+	at com.android.ide.eclipse.adt.internal.editors.layout.configuration.ConfigurationChooser.<init>(ConfigurationChooser.java:301)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.createPartControl(GraphicalEditorPart.java:419)
+	at org.eclipse.ui.part.MultiPageEditorPart.addPage(MultiPageEditorPart.java:244)
+	at org.eclipse.ui.forms.editor.FormEditor.addPage(FormEditor.java:325)
+	at org.eclipse.ui.part.MultiPageEditorPart.addPage(MultiPageEditorPart.java:214)
+	at org.eclipse.ui.forms.editor.FormEditor.addPage(FormEditor.java:308)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.addPage(AndroidXmlEditor.java:356)
+	at com.android.ide.eclipse.adt.internal.editors.layout.LayoutEditorDelegate.delegateCreateFormPages(LayoutEditorDelegate.java:281)
+	at com.android.ide.eclipse.adt.internal.editors.common.CommonXmlEditor.createFormPages(CommonXmlEditor.java:268)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.createAndroidPages(AndroidXmlEditor.java:319)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.addPages(AndroidXmlEditor.java:310)
+	at com.android.ide.eclipse.adt.internal.editors.common.CommonXmlEditor.addPages(CommonXmlEditor.java:285)
+	at org.eclipse.ui.forms.editor.FormEditor.createPages(FormEditor.java:138)
+	at org.eclipse.ui.part.MultiPageEditorPart.createPartControl(MultiPageEditorPart.java:363)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:151)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:99)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:341)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:898)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:879)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:121)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:345)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:264)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:104)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:971)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1306)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer$1.handleEvent(LazyStackRenderer.java:72)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:186)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4761)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:211)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:85)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:59)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:171)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer$9.widgetSelected(StackRenderer.java:1084)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1122)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:788)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3158)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1841)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:330)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.jst.jsp.core 4 4 2016-03-24 18:04:26.642
+!MESSAGE A workspace crash was detected. The previous session did not exit normally. Not using saved taglib indexes.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 19:25:44.060
+!MESSAGE Can't find file C:\Users\Jesi\Desktop\Android\extras\google\google_play_services\libproject\google-play-services_lib\.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 19:46:00.296
+!MESSAGE Can't find file C:\Users\Jesi\Desktop\Android\extras\google\google_play_services\libproject\google-play-services_lib\.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 19:46:50.445
+!MESSAGE Can't find file C:\Users\Jesi\Desktop\Android\extras\google\google_play_services\libproject\google-play-services_lib\.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 19:50:13.522
+!MESSAGE Can't find file C:\Users\Jesi\Desktop\Android\extras\google\google_play_services\libproject\google-play-services_lib\.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 19:57:35.249
+!MESSAGE Can't find file C:\Users\Jesi\Desktop\Android\extras\google\google_play_services\libproject\google-play-services_lib\.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 20:04:15.331
+!MESSAGE Can't find file C:\Users\Jesi\Desktop\Android\extras\google\google_play_services\libproject\google-play-services_lib\.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 20:07:44.531
+!MESSAGE Can't find file C:\Users\Jesi\Desktop\Android\extras\google\google_play_services\libproject\google-play-services_lib\.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 20:21:37.454
+!MESSAGE Can't find file C:\Users\Jesi\Desktop\Android\extras\google\google_play_services\libproject\google-play-services_lib\.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 20:22:17.092
+!MESSAGE Can't find file C:\Users\Jesi\Desktop\Android\extras\google\google_play_services\libproject\google-play-services_lib\.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 20:24:06.689
+!MESSAGE Can't find file C:\Users\Jesi\Desktop\Android\extras\google\google_play_services\libproject\google-play-services_lib\.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 20:26:12.078
+!MESSAGE Can't find file C:\Users\Jesi\Desktop\Android\extras\google\google_play_services\libproject\google-play-services_lib\.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 20:26:48.403
+!MESSAGE Can't find file C:\Users\Jesi\Desktop\Android\extras\google\google_play_services\libproject\google-play-services_lib\.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 20:32:55.499
+!MESSAGE Can't find file C:\Users\Jesi\Desktop\Android\extras\google\google_play_services\libproject\google-play-services_lib\.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 20:33:00.918
+!MESSAGE Can't find file C:\Users\Jesi\Desktop\Android\extras\google\google_play_services\libproject\google-play-services_lib\.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 20:34:29.669
+!MESSAGE Can't find file C:\Users\Jesi\Desktop\Android\extras\google\google_play_services\libproject\google-play-services_lib\.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 20:34:59.803
+!MESSAGE Can't find file C:\Users\Jesi\Desktop\Android\extras\google\google_play_services\libproject\google-play-services_lib\.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 20:35:18.477
+!MESSAGE Can't find file C:\Users\Jesi\Desktop\Android\extras\google\google_play_services\libproject\google-play-services_lib\.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 20:35:33.658
+!MESSAGE Can't find file C:\Users\Jesi\Desktop\Android\extras\google\google_play_services\libproject\google-play-services_lib\.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 20:36:07.931
+!MESSAGE Can't find file C:\Users\Jesi\Desktop\Android\extras\google\google_play_services\libproject\google-play-services_lib\.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 20:36:19.448
+!MESSAGE Can't find file C:\Users\Jesi\Desktop\Android\extras\google\google_play_services\libproject\google-play-services_lib\.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 20:40:34.281
+!MESSAGE Can't find file C:\Users\Jesi\Desktop\Android\extras\google\google_play_services\libproject\google-play-services_lib\.classpath in workspace
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 20:42:19.654
+!MESSAGE Can't find file C:\Users\Jesi\Desktop\Android\extras\google\google_play_services\libproject\google-play-services_lib\.classpath in workspace
+!SESSION 2016-03-24 20:59:52.454 -----------------------------------------------
+eclipse.buildId=3.7.3.201602250940-RELEASE-e45
+java.version=1.8.0_73
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-03-24 21:00:22.342
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Jesi'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 0 2016-03-24 21:00:49.583
+!MESSAGE Unexpected error loading extension: org.eclipse.equinox.p2.updatesite.metadataRepository
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.getLocalRepositoryLocation(UpdateSiteMetadataRepositoryFactory.java:36)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.loadRepository(UpdateSiteMetadataRepositoryFactory.java:86)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.load(UpdateSiteMetadataRepositoryFactory.java:57)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:668)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:151)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:129)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:73)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2016-03-24 21:00:49.824
+!MESSAGE No repository found at http://www.ieclipse.cn/updates/adt-ext/.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 21:01:10.246
+!MESSAGE Parsing Data for Google Inc.:Google APIs:23 failed
+!STACK 0
+java.lang.NullPointerException
+	at com.android.ide.eclipse.adt.internal.sdk.Sdk$6.run(Sdk.java:731)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-03-24 21:01:10.266
+!MESSAGE The workspace will exit with unsaved changes in this session.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-03-24 21:01:15.625
+!MESSAGE Parsing Data for android-23 failed
+!STACK 0
+java.lang.NullPointerException
+	at com.android.ide.eclipse.adt.internal.sdk.Sdk$6.run(Sdk.java:731)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

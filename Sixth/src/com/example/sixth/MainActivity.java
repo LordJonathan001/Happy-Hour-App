@@ -21,7 +21,7 @@ OnItemSelectedListener {
 	DBHelper myDB;
 	Button selectBar;	
     Spinner spinner;
-    static String pullBar,setBar;
+    static String pullBar,setBar,firstPart;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -54,7 +54,7 @@ OnItemSelectedListener {
 			public void onClick(View v) {
 				pullBar = String.valueOf(spinner.getSelectedItem());
 				String[] parts = pullBar.split(" "); //returns an array with the 2 parts
-				String firstPart = parts[0];
+				firstPart = parts[0];
 				
 				setBar = firstPart.toLowerCase();
 				Intent i = (new Intent(MainActivity.this, Bar.class));

@@ -1,0 +1,36 @@
+package com.example.sixth;
+
+import java.util.Random;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.ImageView;
+
+public class NoResult  extends Activity {
+	ImageView randPic;
+	String picHolder, picName;
+	
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_no_results);
+				
+		Random rand = new Random();
+		int  n = rand.nextInt(2);
+		
+		if(n == 0){
+			picName = "pan";
+		}
+		else if(n==1){
+			picName = "key";
+		}
+		else{
+			picName = "cat";
+		}
+		
+		randPic = (ImageView) findViewById(R.id.randPic);
+		picHolder = "drawable/"+picName;		
+		int imageInt = getResources().getIdentifier(picHolder, null, getPackageName());
+		randPic.setImageResource(imageInt);
+		
+	}
+}

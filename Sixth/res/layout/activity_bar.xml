@@ -52,13 +52,13 @@
        android:textAppearance="?android:attr/textAppearanceLarge" />
 
    <Button
-       android:id="@+id/btnBeer"
+       android:id="@+id/btnWine"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:layout_below="@+id/btnviewAll"
-       android:layout_centerHorizontal="true"
-       android:layout_marginTop="32dp"
-       android:text="@string/beer" />
+       android:layout_alignRight="@+id/btnBeer"
+       android:layout_below="@+id/btnMixedDrinks"
+       android:layout_marginTop="15dp"
+       android:text="@string/wine" />
 
    <Button
        android:id="@+id/btnMixedDrinks"
@@ -66,16 +66,16 @@
        android:layout_height="wrap_content"
        android:layout_below="@+id/btnBeer"
        android:layout_centerHorizontal="true"
-       android:layout_marginTop="30dp"
+       android:layout_marginTop="21dp"
        android:text="@string/mixedDrinks" />
 
    <Button
-       android:id="@+id/btnWine"
+       android:id="@+id/btnBeer"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:layout_alignLeft="@+id/btnBeer"
-       android:layout_below="@+id/btnMixedDrinks"
-
-       android:text="@string/wine" />
+       android:layout_below="@+id/btnviewAll"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="25dp"
+       android:text="@string/beer" />
 
 </RelativeLayout>

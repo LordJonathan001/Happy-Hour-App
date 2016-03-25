@@ -20,10 +20,13 @@ public class DBHelper extends SQLiteOpenHelper {
 	private static String DB_NAME = "BarSample.db";	
 	private final Context myContext;	
 	public static String tableName = "BARS";
+	public static String barTableName = MainActivity.firstPart;
+	public static String drinkType;//Use this to pass in selected drink type to SQL query	
 	public static final String KEY_ROWID = "_id";
 	public static final String BARNAME = "Bar Name";
 	public static final String BARCITY = "Bar City";
 	private SQLiteDatabase myDataBase;
+	
 	
 	public DBHelper(Context context) {
 
@@ -163,6 +166,31 @@ public class DBHelper extends SQLiteOpenHelper {
          
         // returning lables
         return labels;
+		
+	} // will returns all labels stored in database
+	public List<String> getAllDrinkLabels(){
+		List<String> allDrinkLabels = new ArrayList<String>();
+        
+        // Select All Query
+        String sqlquery="SELECT * FROM "+barTableName + " WHERE DRINKTYPE='" + drinkType + "';";
+		String selectQuery = "SELECT  * FROM " + barTableName;
+      
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+      
+        // looping through all rows and adding to list
+        if (cursor.moveToFirst()) {
+            do {
+            	allDrinkLabels.add(cursor.getString(1) + ", " + cursor.getString(2));
+            } while (cursor.moveToNext());
+        }
+         
+        // closing connection
+        cursor.close();
+        db.close();
+         
+        // returning lables
+        return allDrinkLabels;
 		
 	} // will returns all labels stored in database
 }

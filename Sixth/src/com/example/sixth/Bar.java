@@ -2,7 +2,11 @@ package com.example.sixth;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -12,9 +16,16 @@ public class Bar extends Activity{
 	int imageInt, textInt1,textInt2, textInt3;
 	TextView setBarName, setBarContact,setBarPhone;
 	ImageView barPic;
+	Button viewAll, beer, wine, mixedDrinks;
+	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_bar);
+		
+		Button viewAll = (Button)findViewById(R.id.btnviewAll);
+		Button beer = (Button)findViewById(R.id.btnBeer);
+		Button wine = (Button)findViewById(R.id.btnWine);
+		Button mixedDrinks = (Button)findViewById(R.id.btnMixedDrinks);
 		
 		barPic = (ImageView) findViewById(R.id.barPic);
 		String picHolder = "drawable/"+setBarTest;		
@@ -35,8 +46,40 @@ public class Bar extends Activity{
 		String barPhoneHolder = "@string/"+setBarTest+"Phone";
 		int textInt3 = getResources().getIdentifier(barPhoneHolder, null, getPackageName());
 		setBarPhone.setText(textInt3);
+		
+		viewAll.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = (new Intent(Bar.this, NoResult.class));
+				startActivity(i); 			
+			}
+			
+		});
+		beer.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = (new Intent(Bar.this, NoResult.class));
+				startActivity(i); 			
+			}
+			
+		});
+		wine.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = (new Intent(Bar.this, NoResult.class));
+				startActivity(i); 			
+			}
+			
+		});
+		mixedDrinks.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = (new Intent(Bar.this, NoResult.class));
+				startActivity(i); 			
+			}
+			
+		});
+			
+	
 	}
-	/*public static int getImageId(Context context, String imageName) {
-	    return context.getResources().getIdentifier("drawable/" + imageName, null, context.getPackageName());
-	}*/
 }
