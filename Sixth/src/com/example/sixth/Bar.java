@@ -16,7 +16,7 @@ public class Bar extends Activity{
 	int imageInt, textInt1,textInt2, textInt3;
 	TextView setBarName, setBarContact,setBarPhone;
 	ImageView barPic;
-	Button viewAll, beer, wine, mixedDrinks, getTaxi;
+	Button viewAll, beer, wine, mixedDrinks, other, getTaxi;
 	static String setDrinkType;
 	
 	public void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,7 @@ public class Bar extends Activity{
 		Button beer = (Button)findViewById(R.id.btnBeer);
 		Button wine = (Button)findViewById(R.id.btnWine);
 		Button mixedDrinks = (Button)findViewById(R.id.btnMixedDrinks);
+		Button other = (Button)findViewById(R.id.btnOther);
 		Button getTaxi = (Button)findViewById(R.id.btnTaxi);
 		
 		barPic = (ImageView) findViewById(R.id.barPic);
@@ -52,7 +53,7 @@ public class Bar extends Activity{
 		viewAll.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent i = (new Intent(Bar.this, NoResult.class));
+				Intent i = (new Intent(Bar.this, Drinks.class));
 				startActivity(i); 			
 			}
 			
@@ -60,24 +61,44 @@ public class Bar extends Activity{
 		beer.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent i = (new Intent(Bar.this, NoResult.class));
-				startActivity(i); 			
+				String setDrinkType = "Beer";
+				Intent intent = new Intent(getApplicationContext(), Drinks.class);
+				intent.putExtra("sample_name", setDrinkType);
+				startActivity(intent); 
+				
 			}
 			
 		});
 		wine.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent i = (new Intent(Bar.this, NoResult.class));
-				startActivity(i); 			
+				String setDrinkType = "Wine";
+				Intent intent = new Intent(getApplicationContext(), Drinks.class);
+				intent.putExtra("sample_name", setDrinkType);
+				startActivity(intent);
 			}
 			
 		});
 		mixedDrinks.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent i = (new Intent(Bar.this, NoResult.class));
-				startActivity(i); 			
+				String setDrinkType = "Mixed Drink";
+				Intent intent = new Intent(getApplicationContext(), Drinks.class);
+				intent.putExtra("sample_name", setDrinkType);
+				startActivity(intent);
+				
+			}
+			
+		});
+		
+		other.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				String setDrinkType = "Other";
+				Intent intent = new Intent(getApplicationContext(), Drinks.class);
+				intent.putExtra("sample_name", setDrinkType);
+				startActivity(intent); 
+				
 			}
 			
 		});
@@ -90,6 +111,6 @@ public class Bar extends Activity{
 			
 		});
 			
-	
+	 
 	}
 }

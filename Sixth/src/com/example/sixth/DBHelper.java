@@ -172,6 +172,32 @@ public class DBHelper extends SQLiteOpenHelper {
 		List<String> allDrinkLabels = new ArrayList<String>();
         
         // Select All Query
+        String sqlquery="SELECT * FROM "+barTableName + " WHERE DRINKTYPE=";
+		String selectQuery = sqlquery;
+      
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+      
+        // looping through all rows and adding to list
+        if (cursor.moveToFirst()) {
+            do {
+            	allDrinkLabels.add(cursor.getString(1) + ", " + cursor.getString(2));
+            } while (cursor.moveToNext());
+        }
+         
+        // closing connection
+        cursor.close();
+        db.close();
+         
+        // returning labels
+        return allDrinkLabels;
+		
+	} // will returns all labels stored in database
+	
+	public List<String> getSomeDrinkLabels(){
+		List<String> allDrinkLabels = new ArrayList<String>();
+        
+        // Select All Query
         String sqlquery="SELECT * FROM "+barTableName + " WHERE DRINKTYPE='" + drinkType + "';";
 		String selectQuery = sqlquery;
       
