@@ -5,7 +5,56 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2016-03-25T13:52:25Z</updated>
+  <updated>2016-03-29T09:01:25Z</updated>
+  <entry>
+    <title>The Spring Boot Dashboard in STS - Part 5: Working with Launch configurations</title>
+    <link rel="alternate" href="https://spring.io/blog/2016/03/29/the-spring-boot-dashboard-in-sts-part-5-working-with-launch-configurations" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Martin Lippert</name>
+    </author>
+    <id>tag:spring.io,2016-03-29:2444</id>
+    <updated>2016-03-29T09:01:25Z</updated>
+    <content type="html">&lt;p&gt;Welcome back Spring community,&lt;/p&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;in this fifth part of the series we will take a closer look at the new support for multiple launch configurations that was added to the Spring Boot Dashboard in &lt;a href="https://spring.io/blog/2016/03/01/spring-tool-suite-3-7-3-released"&gt;STS 3.7.3&lt;/a&gt;.&lt;/p&gt;&#xD;
+&lt;/div&gt;
+&lt;h2&gt;Multiple launch configs per project&lt;/h2&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;The first version the boot dashboard allowed you to quickly start and stop a local Spring Boot app. Therefore the boot dashboard focused on one specific launch configuration for the project - and completely ignored other launch configs. But having multiple launch configurations per project can be extremely useful, for example to start the same app multiple times in slightly different configurations.&lt;/p&gt;&#xD;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;The new version of the boot dashboard directly integrates the concept of launch configs. If you have multiple launch configs for the same project, they will show up in the boot dashboard as entries below the project node in the tree.&lt;/p&gt;&#xD;
+&lt;/div&gt;
+&lt;img src="http://docs.spring.io/sts/nan/v373/img/blog-series/10-boot-dash-multiple-launches.png"/&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;You can now use all the various actions and features of the boot dashboard on individual launch configs (instead of the project). You can start individual launch configs, stop them, jump to their console, open a browser for the running app, tag them, filter them, and so on. The project node serves an an aggregate for the launch configs. If you want to start or stop all launch configurations, just press start or stop on the project and all launch configs will be started or stopped.&lt;/p&gt;&#xD;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;To help you deal with multiple launch configurations the boot dashboard also has a few new actions for working with launch configurations, like open the launch config editor, duplicate an existing launch config, or delete one.&lt;/p&gt;&#xD;
+&lt;/div&gt;
+&lt;img src="http://docs.spring.io/sts/nan/v373/img/blog-series/12-boot-dash-duplicate-config-action.png"/&gt;
+&lt;h2&gt;Hide launch configs&lt;/h2&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;To keep the simple things simple, the boot dashboard doesn’t show an entry for a launch config for a project if there exists only one for that project. You can change that setting, if you want to, via a setting in the boot dashboard view menu:&lt;/p&gt;&#xD;
+&lt;/div&gt;
+&lt;img src="http://docs.spring.io/sts/nan/v373/img/blog-series/11-boot-dash-filter-solitary-launch-config.png"/&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;There might be situations where you have specific launch configurations that should not show up in the boot dashboard - to keep the boot dashboard clean and easy to use. Therefore we added an option to hide individual launch configurations from the boot dashboard. You can find the switch for that if you open the launch config.&lt;/p&gt;&#xD;
+&lt;/div&gt;
+&lt;img src="http://docs.spring.io/sts/nan/v373/img/blog-series/13-boot-dashboard-hide-launch-config.png"/&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;div class="paragraph"&gt;&#xD;
+&lt;p&gt;This concludes the blog series on the new features of the Spring Boot Dashboard in the Spring Tool Suite 3.7.3. Let us know about your experiences using the dashboard and provide feedback. We are happy to hear about your experiences by commenting on this or file a bug report at: &lt;a href="https://issuetracker.springsource.com/browse/STS"&gt;https://issuetracker.springsource.com/browse/STS&lt;/a&gt;.&lt;/p&gt;&#xD;
+&lt;/div&gt;
+&lt;p&gt;The Spring Boot Dashboard blog series:&lt;/p&gt;
+&lt;ul&gt;&#xD;
+&lt;li&gt;&lt;a href="https://spring.io/blog/2015/10/08/the-spring-boot-dashboard-in-sts-part-1-local-boot-apps"&gt;The Spring Boot Dashboard in STS - Part 1: Local Boot Apps&lt;/a&gt;&lt;/li&gt;&#xD;
+&lt;li&gt;&lt;a href="https://spring.io/blog/2015/10/15/the-spring-boot-dashboard-in-sts-part-2-working-with-cloud-foundry"&gt;The Spring Boot Dashboard in STS - Part 2: Working with Cloud Foundry&lt;/a&gt;&lt;/li&gt;&#xD;
+&lt;li&gt;&lt;a href="https://spring.io/blog/2015/10/22/the-spring-boot-dashboard-in-sts-part-3-spring-boot-devtools-reloaded"&gt;The Spring Boot Dashboard in STS - Part 3: Spring Boot Devtools reloaded&lt;/a&gt;&lt;/li&gt;&#xD;
+&lt;li&gt;&lt;a href="https://spring.io/blog/2016/03/22/the-spring-boot-dashboard-in-sts-part-4-working-with-cloud-foundry-manifest-files"&gt;The Spring Boot Dashboard in STS - Part 4: Working with Cloud Foundry manifest files&lt;/a&gt;&lt;/li&gt;&#xD;
+&lt;/ul&gt;</content>
+  </entry>
   <entry>
     <title>Spring AMQP 1.6.0 Milestone 2 (and 1.5.5) Available</title>
     <link rel="alternate" href="https://spring.io/blog/2016/03/25/spring-amqp-1-6-0-milestone-2-and-1-5-5-available" />
@@ -455,7 +504,7 @@ public class VoteHandler {&#xD;
     </author>
     <id>tag:spring.io,2016-03-20:2433</id>
     <updated>2016-03-20T10:51:00Z</updated>
-    <content type="html">&lt;p&gt;Following my first &lt;a href="https://spring.io/blog/2016/02/15/developing-spring-boot-applications-with-kotlin"&gt;Kotlin blog post&lt;/a&gt;, today I want introduce the new Spring Boot + Kotlin application I have developed for my next week talk &amp;ldquo;Developing Geospatial Web Services with Kotlin and Spring Boot&amp;rdquo; at &lt;a href="http://www.breizhcamp.org/"&gt;Breizhcamp&lt;/a&gt; conference.&lt;/p&gt;&lt;h1&gt;&lt;a href="#dealing-with-native-database-functionalities" class="anchor" name="dealing-with-native-database-functionalities"&gt;&lt;/a&gt;Dealing with native database functionalities&lt;/h1&gt;
+    <content type="html">&lt;p&gt;Following my first &lt;a href="https://spring.io/blog/2016/02/15/developing-spring-boot-applications-with-kotlin"&gt;Kotlin blog post&lt;/a&gt;, today I want introduce the new Spring Boot + Kotlin application I have developed for my upcoming &lt;a href="http://www.springio.net/"&gt;Spring I/O 2016 conference&lt;/a&gt; talk &amp;ldquo;Developing Geospatial Web Services with Kotlin and Spring Boot&amp;rdquo;.&lt;/p&gt;&lt;h1&gt;&lt;a href="#dealing-with-native-database-functionalities" class="anchor" name="dealing-with-native-database-functionalities"&gt;&lt;/a&gt;Dealing with native database functionalities&lt;/h1&gt;
 &lt;p&gt;One of the goal of this application is to see how to take advantage of native database functionalities like we do in NoSQL world. Here we want to use Geospatial support provided by &lt;a href="http://postgis.net/"&gt;PostGIS&lt;/a&gt;, the spatial database extender for &lt;a href="http://postgresql.org/"&gt;PostgreSQL&lt;/a&gt;. &lt;a href="https://www.compose.io/articles/is-postgresql-your-next-json-database/"&gt;Native JSON support&lt;/a&gt; could also be a good use case.&lt;/p&gt;
 &lt;p&gt;This Geospatial Messenger sample application is &lt;a href="https://github.com/sdeleuze/geospatial-messenger"&gt;available on GitHub&lt;/a&gt; in 2 flavors:&lt;br/&gt; - The &lt;code&gt;master&lt;/code&gt; branch uses &lt;a href="https://github.com/JetBrains/Exposed"&gt;Exposed&lt;/a&gt;, a Kotlin SQL library with a typesafe API created by JetBrains. It could be compared to &lt;a href="https://github.com/querydsl/querydsl/tree/master/querydsl-sql"&gt;Query DSL SQL&lt;/a&gt; or &lt;a href="http://www.jooq.org/"&gt;jOOQ&lt;/a&gt; but provides an idiomatic Kotlin API and does not require code generation.&lt;br/&gt; - The &lt;a href="https://github.com/sdeleuze/geospatial-messenger/tree/spring-data-jdbc-repository"&gt;&lt;code&gt;spring-data-jdbc-repository&lt;/code&gt;&lt;/a&gt; branch is using &lt;code&gt;spring-data-jdbc-repository&lt;/code&gt;, a community project that allows to use Spring Data &lt;a href="https://docs.spring.io/spring-data/data-commons/docs/current/api/org/springframework/data/repository/PagingAndSortingRepository.html"&gt;&lt;code&gt;PagingAndSortingRepository&lt;/code&gt;&lt;/a&gt; API with raw SQL queries without JPA. I am using &lt;a href="https://github.com/jirutka/spring-data-jdbc-repository/"&gt;this Jakub Jirutka fork&lt;/a&gt; which is an improved version of &lt;a href="https://github.com/nurkiewicz/spring-data-jdbc-repository"&gt;Tomasz Nurkiewicz original project&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;A &lt;a href="https://github.com/sebastianperruolo/spring-gis"&gt;Spring Data JPA + Hibernate Spatial variant&lt;/a&gt; would be interesting, so feel free to contribute it with a pull request ;-) Kotlin Query DSL support would be also nice but this is currently not supported (please comment on &lt;a href="https://github.com/querydsl/querydsl/issues/1828"&gt;this issue&lt;/a&gt; if you are interested). In this blog post I will focus on the &lt;a href="https://github.com/JetBrains/Exposed"&gt;Exposed&lt;/a&gt; variant.&lt;/p&gt;&lt;h1&gt;&lt;a href="#a-tour-of-geospatial-messenger-code" class="anchor" name="a-tour-of-geospatial-messenger-code"&gt;&lt;/a&gt;A tour of Geospatial Messenger code&lt;/h1&gt;
@@ -728,71 +777,5 @@ class UserController @Autowired constructor(val repo: UserRepository) {&#xD;
     <updated>2016-03-15T13:31:00Z</updated>
     <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2015.&lt;br/&gt;Speaker: Joseph Paulchell, CapitalOne&lt;br/&gt;Big Data Track&lt;br/&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/supercharging-operations-analysis-using-spring-xd-to-support-analytics-and-cep"&gt;http://www.slideshare.net/SpringCentral/supercharging-operations-analysis-using-spring-xd-to-support-analytics-and-cep&lt;/a&gt;&lt;br/&gt;Operations, analytics, and business teams are requesting ever increasing amounts of data delivered to Big Data analysis platforms and tools. This demand is driven by the desire to better understand user experience, quality of service, real time performance of systems, and the undiscovered patterns and opportunities that exist to improve service, sell products, and delight users. Capital One Technology solved for the ever increasing demand for data from consumer facing applications using Spring Extreme Data (XD) and custom Java libraries to stream data in real time from applications to Hadoop HDFS, Mongo, Kafka, Splunk, and others. In this talk we will discuss our journey from batch-oriented processes using databases to a real time data streaming solution and the significant benefits achieved. We’ll cover the implications of adopting a streaming solution, why we selected Spring XD, and the target architecture we are implementing to land data in HDFS. We’ll cover how we automated environment provisioning, the design for our client libraries (Java, Spring), our XD environment, and how we’re tapping into all that data. We’ll describe challenges we overcame on this journey including connecting to our HDFS cluster, working with multiple Mongo stores, using Kerberos, and ensuring protection and encryption of sensitive data end to end. Lastly we’ll talk about a number of use cases where we are evaluating Spring XD and see potential benefits including “rolling window” system analytics, digital message delivery, and event driven architectures.&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/hQ7wnHgx0eY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring for Apache Kafka Milestone 1 Available</title>
-    <link rel="alternate" href="https://spring.io/blog/2016/03/14/spring-for-apache-kafka-milestone-1-available" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Gary Russell</name>
-    </author>
-    <id>tag:spring.io,2016-03-08:2418</id>
-    <updated>2016-03-14T13:11:00Z</updated>
-    <content type="html">&lt;p&gt;I am pleased to announce that the &lt;code&gt;spring-kafka&lt;/code&gt; (Spring for Apache Kafka) first milestone is now available (&lt;code&gt;1.0.0.M1&lt;/code&gt;).&lt;/p&gt;
-&lt;p&gt;The existing &lt;code&gt;spring-integration-kafka&lt;/code&gt; &lt;a href="https://github.com/spring-projects/spring-integration-kafka"&gt;extension project&lt;/a&gt; - currently at version &lt;code&gt;1.3.0.RELEASE&lt;/code&gt; supports Kafka &lt;a href="http://kafka.apache.org/082/documentation.html"&gt;0.8.x.x&lt;/a&gt; and is used in &lt;a href="http://projects.spring.io/spring-xd/"&gt;Spring XD&lt;/a&gt; (Kafka &lt;code&gt;MessageBus&lt;/code&gt;) and &lt;a href="http://cloud.spring.io/spring-cloud-stream/"&gt;Spring Cloud Stream&lt;/a&gt; (Kafka &lt;code&gt;Binder&lt;/code&gt;).&lt;/p&gt;
-&lt;p&gt;This new project (&lt;code&gt;spring-kafka&lt;/code&gt;) breaks out the core components into a separate project. It is based on the new &lt;a href="http://kafka.apache.org/documentation.html"&gt;0.9.0.x&lt;/a&gt; pure Java Kafka clients.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;spring-kafka&lt;/code&gt; brings the familiar Spring programming model to Apache Kafka for any Spring user, not just those using Spring Integration. An upcoming &lt;code&gt;spring-integration-kafka&lt;/code&gt; release will be a complete rewrite, utilizing the &lt;code&gt;spring-kafka&lt;/code&gt; project internally.&lt;/p&gt;
-&lt;p&gt;Much like the other messaging projects in the Spring portfolio, &lt;code&gt;spring-kafka&lt;/code&gt; provides:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Message Listener Container.&lt;/li&gt;
-  &lt;li&gt;Annotations for POJO message listeners (&lt;code&gt;@KafkaListener&lt;/code&gt; - similar to &lt;code&gt;@JmsListener&lt;/code&gt; and &lt;code&gt;@RabbitListener&lt;/code&gt;).&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;KafkaTemplate&lt;/code&gt; for sync and async sending to Kafka topics:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;@Configuration&#xD;
-@EnableKafka&#xD;
-public class KafkaConfig {&#xD;
-     // Infrastructure @Beans omitted. &#xD;
-     // See Reference Manual and tests for comprehensive sample&#xD;
-&#xD;
-     @Bean&#xD;
-     public Listener listener() {&#xD;
-        return new Listener();&#xD;
-     }&#xD;
-&#xD;
-}&#xD;
-&#xD;
-public class Listener {&#xD;
-&#xD;
-     @KafkaListener(topics = &amp;quot;myTopic&amp;quot;)&#xD;
-     public void handleFromKakfa(String payload) {&#xD;
-       ...&#xD;
-    }&#xD;
-&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Using maven or gradle: &lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint xml"&gt;&amp;lt;dependencies&amp;gt;&#xD;
-    &amp;lt;dependency&amp;gt;&#xD;
-        &amp;lt;groupId&amp;gt;org.springframework.kafka&amp;lt;/groupId&amp;gt;&#xD;
-        &amp;lt;artifactId&amp;gt;spring-kafka&amp;lt;/artifactId&amp;gt;&#xD;
-        &amp;lt;version&amp;gt;1.0.0.M1&amp;lt;/version&amp;gt;&#xD;
-    &amp;lt;/dependency&amp;gt;&#xD;
-&amp;lt;/dependencies&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;dependencies {&#xD;
-    compile &amp;#39;org.springframework.kafka:spring-kafka:1.0.0.M1&amp;#39;&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In addition, the &lt;code&gt;spring-kafka-test&lt;/code&gt; artifact is available, containing support for testing, including an embedded Kafka broker, hamcrest &lt;code&gt;Matcher&lt;/code&gt;s etc.&lt;/p&gt;
-&lt;p&gt;Both artifacts are available in the &lt;code&gt;repo.spring.io/milestone&lt;/code&gt; repository.&lt;/p&gt;
-&lt;p&gt;See the &lt;a href="http://docs.spring.io/spring-kafka/docs/1.0.0.M1/reference/htmlsingle/"&gt;milestone 1 reference manual&lt;/a&gt; for more information.&lt;/p&gt;
-&lt;p&gt;Many thanks to &lt;a href="https://github.com/sobychacko"&gt;Soby Chacko&lt;/a&gt; (for kicking off the initial Spring Integration Kafka extension), &lt;a href="https://spring.io/team/mbogoevici"&gt;Marius Bogoevici&lt;/a&gt; and &lt;a href="https://spring.io/team/artembilan"&gt;Artem Bilan&lt;/a&gt; for their help with this important project.&lt;/p&gt;&lt;h1&gt;&lt;a href="#next-steps" class="anchor" name="next-steps"&gt;&lt;/a&gt;Next Steps:&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;First milestone of &lt;code&gt;spring-integration-kafka&lt;/code&gt; (&lt;code&gt;2.0&lt;/code&gt;) based on &lt;code&gt;spring-kafka&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;A Spring Boot starter, with auto configuration support etc.&lt;/li&gt;
-  &lt;li&gt;A new &lt;code&gt;Binder&lt;/code&gt; implementation for &lt;code&gt;spring-cloud-stream&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Flesh out the documentation, set up a project page etc.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In the meantime, you can follow progress, report issues, etc, in the &lt;a href="https://github.com/spring-projects/spring-kafka"&gt;github repo&lt;/a&gt;.&lt;/p&gt;</content>
   </entry>
 </feed>
