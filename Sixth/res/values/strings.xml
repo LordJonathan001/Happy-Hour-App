@@ -34,5 +34,7 @@
     <string name="anthonysPhone">570.297.4567</string>
     <string name="anthonys">Anthony\'s Bar \&amp; Grill</string>
     <string name="other">View Other Drinks</string>
+    <string name="landosHours">M-W 11AM-5PM, Th-Sat 11-1:30AM, Sun CLOSED</string>
+    <string name="changosHours">M-Sat 11AM-2AM, Sun 12PM-2AM</string>
 
 </resources>
