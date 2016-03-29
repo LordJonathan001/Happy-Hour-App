@@ -10,11 +10,8 @@
     <string name="changos">Changos Cantina</string>
     <string name="landos">Landos Lounge</string>
     <string name="select_bar">Select a bar from the list to view more information</string>
-    <string name="set_city">Set City</string>
-    <string name="viewAll">View All Drinks</string>
-    <string name="beer">View Beer</string>
-    <string name="wine">View Wine</string>
-    <string name="mixedDrinks">View Mixed Drinks</string>
+    <string name="set_bar">Choose this bar!</string>
+    <string name="viewAll">View Drinks</string>
     <string name="landosContact">41 South Bridge St, Corning, NY</string>
     <string name="changosContact">21 N Main St, Mansfield, PA 16933</string>
     <string name="changosPhone">570.662.7633</string>
@@ -33,6 +30,8 @@
     <string name="anthonysContact">776 Canton St, Troy, PA 16947</string>
     <string name="anthonysPhone">570.297.4567</string>
     <string name="anthonys">Anthony\'s Bar \&amp; Grill</string>
-    <string name="other">View Other Drinks</string>
+    <string name="landosHours">M-W 11AM-5PM Th-S 11AM - 1:30AM</string>
+    <string name="changosHours">M-Sat 11AM-2AM, Sun 12PM-2AM</string>
+    <string name="anthonysHours">Tu-Sat 11AM-2AM, Sun 1PM-8PM</string>
 
 </resources>
