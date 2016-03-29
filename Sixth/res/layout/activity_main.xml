@@ -12,7 +12,7 @@
         android:layout_below="@+id/spinner"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="52dp"
-        android:text="@string/set_bar"
+        android:text="@string/set_city"
         android:textSize="30sp" />
 
     <Spinner
@@ -22,7 +22,6 @@
         android:layout_below="@+id/select_location"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
-        android:textSize="30sp"
         android:entries="@array/locations" />
 
     <TextView
@@ -31,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="78dp"
+        android:layout_marginTop="69dp"
         android:gravity="center"
         android:text="@string/select_bar"
         android:textSize="40sp" />

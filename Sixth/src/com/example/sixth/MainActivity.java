@@ -21,7 +21,7 @@ OnItemSelectedListener {
 	DBHelper myDB;
 	Button selectBar;	
     Spinner spinner;
-    static String pullBar,setBar,name, cityState,nameUpper;
+    static String pullBar,setBar,name, cityState;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -30,9 +30,8 @@ OnItemSelectedListener {
 		Button selectBar = (Button)findViewById(R.id.btnSelectBar);
 		myDB = new DBHelper(this);
 		 // Spinner element
-        
-		spinner = (Spinner) findViewById(R.id.spinner);
-        // Spinner click listener
+        spinner = (Spinner) findViewById(R.id.spinner);
+     // Spinner click listener
         spinner.setOnItemSelectedListener(this);
     
 		try {
@@ -63,7 +62,6 @@ OnItemSelectedListener {
 				cityState =  nlast+ " " + last;
 				
 				setBar = name.toLowerCase();
-				//nameUpper = name.toUpperCase();
 				Intent i = (new Intent(MainActivity.this, Bar.class));
 				startActivity(i); 			
 			}
@@ -77,7 +75,7 @@ OnItemSelectedListener {
 	        DBHelper db = new DBHelper(getApplicationContext());
 	 
 	        // Spinner Drop down elements
-	        List<String> lables = db.getBarLabels();
+	        List<String> lables = db.getAllLabels();
 	 
 	        // Creating adapter for spinner
 	        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,

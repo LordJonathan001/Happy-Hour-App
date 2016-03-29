@@ -144,7 +144,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
 	}
 
-	public List<String> getBarLabels(){
+	public List<String> getAllLabels(){
 		List<String> labels = new ArrayList<String>();
         
         // Select All Query
@@ -168,13 +168,11 @@ public class DBHelper extends SQLiteOpenHelper {
         return labels;
 		
 	} // will returns all labels stored in database
-	
-	
-	public List<String> getBeerDrinkLabels(){
-		List<String> beerDrinkLabels = new ArrayList<String>();
+	public List<String> getAllDrinkLabels(){
+		List<String> allDrinkLabels = new ArrayList<String>();
         
         // Select All Query
-        String sqlquery="SELECT * FROM "+barTableName + " WHERE DRINKTYPE='Beer';";
+        String sqlquery="SELECT * FROM "+barTableName + " WHERE DRINKTYPE=";
 		String selectQuery = sqlquery;
       
         SQLiteDatabase db = this.getReadableDatabase();
@@ -183,7 +181,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // looping through all rows and adding to list
         if (cursor.moveToFirst()) {
             do {
-            	beerDrinkLabels.add(cursor.getString(1) + ", " + cursor.getString(2));
+            	allDrinkLabels.add(cursor.getString(1) + ", " + cursor.getString(2));
             } while (cursor.moveToNext());
         }
          
@@ -192,14 +190,15 @@ public class DBHelper extends SQLiteOpenHelper {
         db.close();
          
         // returning labels
-        return beerDrinkLabels;
+        return allDrinkLabels;
 		
 	} // will returns all labels stored in database
-	public List<String> getWineDrinkLabels(){
-		List<String> wineDrinkLabels = new ArrayList<String>();
+	
+	public List<String> getSomeDrinkLabels(){
+		List<String> allDrinkLabels = new ArrayList<String>();
         
         // Select All Query
-        String sqlquery="SELECT * FROM "+barTableName + " WHERE DRINKTYPE='Wine';";
+        String sqlquery="SELECT * FROM "+barTableName + " WHERE DRINKTYPE='" + drinkType + "';";
 		String selectQuery = sqlquery;
       
         SQLiteDatabase db = this.getReadableDatabase();
@@ -208,7 +207,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // looping through all rows and adding to list
         if (cursor.moveToFirst()) {
             do {
-            	wineDrinkLabels.add(cursor.getString(1) + ", " + cursor.getString(2));
+            	allDrinkLabels.add(cursor.getString(1) + ", " + cursor.getString(2));
             } while (cursor.moveToNext());
         }
          
@@ -217,32 +216,7 @@ public class DBHelper extends SQLiteOpenHelper {
         db.close();
          
         // returning labels
-        return wineDrinkLabels;
-		
-	} // will returns all labels stored in database
-	public List<String> getMDDrinkLabels(){
-		List<String> mDDrinkLabels = new ArrayList<String>();
-        
-        // Select All Query
-        String sqlquery="SELECT * FROM "+barTableName + " WHERE DRINKTYPE= 'Mixed Drink';";
-		String selectQuery = sqlquery;
-      
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery(selectQuery, null);
-      
-        // looping through all rows and adding to list
-        if (cursor.moveToFirst()) {
-            do {
-            	mDDrinkLabels.add(cursor.getString(1) + ", " + cursor.getString(2));
-            } while (cursor.moveToNext());
-        }
-         
-        // closing connection
-        cursor.close();
-        db.close();
-         
-        // returning labels
-        return mDDrinkLabels;
+        return allDrinkLabels;
 		
 	} // will returns all labels stored in database
 }

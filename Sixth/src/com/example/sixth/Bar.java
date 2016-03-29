@@ -12,9 +12,9 @@ import android.widget.TextView;
 
 public class Bar extends Activity{
 	String setBarTest = MainActivity.setBar;
-	String barNameHolder, picHolder, barContactHolder, barPhoneHolder, barHoursHolder; 
-	int imageInt, textInt1,textInt2, textInt3, textInt4 ;
-	TextView setBarName, setBarContact,setBarPhone, setBarHours;
+	String barNameHolder, picHolder, barContactHolder, barPhoneHolder; 
+	int imageInt, textInt1,textInt2, textInt3;
+	TextView setBarName, setBarContact,setBarPhone;
 	ImageView barPic;
 	Button viewAll, beer, wine, mixedDrinks, other, getTaxi;
 	static String setDrinkType;
@@ -24,6 +24,10 @@ public class Bar extends Activity{
 		setContentView(R.layout.activity_bar);
 		
 		Button viewAll = (Button)findViewById(R.id.btnviewAll);
+		Button beer = (Button)findViewById(R.id.btnBeer);
+		Button wine = (Button)findViewById(R.id.btnWine);
+		Button mixedDrinks = (Button)findViewById(R.id.btnMixedDrinks);
+		Button other = (Button)findViewById(R.id.btnOther);
 		Button getTaxi = (Button)findViewById(R.id.btnTaxi);
 		
 		barPic = (ImageView) findViewById(R.id.barPic);
@@ -33,23 +37,18 @@ public class Bar extends Activity{
 		
 		setBarName = (TextView)findViewById(R.id.barName);
 		String barNameHolder = "@string/"+setBarTest;
-		textInt1 = getResources().getIdentifier(barNameHolder, null, getPackageName());
+		int textInt1 = getResources().getIdentifier(barNameHolder, null, getPackageName());
 		setBarName.setText(textInt1);
 		
 		setBarContact = (TextView)findViewById(R.id.barContact);
 		String barContactHolder = "@string/"+setBarTest+"Contact";
-		textInt2 = getResources().getIdentifier(barContactHolder, null, getPackageName());
+		int textInt2 = getResources().getIdentifier(barContactHolder, null, getPackageName());
 		setBarContact.setText(textInt2);
 		
 		setBarPhone = (TextView)findViewById(R.id.barPhone);
 		String barPhoneHolder = "@string/"+setBarTest+"Phone";
-		textInt3 = getResources().getIdentifier(barPhoneHolder, null, getPackageName());
+		int textInt3 = getResources().getIdentifier(barPhoneHolder, null, getPackageName());
 		setBarPhone.setText(textInt3);
-		
-		setBarHours = (TextView)findViewById(R.id.barHours);
-		String barHoursHolder = "@string/"+setBarTest+"Hours";
-		textInt4 = getResources().getIdentifier(barHoursHolder, null, getPackageName());
-		setBarHours.setText(textInt4);
 		
 		viewAll.setOnClickListener(new OnClickListener() {
 			@Override
