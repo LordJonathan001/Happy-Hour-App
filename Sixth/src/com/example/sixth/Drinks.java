@@ -40,12 +40,6 @@ public class Drinks extends Activity{
         // setting list adapter
         expListView.setAdapter(listAdapter);
 		
-		
-		//drinkTestHolder = drinkType;
-		//drinkHolder = (TextView)findViewById(R.id.drinkTest);
-		//String barNameHolder = "@string/"+drinkType;
-		//int textInt1 = getResources().getIdentifier(barNameHolder, null, getPackageName());
-		//drinkHolder.setText(drinkType);
 	}
 	
 	private void prepareListData() {
@@ -53,37 +47,55 @@ public class Drinks extends Activity{
         listDataChild = new HashMap<String, List<String>>();
  
         // Adding child data
-        listDataHeader.add("Top 250");
-        listDataHeader.add("Now Showing");
-        listDataHeader.add("Coming Soon..");
+        listDataHeader.add("Beer");        
+        listDataHeader.add("Mixed Drinks");
+        listDataHeader.add("Other Drinks");
+        listDataHeader.add("Shots");
+        listDataHeader.add("Wine");
  
         // Adding child data
-        List<String> top250 = new ArrayList<String>();
-        top250.add("The Shawshank Redemption");
-        top250.add("The Godfather");
-        top250.add("The Godfather: Part II");
-        top250.add("Pulp Fiction");
-        top250.add("The Good, the Bad and the Ugly");
-        top250.add("The Dark Knight");
-        top250.add("12 Angry Men");
+        List<String> beer = new ArrayList<String>();
+        beer.add("The Shawshank Redemption");
+        beer.add("The Godfather");
+        beer.add("The Godfather: Part II");
+        beer.add("Pulp Fiction");
+        beer.add("The Good, the Bad and the Ugly");
+        beer.add("The Dark Knight");
+        beer.add("12 Angry Men");
  
-        List<String> nowShowing = new ArrayList<String>();
-        nowShowing.add("The Conjuring");
-        nowShowing.add("Despicable Me 2");
-        nowShowing.add("Turbo");
-        nowShowing.add("Grown Ups 2");
-        nowShowing.add("Red 2");
-        nowShowing.add("The Wolverine");
+        List<String> wine = new ArrayList<String>();
+        wine.add("The Conjuring");
+        wine.add("Despicable Me 2");
+        wine.add("Turbo");
+        wine.add("Grown Ups 2");
+        wine.add("Red 2");
+        wine.add("The Wolverine");
  
-        List<String> comingSoon = new ArrayList<String>();
-        comingSoon.add("2 Guns");
-        comingSoon.add("The Smurfs 2");
-        comingSoon.add("The Spectacular Now");
-        comingSoon.add("The Canyons");
-        comingSoon.add("Europa Report");
+        List<String> shots = new ArrayList<String>();
+        shots.add("2 Guns");
+        shots.add("The Smurfs 2");
+        shots.add("The Spectacular Now");
+        shots.add("The Canyons");
+        shots.add("Europa Report");
+        
+        List<String> mixedDrinks = new ArrayList<String>();
+        mixedDrinks.add("2 Guns");
+        mixedDrinks.add("The Smurfs 2");
+        mixedDrinks.add("The Spectacular Now");
+        mixedDrinks.add("The Canyons");
+        mixedDrinks.add("Europa Report");
+        
+        List<String> otherDrinks = new ArrayList<String>();
+        otherDrinks.add("2 Guns");
+        otherDrinks.add("The Smurfs 2");
+        otherDrinks.add("The Spectacular Now");
+        otherDrinks.add("The Canyons");
+        otherDrinks.add("Europa Report");
  
-        listDataChild.put(listDataHeader.get(0), top250); // Header, Child data
-        listDataChild.put(listDataHeader.get(1), nowShowing);
-        listDataChild.put(listDataHeader.get(2), comingSoon);
+        listDataChild.put(listDataHeader.get(0), beer); // Header, Child data
+        listDataChild.put(listDataHeader.get(1), wine);
+        listDataChild.put(listDataHeader.get(2), shots);
+        listDataChild.put(listDataHeader.get(3), mixedDrinks);
+        listDataChild.put(listDataHeader.get(4), otherDrinks);
     }
 }

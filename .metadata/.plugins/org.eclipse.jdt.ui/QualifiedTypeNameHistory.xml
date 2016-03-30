@@ -30,4 +30,5 @@
 <fullyQualifiedTypeName name="android.widget.Button"/>
 <fullyQualifiedTypeName name="com.example.sixth.R.layout"/>
 <fullyQualifiedTypeName name="android.widget.BaseExpandableListAdapter"/>
+<fullyQualifiedTypeName name="com.example.sixth.R.id"/>
 </qualifiedTypeNameHistroy>

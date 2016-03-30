@@ -36,5 +36,8 @@
     <string name="other">View Other Drinks</string>
     <string name="landosHours">M-W 11AM-5PM, Th-Sat 11-1:30AM, Sun CLOSED</string>
     <string name="changosHours">M-Sat 11AM-2AM, Sun 12PM-2AM</string>
+    <string name="anthonysHours">M-Thurs 11AM-12PM, F-Sa 11AM-2PM, Sun 10AM-8PM</string>
+    <string name="specials">Happy Hour Specials</string>
+   
 
 </resources>
