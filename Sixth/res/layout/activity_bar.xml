@@ -95,4 +95,13 @@
         android:layout_marginTop="93dp"
         android:text="@string/specials" />
 
+    <TextView
+        android:id="@+id/setBarTester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnTaxi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
 </RelativeLayout>

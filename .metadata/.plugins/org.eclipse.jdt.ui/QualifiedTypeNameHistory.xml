@@ -9,7 +9,6 @@
 <fullyQualifiedTypeName name="android.widget.ArrayAdapter"/>
 <fullyQualifiedTypeName name="android.view.Menu"/>
 <fullyQualifiedTypeName name="android.view.View"/>
-<fullyQualifiedTypeName name="android.widget.ListView"/>
 <fullyQualifiedTypeName name="cl.telematica.locationexample.R.id"/>
 <fullyQualifiedTypeName name="android.widget.TextView"/>
 <fullyQualifiedTypeName name="cl.telematica.locationexample.location.ActiveLocationManagerActivity"/>
@@ -33,4 +32,5 @@
 <fullyQualifiedTypeName name="com.example.sixth.R.id"/>
 <fullyQualifiedTypeName name="com.example.sixth.R.raw"/>
 <fullyQualifiedTypeName name="android.media.MediaPlayer"/>
+<fullyQualifiedTypeName name="android.widget.ListView"/>
 </qualifiedTypeNameHistroy>

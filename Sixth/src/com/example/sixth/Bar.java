@@ -1,7 +1,6 @@
 package com.example.sixth;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -15,9 +14,10 @@ public class Bar extends Activity{
 	String barNameHolder, picHolder, barContactHolder, barPhoneHolder; 
 	int imageInt, textInt1,textInt2, textInt3, textInt4;
 	TextView setBarName, setBarContact,setBarPhone, setBarHours;
+	TextView setBarTester;
 	ImageView barPic;
 	Button viewAll, beer, wine, mixedDrinks, other, specials, getTaxi;
-	static String setDrinkType;
+	
 	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -51,6 +51,11 @@ public class Bar extends Activity{
 		String barHoursHolder = "@string/"+setBarTest+"Hours";
 		textInt4 = getResources().getIdentifier(barHoursHolder, null, getPackageName());
 		setBarHours.setText(textInt4);
+		
+		setBarTester = (TextView)findViewById(R.id.setBarTester);
+		String barTesterHolder = MainActivity.upperCaseName ;
+		//int textInt5 = getResources().getIdentifier(barTesterHolder, null, getPackageName());
+		setBarTester.setText(barTesterHolder);
 		
 		viewAll.setOnClickListener(new OnClickListener() {
 			@Override

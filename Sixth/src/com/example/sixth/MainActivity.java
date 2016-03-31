@@ -21,7 +21,7 @@ OnItemSelectedListener {
 	DBHelper myDB;
 	Button selectBar;	
     Spinner spinner;
-    static String pullBar,setBar,name, cityState;
+    static String pullBar,setBar,name, cityState, upperCaseName;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -60,7 +60,7 @@ OnItemSelectedListener {
 				String last = parts[parts.length-1];
 				
 				cityState =  nlast+ " " + last;
-				
+				upperCaseName=name.toUpperCase();
 				setBar = name.toLowerCase();
 				Intent i = (new Intent(MainActivity.this, Bar.class));
 				startActivity(i); 			

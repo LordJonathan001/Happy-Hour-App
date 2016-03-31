@@ -5,31 +5,27 @@ import java.util.HashMap;
 import java.util.List;
 import android.app.Activity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.ExpandableListView;
-import android.widget.ExpandableListView.OnChildClickListener;
-import android.widget.ExpandableListView.OnGroupClickListener;
-import android.widget.ExpandableListView.OnGroupCollapseListener;
-import android.widget.ExpandableListView.OnGroupExpandListener;
-import android.widget.ListView;
-import android.widget.Toast;
+
 
 public class Drinks extends Activity {
 	// TextView drinkHolder;
-	public static String drinkType = DBHelper.drinkType;
+	//public static String drinkType = DBHelper.drinkType;
 	String drinkTestHolder = "";
 	ExpandableListAdapter listAdapter;
 	ExpandableListView expListView;
 	List<String> listDataHeader;
 	HashMap<String, List<String>> listDataChild;
+	
 
+	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_drinks);
 		Bundle bundle = getIntent().getExtras();
-		if (bundle != null) {
-			drinkType = bundle.getString("sample_name");
-		}
+		//if (bundle != null) {
+		//	drinkType = bundle.getString("sample_name");
+		//}
 		// get the listview
 		expListView = (ExpandableListView) findViewById(R.id.lvExp);
 
@@ -46,6 +42,7 @@ public class Drinks extends Activity {
 	private void prepareListData() {
 		listDataHeader = new ArrayList<String>();
 		listDataChild = new HashMap<String, List<String>>();
+		
 
 		// Adding child data
 		
@@ -55,11 +52,21 @@ public class Drinks extends Activity {
 		 listDataHeader.add("Shots");
 		 listDataHeader.add("Wine");
 		 
+		 //Get Beer entries
+		 DBHelper db = new DBHelper(getApplicationContext());
+	     List<String> beerLables = db.getBeerDrinkLabels();
+	     
 
 		// Adding child data
 		List<String> beer = new ArrayList<String>();
+		
+		//beer.add("The Shawshank Redemption");
+		for (int i = 0; i < beerLables.size(); i++) {
+		    beer.add(beerLables.get(i));
+		}
+		
 		/*
-		 * beer.add("The Shawshank Redemption"); beer.add("The Godfather");
+		   beer.add("The Godfather");
 		 * beer.add("The Godfather: Part II"); beer.add("Pulp Fiction");
 		 * beer.add("The Good, the Bad and the Ugly"); beer.add(
 		 * "The Dark Knight"); beer.add("12 Angry Men");

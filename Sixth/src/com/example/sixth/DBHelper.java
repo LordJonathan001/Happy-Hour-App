@@ -20,14 +20,11 @@ public class DBHelper extends SQLiteOpenHelper {
 	private static String DB_NAME = "BarSample.db";	
 	private final Context myContext;	
 	public static String tableName = "BARS";
-	public static String barTableName = MainActivity.name;//Pass in the specific bar from the spinner choice
-	public static String drinkType = Bar.setDrinkType;//Use this to pass in selected drink type to SQL query	
-	//public static final String KEY_ROWID = "_id";
-	//public static final String BARNAME = "Bar Name";
-	public static final String BARCITY = "Bar City";
+	String barTableName, sqlquery ;
+	public static String firstBarTableName = MainActivity.upperCaseName;//Pass in the specific bar from the spinner choice
 	private SQLiteDatabase myDataBase;
 	
-	
+		
 	public DBHelper(Context context) {
 
 		super(context, DB_NAME, null, 1);
@@ -170,10 +167,21 @@ public class DBHelper extends SQLiteOpenHelper {
 	} // will returns all labels stored in database
 	
 	public List<String> getBeerDrinkLabels(){
+		//naming();
 		List<String> allBeerDrinkLabels = new ArrayList<String>();
-        
-        // Select All Query
-        String sqlquery="SELECT * FROM "+barTableName + " WHERE DRINKTYPE='Beer';";
+		
+		if (firstBarTableName.equals("CHANGOS")){
+			sqlquery = "SELECT * FROM CHANGOS WHERE DRINKTYPE='Beer';";
+		}
+		else if(firstBarTableName.equals("LANDOS")){
+			sqlquery = "SELECT * FROM LANDOS WHERE DRINKTYPE='Beer';";
+		}
+		else{
+			sqlquery = "SELECT * FROM ANTHONYS WHERE DRINKTYPE='Beer';";
+		}
+		
+				
+        //String sqlquery="SELECT * FROM " + barTableName + " WHERE DRINKTYPE='Beer';";
 		String selectQuery = sqlquery;
       
         SQLiteDatabase db = this.getReadableDatabase();
@@ -182,7 +190,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // looping through all rows and adding to list
         if (cursor.moveToFirst()) {
             do {
-            	allBeerDrinkLabels.add(cursor.getString(1) + ", " + cursor.getString(2));
+            	allBeerDrinkLabels.add(cursor.getString(1) + " Price: " + cursor.getString(2));
             } while (cursor.moveToNext());
         }
          
