@@ -10,7 +10,7 @@
     <string name="changos">Changos Cantina</string>
     <string name="landos">Landos Lounge</string>
     <string name="select_bar">Select a bar from the list to view more information</string>
-    <string name="set_city">Set City</string>
+    <string name="set_city">Choose this Bar!</string>
     <string name="viewAll">View All Drinks</string>
     <string name="beer">View Beer</string>
     <string name="wine">View Wine</string>
@@ -19,7 +19,7 @@
     <string name="changosContact">21 N Main St, Mansfield, PA 16933</string>
     <string name="changosPhone">570.662.7633</string>
     <string name="landosPhone">607.936.3612</string>
-    <string name="noResults">Sorry, your bar doesn\'t offer anything in this cateogry. Here is a cute picture instead.</string>
+    <string name="noResults">Sorry, your bar doesn\'t offer any Happy Hour Specials. Here is a cute picture instead.</string>
     <string name="taxi">Don\'t drink and drive! Get a taxi here! </string>
     <string name="tiogaTaxiName">Canyon Country Cabs</string>
     <string name="tiogaTaxiPhone">570.724.2424</string>

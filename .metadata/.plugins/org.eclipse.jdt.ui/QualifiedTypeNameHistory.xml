@@ -31,4 +31,6 @@
 <fullyQualifiedTypeName name="com.example.sixth.R.layout"/>
 <fullyQualifiedTypeName name="android.widget.BaseExpandableListAdapter"/>
 <fullyQualifiedTypeName name="com.example.sixth.R.id"/>
+<fullyQualifiedTypeName name="com.example.sixth.R.raw"/>
+<fullyQualifiedTypeName name="android.media.MediaPlayer"/>
 </qualifiedTypeNameHistroy>

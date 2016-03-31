@@ -64,7 +64,7 @@ public class Bar extends Activity{
 		specials.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent i = (new Intent(Bar.this, Drinks.class));
+				Intent i = (new Intent(Bar.this, NoResult.class));
 				startActivity(i); 			
 			}
 			

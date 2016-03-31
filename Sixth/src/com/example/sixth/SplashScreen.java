@@ -1,6 +1,7 @@
 package com.example.sixth;
 import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 
@@ -8,12 +9,17 @@ import android.os.Handler;
 public class SplashScreen extends Activity{
  
     // Splash screen timer  extends ActiveLocationManagerActivity 
-    private static int SPLASH_TIME_OUT = 3000;
+    private static int SPLASH_TIME_OUT = 5500;
  
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        
+        
+        MediaPlayer player = new MediaPlayer();
+        player = MediaPlayer.create(getBaseContext(), R.raw.glug); /*Gets soundfile from res/raw/glug.mp3 */
+        player.start(); //Starts your sound
  
         new Handler().postDelayed(new Runnable() {
  
@@ -32,6 +38,7 @@ public class SplashScreen extends Activity{
                 // close this activity
                 finish();
             }
+            
         }, SPLASH_TIME_OUT);
     }
  
