@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MU Pub Crawl</string>
+    
+    <string name="action_settings">Settings</string>
+    <string-array name="locations">
+        
+    </string-array>
+    <string name="changos">Changos Cantina</string>
+    <string name="landos">Landos Lounge</string>
+    <string name="select_bar">Select a bar from the list to view more information</string>
+    <string name="set_city">Choose this Bar!</string>
+    <string name="viewAll">View All Drinks</string>
+    <string name="beer">View Beer</string>
+    <string name="wine">View Wine</string>
+    <string name="mixedDrinks">View Mixed Drinks</string>
+    <string name="landosContact">41 South Bridge St, Corning, NY</string>
+    <string name="changosContact">21 N Main St, Mansfield, PA 16933</string>
+    <string name="changosPhone">570.662.7633</string>
+    <string name="landosPhone">607.936.3612</string>
+    <string name="noResults">Sorry, your bar doesn\'t offer any Happy Hour Specials. Here is a cute picture instead.</string>
+    <string name="taxi">Don\'t drink and drive! Get a taxi here! </string>
+    <string name="tiogaTaxiName">Canyon Country Cabs</string>
+    <string name="tiogaTaxiPhone">570.724.2424</string>
+    <string name="tiogaTaxiHours">Open from 6AM - 3PM</string>
+    <string name="bradfordTaxiName">Valley Taxi</string>
+    <string name="bradfordTaxiPhone">570.888.2365</string>
+    <string name="bradfordTaxiHours">Open 24 hours a day</string>
+    <string name="corningTaxiName">Vets One Taxi Service</string>
+    <string name="corningTaxiPhone">607.962.8294</string>
+    <string name="corningTaxiHours">Open 24 hours a day</string>
+    <string name="anthonysContact">776 Canton St, Troy, PA 16947</string>
+    <string name="anthonysPhone">570.297.4567</string>
+    <string name="anthonys">Anthony\'s Bar \&amp; Grill</string>
+    <string name="other">View Other Drinks</string>
+    <string name="landosHours">M&#8211;W 11&#8211;5PM, Th&#8211;Sat 11&#8211;1:30AM, Sun CLOSED</string>
+    <string name="changosHours">M&#8211;Sat 11AM&#8211;2AM, Sun 12PM&#8211;2AM</string>
+    <string name="anthonysHours">M&#8211;Th 11AM&#8211;12PM, F&#8211;Sa 11AM&#8211;2PM, Sun 10AM&#8211;8PM</string>
+    <string name="specials">Happy Hour Specials</string>
+    <string name="setBarTester"/>
+    <string name="Hours">Hours:</string>
+   
+
+</resources>

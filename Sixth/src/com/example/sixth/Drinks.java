@@ -25,13 +25,7 @@ public class Drinks extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_drinks);
-		Bundle bundle = getIntent().getExtras();
-		//if (bundle != null) {
-		//	barNameHolder = bundle.getString("bar");
-		//	barName =barNameHolder;
-		//}
-		// get the listview
-		
+				
 		expListView = (ExpandableListView) findViewById(R.id.lvExp);
 		 System.out.println("Works to create original List");
 		// preparing list data
@@ -52,33 +46,47 @@ public class Drinks extends Activity {
 		// Adding child data
 		
 		 listDataHeader.add("Beer"); 
-		 listDataHeader.add("Mixed Drinks");
-		 listDataHeader.add("Other Drinks"); 
-		 listDataHeader.add("Shots");
 		 listDataHeader.add("Wine");
+		 listDataHeader.add("Shots"); 
+		 listDataHeader.add("Mixed Drinks");
+		 listDataHeader.add("Other");
 		 System.out.println("Works to create headers");
 		 
 		 DBHelper db = new DBHelper(getApplicationContext());
+		 
 		 List<String> beer = new ArrayList<String>();
 		 List<String> beerLables = db.getBeerDrinkLabels();
 		 for (int i = 0; i < beerLables.size(); i++) {
 			    beer.add(beerLables.get(i));
 			    System.out.println(beerLables.get(i));
 			}
-		 //beer.add(beerLables.get(0));
-		
-		//beer.add("The Shawshank Redemption");
 		List<String> wine = new ArrayList<String>();
-		
+		List<String> wineLables = db.getWineDrinkLabels();
+		 for (int i = 0; i < wineLables.size(); i++) {
+			    wine.add(wineLables.get(i));
+			    System.out.println(wineLables.get(i));
+		 }
 
 		List<String> shots = new ArrayList<String>();
-		
+		List<String> shotsLables = db.getShotsDrinkLabels();
+		 for (int i = 0; i < shotsLables.size(); i++) {
+			    shots.add(shotsLables.get(i));
+			    System.out.println(shotsLables.get(i));
+		 }
 
 		List<String> mixedDrinks = new ArrayList<String>();
-		
+		List<String> mDLables = db.getMDDrinkLabels();
+		 for (int i = 0; i < mDLables.size(); i++) {
+			 mixedDrinks.add(mDLables.get(i));
+			    System.out.println(mDLables.get(i));
+		 }
 
 		List<String> otherDrinks = new ArrayList<String>();
-		
+		List<String> otherLables = db.getOtherDrinkLabels();
+		 for (int i = 0; i < otherLables.size(); i++) {
+			 otherDrinks.add(otherLables.get(i));
+			    System.out.println(otherLables.get(i));
+		 }
 
 		listDataChild.put(listDataHeader.get(0), beer); // Header, Child data
 		listDataChild.put(listDataHeader.get(1), wine);

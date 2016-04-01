@@ -1,6 +1,5 @@
 package com.example.sixth;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import android.app.Activity;
 import android.content.Intent;
