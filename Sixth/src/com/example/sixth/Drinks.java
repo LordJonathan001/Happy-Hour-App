@@ -11,7 +11,7 @@ import android.widget.ExpandableListView;
 public class Drinks extends Activity {
 	// TextView drinkHolder;
 	String barName;
-	static String barNameHolder = MainActivity.upperCaseName;
+	//static String barNameHolder = MainActivity.upperCaseName;
 	String drinkTestHolder = "";
 	ExpandableListAdapter listAdapter;
 	ExpandableListView expListView;
@@ -33,7 +33,7 @@ public class Drinks extends Activity {
 		// get the listview
 		
 		expListView = (ExpandableListView) findViewById(R.id.lvExp);
-
+		 System.out.println("Works to create original List");
 		// preparing list data
 		prepareListData();
 
@@ -56,82 +56,28 @@ public class Drinks extends Activity {
 		 listDataHeader.add("Other Drinks"); 
 		 listDataHeader.add("Shots");
 		 listDataHeader.add("Wine");
+		 System.out.println("Works to create headers");
 		 
 		 DBHelper db = new DBHelper(getApplicationContext());
-		 //beerLables = db.getBeerDrinkLabels();
-		 //for (int i = 0; i < beerLables.size(); i++) {
-			  //  beer.add(beerLables.get(i));
-			//}
-	 
-		if(barNameHolder.equals("CHANGOS")){
-			List<String> beerLables ;
-			List<String> beer =  new ArrayList<String>();;
-			beerLables = db.getChangosBeerDrinkLabels();
-			 for (int i = 0; i < beerLables.size(); i++) {
-				 beer.add(beerLables.get(i));
-				}
-		 }
-		 else if (barNameHolder.equals("LANDOS")){
-			 List<String> beerLables;
-			 List<String> beer =  new ArrayList<String>();;  
-			 beerLables = db.getLandosBeerDrinkLabels();
-			 for (int i = 0; i < beerLables.size(); i++) {
-			     beer.add(beerLables.get(i));
-				}
-		 }
-		 else {
-			 List<String> beerLables;
-			 List<String> beer =  new ArrayList<String>();;  
-			 beerLables = db.getAnthonysBeerDrinkLabels();
-			 for (int i = 0; i < beerLables.size(); i++) {
-				    beer.add(beerLables.get(i));
-				}
-		 }
-		 //Get Beer entries
-		 
-	     
-	     
-
-		// Adding child data
-		
+		 List<String> beerLables = db.getBeerDrinkLabels();
+		 for (int i = 0; i < beerLables.size(); i++) {
+			    beer.add(beerLables.get(i));
+			    System.out.println(beerLables.get(i));
+			}
+		 //beer.add(beerLables.get(0));
 		
 		//beer.add("The Shawshank Redemption");
-		
-		
-		/*
-		   beer.add("The Godfather");
-		 * beer.add("The Godfather: Part II"); beer.add("Pulp Fiction");
-		 * beer.add("The Good, the Bad and the Ugly"); beer.add(
-		 * "The Dark Knight"); beer.add("12 Angry Men");
-		 */
-
 		List<String> wine = new ArrayList<String>();
-		/*
-		 * wine.add("The Conjuring"); wine.add("Despicable Me 2");
-		 * wine.add("Turbo"); wine.add("Grown Ups 2"); wine.add("Red 2");
-		 * wine.add("The Wolverine");
-		 */
+		
 
 		List<String> shots = new ArrayList<String>();
-		/*
-		 * shots.add("2 Guns"); shots.add("The Smurfs 2"); shots.add(
-		 * "The Spectacular Now"); shots.add("The Canyons"); shots.add(
-		 * "Europa Report");
-		 */
+		
 
 		List<String> mixedDrinks = new ArrayList<String>();
-		/*
-		 * mixedDrinks.add("2 Guns"); mixedDrinks.add("The Smurfs 2");
-		 * mixedDrinks.add("The Spectacular Now"); mixedDrinks.add("The Canyons"
-		 * ); mixedDrinks.add("Europa Report");
-		 */
+		
 
 		List<String> otherDrinks = new ArrayList<String>();
-		/*
-		 * otherDrinks.add("2 Guns"); otherDrinks.add("The Smurfs 2");
-		 * otherDrinks.add("The Spectacular Now"); otherDrinks.add("The Canyons"
-		 * ); otherDrinks.add("Europa Report");
-		 */
+		
 
 		listDataChild.put(listDataHeader.get(0), beer); // Header, Child data
 		listDataChild.put(listDataHeader.get(1), wine);

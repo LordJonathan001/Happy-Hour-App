@@ -22,9 +22,11 @@ OnItemSelectedListener {
 	DBHelper myDB;
 	Button selectBar;	
     Spinner spinner;
-    static String pullBar,setBar,name, cityState, upperCaseName;
+     String pullBar,setBar,name; 
+     static String cityState;
+    public String upperCaseName;
     
-   static  List<String> beer, beerLables;
+  // static  List<String> beer, beerLables;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -65,12 +67,13 @@ OnItemSelectedListener {
 				cityState =  nlast+ " " + last;
 				upperCaseName=name.toUpperCase();
 				setBar = name.toLowerCase();
+				System.out.println("Works to the set bar button");
 				
-				 beer = new ArrayList<String>();
-				 beerLables = new ArrayList<String>();
-				 			 
+				 
+				//DBHelper.barTableName = upperCaseName;			 
 				 Intent i = (new Intent(MainActivity.this, Bar.class));
-				 i.putExtra("bar",upperCaseName);
+				 i.putExtra("bar",setBar);
+				 i.putExtra("upper",upperCaseName);
 				startActivity(i); 			
 			}
 			

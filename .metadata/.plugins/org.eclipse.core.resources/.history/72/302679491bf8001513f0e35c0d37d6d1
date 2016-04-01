@@ -1,0 +1,86 @@
+package com.example.sixth;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.ExpandableListView;
+
+
+public class Drinks extends Activity {
+	// TextView drinkHolder;
+	String barName;
+	//static String barNameHolder = MainActivity.upperCaseName;
+	String drinkTestHolder = "";
+	ExpandableListAdapter listAdapter;
+	ExpandableListView expListView;
+	List<String> listDataHeader;
+	HashMap<String, List<String>> listDataChild;
+	List<String> beer;
+	//List<String> beerLables = MainActivity.beerLables;
+	
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_drinks);
+		Bundle bundle = getIntent().getExtras();
+		//if (bundle != null) {
+		//	barNameHolder = bundle.getString("bar");
+		//	barName =barNameHolder;
+		//}
+		// get the listview
+		
+		expListView = (ExpandableListView) findViewById(R.id.lvExp);
+
+		// preparing list data
+		prepareListData();
+
+		listAdapter = new ExpandableListAdapter(this, listDataHeader, listDataChild);
+
+		// setting list adapter
+		expListView.setAdapter(listAdapter);
+
+	}
+
+	private void prepareListData() {
+		listDataHeader = new ArrayList<String>();
+		listDataChild = new HashMap<String, List<String>>();
+		
+
+		// Adding child data
+		
+		 listDataHeader.add("Beer"); 
+		 listDataHeader.add("Mixed Drinks");
+		 listDataHeader.add("Other Drinks"); 
+		 listDataHeader.add("Shots");
+		 listDataHeader.add("Wine");
+		 
+		 DBHelper db = new DBHelper(getApplicationContext());
+		 List<String> beerLables = db.getBeerDrinkLabels();
+		 for (int i = 0; i < beerLables.size(); i++) {
+			    beer.add(beerLables.get(i));
+			}
+	 
+		
+		//beer.add("The Shawshank Redemption");
+		List<String> wine = new ArrayList<String>();
+		
+
+		List<String> shots = new ArrayList<String>();
+		
+
+		List<String> mixedDrinks = new ArrayList<String>();
+		
+
+		List<String> otherDrinks = new ArrayList<String>();
+		
+
+		listDataChild.put(listDataHeader.get(0), beer); // Header, Child data
+		listDataChild.put(listDataHeader.get(1), wine);
+		listDataChild.put(listDataHeader.get(2), shots);
+		listDataChild.put(listDataHeader.get(3), mixedDrinks);
+		listDataChild.put(listDataHeader.get(4), otherDrinks);
+	}
+}

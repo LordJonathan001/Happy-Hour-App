@@ -10,8 +10,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Bar extends Activity{
-	String setBarTest = MainActivity.setBar;
-	String barNameHolder, picHolder, barContactHolder, barPhoneHolder; 
+	String setBarTest;
+	String barNameHolder, picHolder, barContactHolder, barPhoneHolder;
+	static String barTableName; 
 	int imageInt, textInt1,textInt2, textInt3, textInt4;
 	TextView setBarName, setBarContact,setBarPhone, setBarHours;
 	TextView setBarTester;
@@ -20,6 +21,14 @@ public class Bar extends Activity{
 	
 	
 	public void onCreate(Bundle savedInstanceState) {
+		Bundle bundle = getIntent().getExtras();
+		if (bundle != null) {
+			setBarTest = bundle.getString("bar");
+			//barName =barNameHolder;
+		}
+		
+		barTableName=setBarTest.toUpperCase();
+		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_bar);
 		
@@ -53,13 +62,14 @@ public class Bar extends Activity{
 		setBarHours.setText(textInt4);
 		
 		setBarTester = (TextView)findViewById(R.id.setBarTester);
-		String barTesterHolder = MainActivity.upperCaseName ;
+		String barTesterHolder = barTableName ;
 		//int textInt5 = getResources().getIdentifier(barTesterHolder, null, getPackageName());
 		setBarTester.setText(barTesterHolder);
 		
 		viewAll.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				System.out.println("Works to the bar button");
 				Intent i = (new Intent(Bar.this, Drinks.class));
 				startActivity(i); 			
 			}
