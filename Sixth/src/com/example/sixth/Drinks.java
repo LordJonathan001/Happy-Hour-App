@@ -10,12 +10,15 @@ import android.widget.ExpandableListView;
 
 public class Drinks extends Activity {
 	// TextView drinkHolder;
-	//public static String drinkType = DBHelper.drinkType;
+	String barName;
+	static String barNameHolder = MainActivity.upperCaseName;
 	String drinkTestHolder = "";
 	ExpandableListAdapter listAdapter;
 	ExpandableListView expListView;
 	List<String> listDataHeader;
 	HashMap<String, List<String>> listDataChild;
+	List<String> beer;
+	//List<String> beerLables = MainActivity.beerLables;
 	
 
 	@Override
@@ -24,9 +27,11 @@ public class Drinks extends Activity {
 		setContentView(R.layout.activity_drinks);
 		Bundle bundle = getIntent().getExtras();
 		//if (bundle != null) {
-		//	drinkType = bundle.getString("sample_name");
+		//	barNameHolder = bundle.getString("bar");
+		//	barName =barNameHolder;
 		//}
 		// get the listview
+		
 		expListView = (ExpandableListView) findViewById(R.id.lvExp);
 
 		// preparing list data
@@ -52,18 +57,46 @@ public class Drinks extends Activity {
 		 listDataHeader.add("Shots");
 		 listDataHeader.add("Wine");
 		 
-		 //Get Beer entries
 		 DBHelper db = new DBHelper(getApplicationContext());
-	     List<String> beerLables = db.getBeerDrinkLabels();
+		 //beerLables = db.getBeerDrinkLabels();
+		 //for (int i = 0; i < beerLables.size(); i++) {
+			  //  beer.add(beerLables.get(i));
+			//}
+	 
+		if(barNameHolder.equals("CHANGOS")){
+			List<String> beerLables ;
+			List<String> beer =  new ArrayList<String>();;
+			beerLables = db.getChangosBeerDrinkLabels();
+			 for (int i = 0; i < beerLables.size(); i++) {
+				 beer.add(beerLables.get(i));
+				}
+		 }
+		 else if (barNameHolder.equals("LANDOS")){
+			 List<String> beerLables;
+			 List<String> beer =  new ArrayList<String>();;  
+			 beerLables = db.getLandosBeerDrinkLabels();
+			 for (int i = 0; i < beerLables.size(); i++) {
+			     beer.add(beerLables.get(i));
+				}
+		 }
+		 else {
+			 List<String> beerLables;
+			 List<String> beer =  new ArrayList<String>();;  
+			 beerLables = db.getAnthonysBeerDrinkLabels();
+			 for (int i = 0; i < beerLables.size(); i++) {
+				    beer.add(beerLables.get(i));
+				}
+		 }
+		 //Get Beer entries
+		 
+	     
 	     
 
 		// Adding child data
-		List<String> beer = new ArrayList<String>();
+		
 		
 		//beer.add("The Shawshank Redemption");
-		for (int i = 0; i < beerLables.size(); i++) {
-		    beer.add(beerLables.get(i));
-		}
+		
 		
 		/*
 		   beer.add("The Godfather");

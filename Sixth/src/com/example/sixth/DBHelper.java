@@ -17,14 +17,18 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DBHelper extends SQLiteOpenHelper {
 
 	private static String DB_PATH = "/data/data/com.example.sixth/databases/";
-	private static String DB_NAME = "BarSample.db";	
-	private final Context myContext;	
+	private static String DB_NAME = "BarSample.db";
+	private final Context myContext;
 	public static String tableName = "BARS";
-	String barTableName, sqlquery ;
-	public static String firstBarTableName = MainActivity.upperCaseName;//Pass in the specific bar from the spinner choice
+	String barTableName, sqlquery;
+	public String firstBarTableName = MainActivity.upperCaseName;// Pass in the
+																	// specific
+																	// bar from
+																	// the
+																	// spinner
+																	// choice
 	private SQLiteDatabase myDataBase;
-	
-		
+
 	public DBHelper(Context context) {
 
 		super(context, DB_NAME, null, 1);
@@ -141,169 +145,414 @@ public class DBHelper extends SQLiteOpenHelper {
 
 	}
 
-	public List<String> getAllLabels(){
+	public List<String> getAllLabels() {
 		List<String> labels = new ArrayList<String>();
-        
-        // Select All Query
-        String selectQuery = "SELECT  * FROM " + tableName;
-      
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery(selectQuery, null);
-      
-        // looping through all rows and adding to list
-        if (cursor.moveToFirst()) {
-            do {
-            	labels.add(cursor.getString(1) + " " + cursor.getString(2)+ ", " + cursor.getString(3));
-            } while (cursor.moveToNext());
-        }
-         
-        // closing connection
-        cursor.close();
-        db.close();
-         
-        // returning labels
-        return labels;
-		
+
+		// Select All Query
+		String selectQuery = "SELECT  * FROM " + tableName;
+
+		SQLiteDatabase db = this.getReadableDatabase();
+		Cursor cursor = db.rawQuery(selectQuery, null);
+
+		// looping through all rows and adding to list
+		if (cursor.moveToFirst()) {
+			do {
+				labels.add(cursor.getString(1) + " " + cursor.getString(2) + ", " + cursor.getString(3));
+			} while (cursor.moveToNext());
+		}
+
+		// closing connection
+		cursor.close();
+		db.close();
+
+		// returning labels
+		return labels;
+
 	} // will returns all labels stored in database
-	
-	public List<String> getBeerDrinkLabels(){
-		//naming();
+
+	/*
+	 * public List<String> getBeerDrinkLabels(){
+	 * 
+	 * List<String> allBeerDrinkLabels = new ArrayList<String>();
+	 * 
+	 * if (firstBarTableName.equals("CHANGOS")){ sqlquery =
+	 * "SELECT * FROM CHANGOS WHERE DRINKTYPE='Beer';"; } else
+	 * if(firstBarTableName.equals("LANDOS")){ sqlquery =
+	 * "SELECT * FROM LANDOS WHERE DRINKTYPE='Beer';"; } else{ sqlquery =
+	 * "SELECT * FROM ANTHONYS WHERE DRINKTYPE='Beer';"; }
+	 * 
+	 * 
+	 * //String sqlquery="SELECT * FROM " + barTableName +
+	 * " WHERE DRINKTYPE='Beer';"; String selectQuery = sqlquery;
+	 * 
+	 * SQLiteDatabase db = this.getReadableDatabase(); Cursor cursor =
+	 * db.rawQuery(selectQuery, null);
+	 * 
+	 * // looping through all rows and adding to list if (cursor.moveToFirst())
+	 * { do { allBeerDrinkLabels.add(cursor.getString(1) + " Price: " +
+	 * cursor.getString(2)); } while (cursor.moveToNext()); }
+	 * 
+	 * // closing connection cursor.close(); db.close();
+	 * 
+	 * // returning labels return allBeerDrinkLabels;
+	 * 
+	 * } // will returns all labels stored in database
+	 */
+	public List<String> getChangosBeerDrinkLabels() {
 		List<String> allBeerDrinkLabels = new ArrayList<String>();
-		
-		if (firstBarTableName.equals("CHANGOS")){
-			sqlquery = "SELECT * FROM CHANGOS WHERE DRINKTYPE='Beer';";
+		// Select All Query
+		String sqlBeerquery = "SELECT * FROM CHANGOS WHERE DRINKTYPE='Beer';";
+		SQLiteDatabase bdb = this.getReadableDatabase();
+		Cursor beerCursor = bdb.rawQuery(sqlBeerquery, null);
+
+		// looping through all rows and adding to list
+		if (beerCursor.moveToFirst()) {
+			do {
+				allBeerDrinkLabels.add(beerCursor.getString(1) + ", " + beerCursor.getString(2));
+			} while (beerCursor.moveToNext());
 		}
-		else if(firstBarTableName.equals("LANDOS")){
-			sqlquery = "SELECT * FROM LANDOS WHERE DRINKTYPE='Beer';";
-		}
-		else{
-			sqlquery = "SELECT * FROM ANTHONYS WHERE DRINKTYPE='Beer';";
-		}
-		
-				
-        //String sqlquery="SELECT * FROM " + barTableName + " WHERE DRINKTYPE='Beer';";
-		String selectQuery = sqlquery;
-      
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery(selectQuery, null);
-      
-        // looping through all rows and adding to list
-        if (cursor.moveToFirst()) {
-            do {
-            	allBeerDrinkLabels.add(cursor.getString(1) + " Price: " + cursor.getString(2));
-            } while (cursor.moveToNext());
-        }
-         
-        // closing connection
-        cursor.close();
-        db.close();
-         
-        // returning labels
-        return allBeerDrinkLabels;
-		
+
+		// closing connection
+		beerCursor.close();
+		bdb.close();
+
+		// returning labels
+		return allBeerDrinkLabels;
+
 	} // will returns all labels stored in database
-	
-	public List<String> getWineDrinkLabels(){
+
+	public List<String> getChangosWineDrinkLabels() {
 		List<String> allWineDrinkLabels = new ArrayList<String>();
-        
-        // Select All Query
-        String sqlquery="SELECT * FROM "+barTableName + " WHERE DRINKTYPE='Wine';";
-		String selectQuery = sqlquery;
-      
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery(selectQuery, null);
-      
-        // looping through all rows and adding to list
-        if (cursor.moveToFirst()) {
-            do {
-            	allWineDrinkLabels.add(cursor.getString(1) + ", " + cursor.getString(2));
-            } while (cursor.moveToNext());
-        }
-         
-        // closing connection
-        cursor.close();
-        db.close();
-         
-        // returning labels
-        return allWineDrinkLabels;
-		
-	} // will returns all labels stored in database
-	
-	public List<String> getMixedDrinkDrinkLabels(){
-		List<String> allMixedDrinkDrinkLabels = new ArrayList<String>();
-        
-        // Select All Query
-        String sqlquery="SELECT * FROM "+barTableName + " WHERE DRINKTYPE='Mixed Drink';";
-		String selectQuery = sqlquery;
-      
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery(selectQuery, null);
-      
-        // looping through all rows and adding to list
-        if (cursor.moveToFirst()) {
-            do {
-            	allMixedDrinkDrinkLabels.add(cursor.getString(1) + ", " + cursor.getString(2));
-            } while (cursor.moveToNext());
-        }
-         
-        // closing connection
-        cursor.close();
-        db.close();
-         
-        // returning labels
-        return allMixedDrinkDrinkLabels;
-		
-	} // will returns all labels stored in database
-	
-	public List<String> getOtherDrinkLabels(){
-		List<String> allOtherDrinkLabels = new ArrayList<String>();
-        
-        // Select All Query
-        String sqlquery="SELECT * FROM "+barTableName + " WHERE DRINKTYPE='Other';";
-		String selectQuery = sqlquery;
-      
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery(selectQuery, null);
-      
-        // looping through all rows and adding to list
-        if (cursor.moveToFirst()) {
-            do {
-            	allOtherDrinkLabels.add(cursor.getString(1) + ", " + cursor.getString(2));
-            } while (cursor.moveToNext());
-        }
-         
-        // closing connection
-        cursor.close();
-        db.close();
-         
-        // returning labels
-        return allOtherDrinkLabels;
-		
-	} // will returns all labels stored in database
-	
-	public List<String> getShotsDrinkLabels(){
+		String sqlWinequery = "SELECT * FROM CHANGOS WHERE DRINKTYPE='Wine';";
+		SQLiteDatabase wdb = this.getReadableDatabase();
+		Cursor wineCursor = wdb.rawQuery(sqlWinequery, null);
+
+		// looping through all rows and adding to list
+		if (wineCursor.moveToFirst()) {
+			do {
+				allWineDrinkLabels.add(wineCursor.getString(1) + ", " + wineCursor.getString(2));
+			} while (wineCursor.moveToNext());
+		}
+
+		// closing connection
+		wineCursor.close();
+		wdb.close();
+		return allWineDrinkLabels;
+	}
+
+	public List<String> getChangosShotsDrinkLabels() {
 		List<String> allShotsDrinkLabels = new ArrayList<String>();
-        
-        // Select All Query
-        String sqlquery="SELECT * FROM "+barTableName + " WHERE DRINKTYPE='Shots';";
-		String selectQuery = sqlquery;
-      
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery(selectQuery, null);
-      
-        // looping through all rows and adding to list
-        if (cursor.moveToFirst()) {
-            do {
-            	allShotsDrinkLabels.add(cursor.getString(1) + ", " + cursor.getString(2));
-            } while (cursor.moveToNext());
-        }
-         
-        // closing connection
-        cursor.close();
-        db.close();
-         
-        // returning labels
-        return allShotsDrinkLabels;
-		
+		String sqlShotsquery = "SELECT * FROM CHANGOS WHERE DRINKTYPE='Shot';";
+		SQLiteDatabase sdb = this.getReadableDatabase();
+		Cursor shotCursor = sdb.rawQuery(sqlShotsquery, null);
+
+		// looping through all rows and adding to list
+		if (shotCursor.moveToFirst()) {
+			do {
+				allShotsDrinkLabels.add(shotCursor.getString(1) + ", " + shotCursor.getString(2));
+			} while (shotCursor.moveToNext());
+		}
+
+		// closing connection
+		shotCursor.close();
+		sdb.close();
+		return allShotsDrinkLabels;
+	}
+
+	public List<String> getChangosMDDrinkLabels() {
+		List<String> allMDDrinkLabels = new ArrayList<String>();
+		String sqlMDquery = "SELECT * FROM CHANGOS WHERE DRINKTYPE='Mixed Drink';";
+		SQLiteDatabase mddb = this.getReadableDatabase();
+		Cursor mDCursor = mddb.rawQuery(sqlMDquery, null);
+
+		// looping through all rows and adding to list
+		if (mDCursor.moveToFirst()) {
+			do {
+				allMDDrinkLabels.add(mDCursor.getString(1) + ", " + mDCursor.getString(2));
+			} while (mDCursor.moveToNext());
+		}
+
+		// closing connection
+		mDCursor.close();
+		mddb.close();
+		return allMDDrinkLabels;
+	}
+
+	public List<String> getChangosOtherDrinkLabels() {
+		List<String> allOtherDrinkLabels = new ArrayList<String>();
+		String sqlOtherquery = "SELECT * FROM CHANGOS WHERE DRINKTYPE='Other';";
+		SQLiteDatabase odb = this.getReadableDatabase();
+		Cursor otherCursor = odb.rawQuery(sqlOtherquery, null);
+
+		// looping through all rows and adding to list
+		if (otherCursor.moveToFirst()) {
+			do {
+				allOtherDrinkLabels.add(otherCursor.getString(1) + ", " + otherCursor.getString(2));
+			} while (otherCursor.moveToNext());
+		}
+
+		// closing connection
+		otherCursor.close();
+		odb.close();
+		return allOtherDrinkLabels;
+	}
+
+	public List<String> getLandosBeerDrinkLabels() {
+		List<String> allBeerDrinkLabels = new ArrayList<String>();
+		// Select All Query
+		String sqlBeerquery = "SELECT * FROM LANDOS WHERE DRINKTYPE='Beer';";
+		SQLiteDatabase bdb = this.getReadableDatabase();
+		Cursor beerCursor = bdb.rawQuery(sqlBeerquery, null);
+
+		// looping through all rows and adding to list
+		if (beerCursor.moveToFirst()) {
+			do {
+				allBeerDrinkLabels.add(beerCursor.getString(1) + ", " + beerCursor.getString(2));
+			} while (beerCursor.moveToNext());
+		}
+
+		// closing connection
+		beerCursor.close();
+		bdb.close();
+
+		// returning labels
+		return allBeerDrinkLabels;
+
 	} // will returns all labels stored in database
+
+	public List<String> getLandosWineDrinkLabels() {
+		List<String> allWineDrinkLabels = new ArrayList<String>();
+		String sqlWinequery = "SELECT * FROM LANDOS WHERE DRINKTYPE='Wine';";
+		SQLiteDatabase wdb = this.getReadableDatabase();
+		Cursor wineCursor = wdb.rawQuery(sqlWinequery, null);
+
+		// looping through all rows and adding to list
+		if (wineCursor.moveToFirst()) {
+			do {
+				allWineDrinkLabels.add(wineCursor.getString(1) + ", " + wineCursor.getString(2));
+			} while (wineCursor.moveToNext());
+		}
+
+		// closing connection
+		wineCursor.close();
+		wdb.close();
+		return allWineDrinkLabels;
+	}
+
+	public List<String> getLandosShotsDrinkLabels() {
+		List<String> allShotsDrinkLabels = new ArrayList<String>();
+		String sqlShotsquery = "SELECT * FROM LANDOS WHERE DRINKTYPE='Shot';";
+		SQLiteDatabase sdb = this.getReadableDatabase();
+		Cursor shotCursor = sdb.rawQuery(sqlShotsquery, null);
+
+		// looping through all rows and adding to list
+		if (shotCursor.moveToFirst()) {
+			do {
+				allShotsDrinkLabels.add(shotCursor.getString(1) + ", " + shotCursor.getString(2));
+			} while (shotCursor.moveToNext());
+		}
+
+		// closing connection
+		shotCursor.close();
+		sdb.close();
+		return allShotsDrinkLabels;
+	}
+
+	public List<String> getLandosMDDrinkLabels() {
+		List<String> allMDDrinkLabels = new ArrayList<String>();
+		String sqlMDquery = "SELECT * FROM LANDOS WHERE DRINKTYPE='Mixed Drink';";
+		SQLiteDatabase mddb = this.getReadableDatabase();
+		Cursor mDCursor = mddb.rawQuery(sqlMDquery, null);
+
+		// looping through all rows and adding to list
+		if (mDCursor.moveToFirst()) {
+			do {
+				allMDDrinkLabels.add(mDCursor.getString(1) + ", " + mDCursor.getString(2));
+			} while (mDCursor.moveToNext());
+		}
+
+		// closing connection
+		mDCursor.close();
+		mddb.close();
+		return allMDDrinkLabels;
+	}
+
+	public List<String> getLandosOtherDrinkLabels() {
+		List<String> allOtherDrinkLabels = new ArrayList<String>();
+		String sqlOtherquery = "SELECT * FROM LANDOS WHERE DRINKTYPE='Other';";
+		SQLiteDatabase odb = this.getReadableDatabase();
+		Cursor otherCursor = odb.rawQuery(sqlOtherquery, null);
+
+		// looping through all rows and adding to list
+		if (otherCursor.moveToFirst()) {
+			do {
+				allOtherDrinkLabels.add(otherCursor.getString(1) + ", " + otherCursor.getString(2));
+			} while (otherCursor.moveToNext());
+		}
+
+		// closing connection
+		otherCursor.close();
+		odb.close();
+		return allOtherDrinkLabels;
+	}
+
+	public List<String> getAnthonysBeerDrinkLabels() {
+		List<String> allBeerDrinkLabels = new ArrayList<String>();
+		// Select All Query
+		String sqlBeerquery = "SELECT * FROM ANTHONYS WHERE DRINKTYPE='Beer';";
+		SQLiteDatabase bdb = this.getReadableDatabase();
+		Cursor beerCursor = bdb.rawQuery(sqlBeerquery, null);
+
+		// looping through all rows and adding to list
+		if (beerCursor.moveToFirst()) {
+			do {
+				allBeerDrinkLabels.add(beerCursor.getString(1) + ", " + beerCursor.getString(2));
+			} while (beerCursor.moveToNext());
+		}
+
+		// closing connection
+		beerCursor.close();
+		bdb.close();
+
+		// returning labels
+		return allBeerDrinkLabels;
+
+	} // will returns all labels stored in database
+
+	public List<String> getAnthonysWineDrinkLabels() {
+		List<String> allWineDrinkLabels = new ArrayList<String>();
+		String sqlWinequery = "SELECT * FROM ANTHONYS WHERE DRINKTYPE='Wine';";
+		SQLiteDatabase wdb = this.getReadableDatabase();
+		Cursor wineCursor = wdb.rawQuery(sqlWinequery, null);
+
+		// looping through all rows and adding to list
+		if (wineCursor.moveToFirst()) {
+			do {
+				allWineDrinkLabels.add(wineCursor.getString(1) + ", " + wineCursor.getString(2));
+			} while (wineCursor.moveToNext());
+		}
+
+		// closing connection
+		wineCursor.close();
+		wdb.close();
+		return allWineDrinkLabels;
+	}
+
+	public List<String> getAnthonysShotsDrinkLabels() {
+		List<String> allShotsDrinkLabels = new ArrayList<String>();
+		String sqlShotsquery = "SELECT * FROM ANTHONYS WHERE DRINKTYPE='Shot';";
+		SQLiteDatabase sdb = this.getReadableDatabase();
+		Cursor shotCursor = sdb.rawQuery(sqlShotsquery, null);
+
+		// looping through all rows and adding to list
+		if (shotCursor.moveToFirst()) {
+			do {
+				allShotsDrinkLabels.add(shotCursor.getString(1) + ", " + shotCursor.getString(2));
+			} while (shotCursor.moveToNext());
+		}
+
+		// closing connection
+		shotCursor.close();
+		sdb.close();
+		return allShotsDrinkLabels;
+	}
+
+	public List<String> getAnthonysMDDrinkLabels() {
+		List<String> allMDDrinkLabels = new ArrayList<String>();
+		String sqlMDquery = "SELECT * FROM ANTHONYS WHERE DRINKTYPE='Mixed Drink';";
+		SQLiteDatabase mddb = this.getReadableDatabase();
+		Cursor mDCursor = mddb.rawQuery(sqlMDquery, null);
+
+		// looping through all rows and adding to list
+		if (mDCursor.moveToFirst()) {
+			do {
+				allMDDrinkLabels.add(mDCursor.getString(1) + ", " + mDCursor.getString(2));
+			} while (mDCursor.moveToNext());
+		}
+
+		// closing connection
+		mDCursor.close();
+		mddb.close();
+		return allMDDrinkLabels;
+	}
+
+	public List<String> getAnthonysOtherDrinkLabels() {
+		List<String> allOtherDrinkLabels = new ArrayList<String>();
+		String sqlOtherquery = "SELECT * FROM ANTHONYS WHERE DRINKTYPE='Other';";
+		SQLiteDatabase odb = this.getReadableDatabase();
+		Cursor otherCursor = odb.rawQuery(sqlOtherquery, null);
+
+		// looping through all rows and adding to list
+		if (otherCursor.moveToFirst()) {
+			do {
+				allOtherDrinkLabels.add(otherCursor.getString(1) + ", " + otherCursor.getString(2));
+			} while (otherCursor.moveToNext());
+		}
+
+		// closing connection
+		otherCursor.close();
+		odb.close();
+		return allOtherDrinkLabels;
+	}
+	
+	/*
+	 * public List<String> getMixedDrinkDrinkLabels(){ List<String>
+	 * allMixedDrinkDrinkLabels = new ArrayList<String>();
+	 * 
+	 * // Select All Query String sqlquery="SELECT * FROM "+barTableName +
+	 * " WHERE DRINKTYPE='Mixed Drink';"; String selectQuery = sqlquery;
+	 * 
+	 * SQLiteDatabase db = this.getReadableDatabase(); Cursor cursor =
+	 * db.rawQuery(selectQuery, null);
+	 * 
+	 * // looping through all rows and adding to list if (cursor.moveToFirst())
+	 * { do { allMixedDrinkDrinkLabels.add(cursor.getString(1) + ", " +
+	 * cursor.getString(2)); } while (cursor.moveToNext()); }
+	 * 
+	 * // closing connection cursor.close(); db.close();
+	 * 
+	 * // returning labels return allMixedDrinkDrinkLabels;
+	 * 
+	 * } // will returns all labels stored in database
+	 * 
+	 * public List<String> getOtherDrinkLabels(){ List<String>
+	 * allOtherDrinkLabels = new ArrayList<String>();
+	 * 
+	 * // Select All Query String sqlquery="SELECT * FROM "+barTableName +
+	 * " WHERE DRINKTYPE='Other';"; String selectQuery = sqlquery;
+	 * 
+	 * SQLiteDatabase db = this.getReadableDatabase(); Cursor cursor =
+	 * db.rawQuery(selectQuery, null);
+	 * 
+	 * // looping through all rows and adding to list if (cursor.moveToFirst())
+	 * { do { allOtherDrinkLabels.add(cursor.getString(1) + ", " +
+	 * cursor.getString(2)); } while (cursor.moveToNext()); }
+	 * 
+	 * // closing connection cursor.close(); db.close();
+	 * 
+	 * // returning labels return allOtherDrinkLabels;
+	 * 
+	 * } // will returns all labels stored in database
+	 * 
+	 * public List<String> getShotsDrinkLabels(){ List<String>
+	 * allShotsDrinkLabels = new ArrayList<String>();
+	 * 
+	 * // Select All Query String sqlquery="SELECT * FROM "+barTableName +
+	 * " WHERE DRINKTYPE='Shots';"; String selectQuery = sqlquery;
+	 * 
+	 * SQLiteDatabase db = this.getReadableDatabase(); Cursor cursor =
+	 * db.rawQuery(selectQuery, null);
+	 * 
+	 * // looping through all rows and adding to list if (cursor.moveToFirst())
+	 * { do { allShotsDrinkLabels.add(cursor.getString(1) + ", " +
+	 * cursor.getString(2)); } while (cursor.moveToNext()); }
+	 * 
+	 * // closing connection cursor.close(); db.close();
+	 * 
+	 * // returning labels return allShotsDrinkLabels;
+	 * 
+	 * } // will returns all labels stored in database
+	 */
 }
+
+

@@ -1,0 +1,46 @@
+package com.example.sixth;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+
+public class testing {
+	
+	public List<String> getChangosDrinkLabels(){
+		List<String> allBeerDrinkLabels = new ArrayList<String>();
+		List<String> allWineDrinkLabels = new ArrayList<String>();
+		List<String> allShotsDrinkLabels = new ArrayList<String>();
+		List<String> allMDDrinkLabels = new ArrayList<String>();
+		List<String> allOtherDrinkLabels = new ArrayList<String>();
+		
+        
+        // Select All Query
+        String sqlBeerquery="SELECT * FROM CHANGOS WHERE DRINKTYPE='Beer';";
+        String sqlWinequery="SELECT * FROM CHANGOS WHERE DRINKTYPE='Wine';";
+        String sqlShotsquery="SELECT * FROM CHANGOS WHERE DRINKTYPE='Shot';";
+        String sqlMDquery="SELECT * FROM CHANGOS WHERE DRINKTYPE='Mixed Drink';";
+        String sqlOtherquery="SELECT * FROM CHANGOS WHERE DRINKTYPE='Other';";
+		String selectQuery = sqlquery;
+      
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+      
+        // looping through all rows and adding to list
+        if (cursor.moveToFirst()) {
+            do {
+            	allWineDrinkLabels.add(cursor.getString(1) + ", " + cursor.getString(2));
+            } while (cursor.moveToNext());
+        }
+         
+        // closing connection
+        cursor.close();
+        db.close();
+         
+        // returning labels
+        return allWineDrinkLabels;
+		
+	} // will returns all labels stored in database
+
+}

@@ -1,5 +1,6 @@
 package com.example.sixth;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import android.app.Activity;
 import android.content.Intent;
@@ -22,6 +23,8 @@ OnItemSelectedListener {
 	Button selectBar;	
     Spinner spinner;
     static String pullBar,setBar,name, cityState, upperCaseName;
+    
+   static  List<String> beer, beerLables;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -62,7 +65,12 @@ OnItemSelectedListener {
 				cityState =  nlast+ " " + last;
 				upperCaseName=name.toUpperCase();
 				setBar = name.toLowerCase();
-				Intent i = (new Intent(MainActivity.this, Bar.class));
+				
+				 beer = new ArrayList<String>();
+				 beerLables = new ArrayList<String>();
+				 			 
+				 Intent i = (new Intent(MainActivity.this, Bar.class));
+				 i.putExtra("bar",upperCaseName);
 				startActivity(i); 			
 			}
 			
