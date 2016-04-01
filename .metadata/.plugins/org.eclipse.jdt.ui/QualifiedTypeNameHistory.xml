@@ -33,4 +33,5 @@
 <fullyQualifiedTypeName name="com.example.sixth.R.raw"/>
 <fullyQualifiedTypeName name="android.media.MediaPlayer"/>
 <fullyQualifiedTypeName name="android.widget.ListView"/>
+<fullyQualifiedTypeName name="android.R.layout"/>
 </qualifiedTypeNameHistroy>

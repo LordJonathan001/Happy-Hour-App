@@ -89,7 +89,7 @@ OnItemSelectedListener {
 	 
 	        // Creating adapter for spinner
 	        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
-	                android.R.layout.simple_spinner_item, lables);
+	                R.layout.spinner_item, lables);
 	 
 	        // Drop down layout style - list view with radio button
 	        dataAdapter

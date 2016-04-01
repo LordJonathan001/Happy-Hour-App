@@ -618,8 +618,9 @@ int layout notification_template_part_time 0x7f030027
 int layout select_dialog_item_material 0x7f030028
 int layout select_dialog_multichoice_material 0x7f030029
 int layout select_dialog_singlechoice_material 0x7f03002a
-int layout support_simple_spinner_dropdown_item 0x7f03002b
-int layout taxi 0x7f03002c
+int layout spinner_item 0x7f03002b
+int layout support_simple_spinner_dropdown_item 0x7f03002c
+int layout taxi 0x7f03002d
 int menu main 0x7f0e0000
 int raw glug 0x7f050000
 int string Hours 0x7f0b0036
