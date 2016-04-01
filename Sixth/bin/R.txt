@@ -501,6 +501,7 @@ int id end 0x7f0a001f
 int id end_padder 0x7f0a006f
 int id expand_activities_button 0x7f0a0025
 int id expanded_menu 0x7f0a0038
+int id happyHourSpecials 0x7f0a005d
 int id home 0x7f0a0000
 int id homeAsUp 0x7f0a000e
 int id icon 0x7f0a0029
@@ -556,7 +557,6 @@ int id status_bar_latest_event_content 0x7f0a0065
 int id submit_area 0x7f0a004c
 int id tabMode 0x7f0a000c
 int id taxiHours 0x7f0a0071
-int id taxiName 0x7f0a005d
 int id taxiPhone 0x7f0a0070
 int id text 0x7f0a006d
 int id text2 0x7f0a006b
@@ -648,6 +648,7 @@ int string anthonys 0x7f0b002f
 int string anthonysContact 0x7f0b002d
 int string anthonysHours 0x7f0b0033
 int string anthonysPhone 0x7f0b002e
+int string anthonyshhSpecials 0x7f0b003a
 int string app_name 0x7f0b0014
 int string beer 0x7f0b001b
 int string bradfordTaxiHours 0x7f0b0029
@@ -657,6 +658,7 @@ int string changos 0x7f0b0016
 int string changosContact 0x7f0b001f
 int string changosHours 0x7f0b0032
 int string changosPhone 0x7f0b0020
+int string changoshhSpecials 0x7f0b0038
 int string corningTaxiHours 0x7f0b002c
 int string corningTaxiName 0x7f0b002a
 int string corningTaxiPhone 0x7f0b002b
@@ -664,6 +666,7 @@ int string landos 0x7f0b0017
 int string landosContact 0x7f0b001e
 int string landosHours 0x7f0b0031
 int string landosPhone 0x7f0b0021
+int string landoshhSpecials 0x7f0b0039
 int string mixedDrinks 0x7f0b001d
 int string noResults 0x7f0b0022
 int string other 0x7f0b0030

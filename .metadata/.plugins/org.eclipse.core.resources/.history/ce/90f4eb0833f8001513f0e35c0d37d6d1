@@ -36,14 +36,11 @@
     <string name="other">View Other Drinks</string>
     <string name="landosHours">M&#8211;W 11&#8211;5PM, Th&#8211;Sat 11&#8211;1:30AM, Sun CLOSED</string>
     <string name="changosHours">M&#8211;Sat 11AM&#8211;2AM, Sun 12PM&#8211;2AM</string>
-    <string name="anthonysHours">M–Th 11AM–12AM, F–Sa 11AM–2PM, Sun 10AM–8PM</string>
+    <string name="anthonysHours">M&#8211;Th 11AM&#8211;12PM, F&#8211;Sa 11AM&#8211;2PM, Sun 10AM&#8211;8PM</string>
     <string name="specials">Happy Hour Specials</string>
     <string name="setBarTester"/>
     <string name="Hours">Hours:</string>
     <string name="PicHolder">Pic of Bar</string>
-    <string name="changoshhSpecials">Changos Happy Hour Special</string>
-    <string name="landoshhSpecials">Landos Happy Hour Specials</string>
-    <string name="anthonyshhSpecials">Anthonys Happy Hour Specials</string>
    
 
 </resources>

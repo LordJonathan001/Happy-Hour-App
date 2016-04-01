@@ -11,7 +11,6 @@ public class NoResult  extends Activity {
 	ImageView randPic;
 	String picHolder, picName;
 	TextView setHappyHourSpecials;
-	String sethhSpecialTest = Bar.hhSpecialTest;
 	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -36,7 +35,7 @@ public class NoResult  extends Activity {
 		randPic.setImageResource(imageInt);
 		
 		setHappyHourSpecials = (TextView) findViewById(R.id.happyHourSpecials);
-		String hhsHolder = "@string/" + sethhSpecialTest + "hhSpecials";
+		String hhsHolder = "@string/" + setBarTest + "hhSpecials";
 		int textInt1 = getResources().getIdentifier(hhsHolder, null, getPackageName());
 		setHappyHourSpecials.setText(textInt1);
 		

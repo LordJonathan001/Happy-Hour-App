@@ -5,13 +5,10 @@ import java.util.Random;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 public class NoResult  extends Activity {
 	ImageView randPic;
 	String picHolder, picName;
-	TextView setHappyHourSpecials;
-	String sethhSpecialTest = Bar.hhSpecialTest;
 	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -34,11 +31,6 @@ public class NoResult  extends Activity {
 		picHolder = "drawable/"+picName;		
 		int imageInt = getResources().getIdentifier(picHolder, null, getPackageName());
 		randPic.setImageResource(imageInt);
-		
-		setHappyHourSpecials = (TextView) findViewById(R.id.happyHourSpecials);
-		String hhsHolder = "@string/" + sethhSpecialTest + "hhSpecials";
-		int textInt1 = getResources().getIdentifier(hhsHolder, null, getPackageName());
-		setHappyHourSpecials.setText(textInt1);
 		
 	}
 }

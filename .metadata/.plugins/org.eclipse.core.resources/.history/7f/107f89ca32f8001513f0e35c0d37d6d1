@@ -1,7 +1,5 @@
 package com.example.sixth;
 
-import java.util.Locale;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,14 +10,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Bar extends Activity {
-	
-	static String hhSpecialTest, barTableName;
-	String setBarTest,barNameHolder, picHolder, barContactHolder, barPhoneHolder;
+	String setBarTest;
+	static String hhSpecialTest;
+	String barNameHolder, picHolder, barContactHolder, barPhoneHolder;
 	int imageInt, textInt1, textInt2, textInt3, textInt4;
 	TextView setBarName, setBarContact, setBarPhone, setBarHours;
 	ImageView barPic;
 	Button viewAll, specials, getTaxi;
-		
+	static String barTableName;
+	
 	public void onCreate(Bundle savedInstanceState) {
 		Bundle bundle = getIntent().getExtras();
 		if (bundle != null) {
@@ -29,7 +28,7 @@ public class Bar extends Activity {
 		}
 		
 		hhSpecialTest = setBarTest;
-		barTableName = setBarTest.toUpperCase(Locale.US);
+		barTableName = setBarTest.toUpperCase();
 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_bar);
