@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MU Pub Crawl</string>
+    
+    <string name="action_settings">Settings</string>
+    <string-array name="locations">
+        
+    </string-array>
+    <string name="select_bar">Select a bar from the list to view more information</string>
+    <string name="set_city">Choose this Bar!</string>
+    <string name="viewAll">View All Drinks</string>
+    <string name="landosContact">41 South Bridge St, Corning, NY</string>
+    <string name="changosContact">21 N Main St, Mansfield, PA 16933</string>
+    <string name="changosPhone">570.662.7633</string>
+    <string name="landosPhone">607.936.3612</string>
+    <string name="noResults">Sorry, your bar doesn\'t offer any Happy Hour Specials. Here is a cute picture instead.</string>
+    <string name="taxi">Don\'t drink and drive! Get a taxi here! </string>
+    <string name="tiogaTaxiName">Canyon Country Cabs</string>
+    <string name="tiogaTaxiPhone">570.724.2424</string>
+    <string name="tiogaTaxiHours">Open from 6AM - 3PM</string>
+    <string name="bradfordTaxiName">Valley Taxi</string>
+    <string name="bradfordTaxiPhone">570.888.2365</string>
+    <string name="bradfordTaxiHours">Open 24 hours a day</string>
+    <string name="corningTaxiName">Vets One Taxi Service</string>
+    <string name="corningTaxiPhone">607.962.8294</string>
+    <string name="corningTaxiHours">Open 24 hours a day</string>
+    <string name="anthonysContact">776 Canton St, Troy, PA 16947</string>
+    <string name="anthonysPhone">570.297.4567</string>
+    <string name="landosHours">M&#8211;W 11&#8211;5PM, Th&#8211;Sat 11&#8211;1:30AM, Sun CLOSED</string>
+    <string name="changosHours">M&#8211;Sat 11AM&#8211;2AM, Sun 12PM&#8211;2AM</string>
+    <string name="anthonysHours">M–Th 11AM–12AM, F–Sa 11AM–2PM, Sun 10AM–8PM</string>
+    <string name="specials">Happy Hour Specials</string>
+    <string name="setBarTester"/>
+    <string name="Hours">Hours:</string>
+    <string name="PicHolder">Pic of Bar</string>
+    <string name="changosSpecials">Changos Happy Hour Special</string>
+    <string name="landosSpecials">Landos Happy Hour Specials</string>
+    <string name="anthonysSpecials">Anthonys Happy Hour Specials</string>
+    <string name="beamhousePhone">814. 258.5608</string>
+    <string name="beamhouseContact">109 N Buffalo St, Elkland, PA 16920</string>
+    <string name="beamhouseHours">M &#8211;Sa 3PM&#8211;2AM, Su 12PM&#8211;2AM</string>
+    <string name="beamhouseSpecials"/>
+    <string name="capnHours">M-Th 11AM-11PM, Fri 11AM-1AM, Sa 12PM-1AM, Sun 12PM-11PM</string>
+    <string name="capnContact">36 Bridge Street Corning, NY 14830</string>
+    <string name="capnPhone">607.962.1616</string>
+    <string name="capnSpecials"/>
+    <string name="captainContact">616 Main St, Towanda, PA 18848</string>
+    <string name="captainHours">Su-Th 11AM-1:30AM, Fr-Sa 11AM-2:30AM</string>
+    <string name="captainPhone">570.265.1329</string>
+    <string name="captainSpecials"/>
+    <string name="centralContact">16749 Route 6 Burlington, PA 18814</string>
+    <string name="centralPhone">570.297.2337</string>
+    <string name="centralSpecials"/>
+    <string name="centralHours">Mon-Thur: 11AM-12AM, Fr-Sat: 11AM-1AM, Sun: 12:30PM-12AM</string>
+    <string name="erwinnaContact">820 Addison Rd, Painted Post, NY 14870</string>
+    <string name="erwinnaPhone">607.654.7343</string>
+    <string name="erwinnaSpecials"/>
+    <string name="erwinnaHours">Mon-Sat: 9AM-1AM, Sun: 12PM-12AM</string>
+    <string name="gaslightContact">35 Main St, Wellsboro, PA 16901</string>
+    <string name="gaslightPhone">570.724.1031</string>
+    <string name="gaslightSpecials"/>
+    <string name="gaslightHours">Mon-Sat: 10AM-2:30AM, Sun: 11AM-2:30AM</string>
+    <string name="maleysContact">92 E Market Street Corning, NY 14830</string>
+    <string name="maleysPhone">607.936.2170</string>
+    <string name="maleysHours">Mon-Fri: 2pm-1am, Sat-Sun: 12pm-1am</string>
+    <string name="maleysSpecials"/>
+    <string name="mchalesSpecials"/>
+    <string name="mchalesPhone">607.542.5280</string>
+    <string name="mchalesContact">57 South Bridge St, Corning, NY 14830</string>
+    <string name="mchalesHours">Mon-Sat: 6pm-1am, Sun: CLOSED</string>
+    <string name="oaksContact">96 W Market Street Corning, NY 14830</string>
+    <string name="oaksPhone">607.936.6367</string>
+    <string name="oaksSpecials"/>
+    <string name="oaksHours"/>
+    <string name="oldContact">3591 Route 6, Wellsboro, PA 16901</string>
+    <string name="oldPhone">814.435.6300</string>
+   
+
+</resources>

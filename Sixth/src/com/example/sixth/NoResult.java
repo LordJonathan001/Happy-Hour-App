@@ -36,7 +36,7 @@ public class NoResult  extends Activity {
 		randPic.setImageResource(imageInt);
 		
 		setHappyHourSpecials = (TextView) findViewById(R.id.happyHourSpecials);
-		String hhsHolder = "@string/" + sethhSpecialTest + "hhSpecials";
+		String hhsHolder = "@string/" + sethhSpecialTest + "Specials";
 		int textInt1 = getResources().getIdentifier(hhsHolder, null, getPackageName());
 		setHappyHourSpecials.setText(textInt1);
 		
