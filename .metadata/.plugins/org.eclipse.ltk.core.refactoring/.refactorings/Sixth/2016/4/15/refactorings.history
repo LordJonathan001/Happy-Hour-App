@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;sethhSpecialTest&apos; in &apos;com.example.sixth.NoResult&apos; to &apos;setSpecials&apos;&#x0D;&#x0A;- Original project: &apos;Sixth&apos;&#x0D;&#x0A;- Original element: &apos;com.example.sixth.NoResult.sethhSpecialTest&apos;&#x0D;&#x0A;- Renamed element: &apos;com.example.sixth.NoResult.setSpecials&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;sethhSpecialTest&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;com.example.sixth{NoResult.java[NoResult^sethhSpecialTest" name="setSpecials" references="true" setter="false" stamp="1459782875960" textual="false" version="1.0"/>
+</session>

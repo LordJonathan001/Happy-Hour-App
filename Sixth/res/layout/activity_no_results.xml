@@ -11,9 +11,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="54dp"
         android:gravity="center"
-        android:text="@string/noResults"
+        android:text="@string/changos"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="30sp" />
+        android:textSize="20sp" />
 
     <ImageView
         android:id="@+id/randPic"
@@ -22,6 +22,6 @@
         android:layout_below="@+id/happyHourSpecials"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="91dp"
-        android:src="@drawable/cat" />
+        android:contentDescription="cutePic" />
 
 </RelativeLayout>

@@ -7,38 +7,55 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class NoResult  extends Activity {
+public class NoResult extends Activity {
 	ImageView randPic;
-	String picHolder, picName;
+	String picHolder, picName, specialsHolder;
 	TextView setHappyHourSpecials;
-	String sethhSpecialTest = Bar.hhSpecialTest;
-	
+	String setSpecials = Bar.hhSpecialTest;
+
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_no_results);
-				
+
 		Random rand = new Random();
-		int  n = rand.nextInt(2);
-		
-		if(n == 0){
+		int n = rand.nextInt(2);
+
+		if (n == 0) {
 			picName = "pan";
-		}
-		else if(n==1){
+		} else if (n == 1) {
 			picName = "key";
-		}
-		else{
+		} else {
 			picName = "cat";
 		}
+
+		if (setSpecials.equals("maleys")) {
+			specialsHolder = setSpecials;
+		} else if (setSpecials.equals("oaks")) {
+			specialsHolder = setSpecials;
+		} else if (setSpecials.equals("capn")) {
+			specialsHolder = setSpecials;
+		} else if (setSpecials.equals("central")) {
+			specialsHolder = setSpecials;
+		} else if (setSpecials.equals("changos")) {
+			specialsHolder = setSpecials;
+		} else if (setSpecials.equals("mchales")) {
+			specialsHolder = setSpecials;
+		} else if (setSpecials.equals("erwinna")) {
+			specialsHolder = setSpecials;
+		} else {
+			specialsHolder = "noResults";
+			randPic = (ImageView) findViewById(R.id.randPic);
+			picHolder = "drawable/" + picName;
+			int imageInt = getResources().getIdentifier(picHolder, null, getPackageName());
+			randPic.setImageResource(imageInt);
+		} 
+
 		
-		randPic = (ImageView) findViewById(R.id.randPic);
-		picHolder = "drawable/"+picName;		
-		int imageInt = getResources().getIdentifier(picHolder, null, getPackageName());
-		randPic.setImageResource(imageInt);
-		
+
 		setHappyHourSpecials = (TextView) findViewById(R.id.happyHourSpecials);
-		String hhsHolder = "@string/" + sethhSpecialTest + "Specials";
+		String hhsHolder = "@string/" + specialsHolder + "Specials";
 		int textInt1 = getResources().getIdentifier(hhsHolder, null, getPackageName());
 		setHappyHourSpecials.setText(textInt1);
-		
+
 	}
 }

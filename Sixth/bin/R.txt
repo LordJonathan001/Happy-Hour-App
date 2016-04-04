@@ -720,7 +720,7 @@ int string mchalesContact 0x7f0b0052
 int string mchalesHours 0x7f0b0053
 int string mchalesPhone 0x7f0b0051
 int string mchalesSpecials 0x7f0b0050
-int string noResults 0x7f0b001d
+int string noResultsSpecials 0x7f0b001d
 int string oaks 0x7f0b006f
 int string oaksContact 0x7f0b0054
 int string oaksHours 0x7f0b0057
