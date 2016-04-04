@@ -1,5 +1,4 @@
-INDEX VERSION 1.127+C:\Users\55vancej10\Desktop\Git\Happy-Hour-App\.metadata\.plugins\org.eclipse.jdt.core
-3866361098.index
+INDEX VERSION 1.127+C:\Users\State Farm Admin\Documents\GitHub\Happy-Hour-App\.metadata\.plugins\org.eclipse.jdt.core
 3515282563.index
+3866361098.index
 1529345008.index
-2714437837.index
