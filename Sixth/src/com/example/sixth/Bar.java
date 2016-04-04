@@ -66,7 +66,6 @@ public class Bar extends Activity {
 		viewAll.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				System.out.println("Works to the bar button");
 				Intent i = (new Intent(Bar.this, Drinks.class));
 				startActivity(i);
 			}

@@ -9,17 +9,14 @@ import android.widget.ExpandableListView;
 
 
 public class Drinks extends Activity {
-	// TextView drinkHolder;
+	
 	String barName;
-	//static String barNameHolder = MainActivity.upperCaseName;
 	String drinkTestHolder = "";
 	ExpandableListAdapter listAdapter;
 	ExpandableListView expListView;
 	List<String> listDataHeader;
 	HashMap<String, List<String>> listDataChild;
-	//List<String> beer;
-	//List<String> beerLables = MainActivity.beerLables;
-	
+		
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {

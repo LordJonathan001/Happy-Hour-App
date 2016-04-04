@@ -22,6 +22,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="17dp"
         android:text="@string/changosPhone"
+        android:gravity="center"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <ImageView
@@ -56,44 +57,35 @@
         android:gravity="center"
         android:text="@string/taxi" />
 
-    <Button
-        android:id="@+id/btnviewAll"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btnTaxi"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="190dp"
-        android:text="@string/viewAll" />
-
     <TextView
         android:id="@+id/barHours"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnviewAll"
         android:layout_below="@+id/barPhone"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="57dp"
+        android:layout_marginTop="33dp"
         android:gravity="center"
         android:text="@string/changosHours"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <TextView
-        android:id="@+id/textView1"
+    <Button
+        android:id="@+id/btnviewAll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/barHours"
+        android:layout_above="@+id/btnSpecials"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="23dp"
         android:gravity="center"
-        android:text="@string/Hours"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:text="@string/viewAll" />
 
     <Button
         android:id="@+id/btnSpecials"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/btnviewAll"
+        android:layout_above="@+id/btnTaxi"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="93dp"
+        android:layout_marginBottom="21dp"
+        android:gravity="center"
         android:text="@string/specials" />
 
 </RelativeLayout>

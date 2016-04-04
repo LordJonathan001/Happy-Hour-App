@@ -17,13 +17,22 @@ public class Taxi extends Activity {
 		if(cityState.equals("Corning, NY")){
 			location = "corning";
 		}
+		else if (cityState.equals("Post, NY")){
+			location = "corning";			
+		}		
 		else if (cityState.equals("Troy, PA")){
+			location = "bradford";			
+		}
+		else if (cityState.equals("Burlington, PA")){
+			location = "bradford";			
+		}
+		else if (cityState.equals("Towanda, PA")){
 			location = "bradford";
 		}
 		else{
 			location ="tioga";
 		}
-		
+					
 		setTaxiName = (TextView)findViewById(R.id.happyHourSpecials);
 		//taxiNameHolder = cityState; // Used to verify the correct cityState is being passed in
 		taxiNameHolder = "@string/"+location+"TaxiName";

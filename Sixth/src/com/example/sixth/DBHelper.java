@@ -228,7 +228,7 @@ public class DBHelper extends SQLiteOpenHelper {
 		// looping through all rows and adding to list
 		if (cursorShots.moveToFirst()) {
 			do {
-				allShotsDrinkLabels.add(cursorShots.getString(1) + " \t \t Price: " + cursorShots.getString(2));
+				allShotsDrinkLabels.add(cursorShots.getString(1) + " Price: " + cursorShots.getString(2));
 			} while (cursorShots.moveToNext());
 		}
 
