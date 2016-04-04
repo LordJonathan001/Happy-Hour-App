@@ -7,6 +7,7 @@ import android.os.Handler;
 
  
 public class SplashScreen extends Activity{
+	MediaPlayer player;
  
     // Splash screen timer  extends ActiveLocationManagerActivity 
     private static int SPLASH_TIME_OUT = 5500;
@@ -17,9 +18,11 @@ public class SplashScreen extends Activity{
         setContentView(R.layout.activity_splash);
         
         
-        MediaPlayer player = new MediaPlayer();
+        player = new MediaPlayer();
         player = MediaPlayer.create(getBaseContext(), R.raw.glug); /*Gets soundfile from res/raw/glug.mp3 */
         player.start(); //Starts your sound
+        
+        
  
         new Handler().postDelayed(new Runnable() {
  
@@ -34,12 +37,16 @@ public class SplashScreen extends Activity{
                 // Start your app main activity
                 Intent i = new Intent(SplashScreen.this, MainActivity.class);
                 startActivity(i);
- 
+                releaseResources();
                 // close this activity
                 finish();
             }
             
         }, SPLASH_TIME_OUT);
+    }
+    public void releaseResources()
+    {
+        player.release();
     }
  
 }

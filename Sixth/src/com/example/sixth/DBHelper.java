@@ -271,7 +271,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
 		List<String> allMDDrinkLabels = new ArrayList<String>();
 
-		String sqlquery = "SELECT * FROM " + barTableName + " WHERE DRINKTYPE ='Mixed Drink';";
+		String sqlquery = "SELECT * FROM " + barTableName + " WHERE DRINKTYPE ='Mixed Drinks';";
 		String selectQuery = sqlquery;
 
 		SQLiteDatabase db = this.getReadableDatabase();
