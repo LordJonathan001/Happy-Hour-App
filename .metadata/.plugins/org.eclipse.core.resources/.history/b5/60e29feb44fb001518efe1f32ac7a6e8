@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText" 
+    android:background="#000000"
+    android:screenOrientation="portrait">
+
+    <Button
+        android:id="@+id/btnSelectBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="@string/set_city"
+        android:textSize="30sp"
+        android:textColor="#ffffff" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_location"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:entries="@array/locations" />
+
+    <TextView
+        android:id="@+id/select_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="69dp"
+        android:gravity="center"
+        android:text="@string/select_bar"
+        android:textSize="40sp"
+        android:textColor="#ffffff" />
+   
+</RelativeLayout>
