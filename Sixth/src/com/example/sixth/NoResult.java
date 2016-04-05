@@ -18,7 +18,7 @@ public class NoResult extends Activity {
 		setContentView(R.layout.activity_no_results);
 
 		Random rand = new Random();
-		int n = rand.nextInt(2);
+		int n = rand.nextInt(3);
 
 		if (n == 0) {
 			picName = "pan";
@@ -27,7 +27,7 @@ public class NoResult extends Activity {
 		} else {
 			picName = "cat";
 		}
-
+		System.out.println(n);
 		if (setSpecials.equals("maleys")) {
 			specialsHolder = setSpecials;
 		} else if (setSpecials.equals("oaks")) {

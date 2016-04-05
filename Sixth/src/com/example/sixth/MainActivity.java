@@ -2,7 +2,6 @@ package com.example.sixth;
 import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.database.SQLException;
@@ -33,6 +32,7 @@ OnItemSelectedListener {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+					
 		Button selectBar = (Button)findViewById(R.id.btnSelectBar);
 		myDB = new DBHelper(this);
 		 // Spinner element
