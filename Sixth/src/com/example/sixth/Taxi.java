@@ -33,7 +33,7 @@ public class Taxi extends Activity {
 			location ="tioga";
 		}
 					
-		setTaxiName = (TextView)findViewById(R.id.happyHourSpecials);
+		setTaxiName = (TextView)findViewById(R.id.taxiName);
 		//taxiNameHolder = cityState; // Used to verify the correct cityState is being passed in
 		taxiNameHolder = "@string/"+location+"TaxiName";
 		textInt1 = getResources().getIdentifier(taxiNameHolder, null, getPackageName());

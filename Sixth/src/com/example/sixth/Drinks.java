@@ -54,34 +54,29 @@ public class Drinks extends Activity {
 		List<String> beerLables = db.getBeerDrinkLabels();
 		for (int i = 0; i < beerLables.size(); i++) {
 			beer.add(beerLables.get(i));
-			System.out.println(beerLables.get(i));
-		}
+			}
 		List<String> wine = new ArrayList<String>();
 		List<String> wineLables = db.getWineDrinkLabels();
 		for (int i = 0; i < wineLables.size(); i++) {
 			wine.add(wineLables.get(i));
-			System.out.println(wineLables.get(i));
-		}
+			}
 
 		List<String> shots = new ArrayList<String>();
 		List<String> shotsLables = db.getShotsDrinkLabels();
 		for (int i = 0; i < shotsLables.size(); i++) {
 			shots.add(shotsLables.get(i));
-			System.out.println(shotsLables.get(i));
-		}
+			}
 
 		List<String> mixedDrinks = new ArrayList<String>();
 		List<String> mDLables = db.getMDDrinkLabels();
 		for (int i = 0; i < mDLables.size(); i++) {
 			mixedDrinks.add(mDLables.get(i));
-			System.out.println(mDLables.get(i));
 		}
 
 		List<String> otherDrinks = new ArrayList<String>();
 		List<String> otherLables = db.getOtherDrinkLabels();
 		for (int i = 0; i < otherLables.size(); i++) {
 			otherDrinks.add(otherLables.get(i));
-			System.out.println(otherLables.get(i));
 		}
 		listDataChild.put(listDataHeader.get(0), nada);
 		listDataChild.put(listDataHeader.get(1), beer); // Header, Child data

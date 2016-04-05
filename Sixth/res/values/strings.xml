@@ -40,7 +40,7 @@
     <string name="beamhousePhone">814. 258.5608</string>
     <string name="beamhouseContact">109 N Buffalo St, Elkland, PA 16920</string>
     <string name="beamhouseHours">Mon –Sat 3pm–2am\nSun 12pm–2am</string>
-    <string name="beamhouseSpecials"/>
+    <string name="beamhouseSpecials">Mon - Fri\n6 - 8\nAll Draft Beer is $1.00</string>
     <string name="capnHours">Mon-Th 11am-11pm\nFri 11am-1am\nSat 12pm-1am\nSun 12pm-11pm</string>
     <string name="capnContact">36 Bridge Street Corning, NY 14830</string>
     <string name="capnPhone">607.962.1616</string>
@@ -48,7 +48,7 @@
     <string name="captainContact">616 Main St, Towanda, PA 18848</string>
     <string name="captainHours">Sun-Th 11am-1:30am\nFri-Sat 11am-2:30am</string>
     <string name="captainPhone">570.265.1329</string>
-    <string name="captainSpecials">Happy Hour Specials Daily 5-7</string>
+    <string name="captainSpecials">Monday: 5 - 7 Beer Pitcher $6.00\nTuesday 5 - 7 Pint $1.00\nWednesday: All Day Yuengling mug $1.00\nThursday: 7 - 9 Pint $1.00\nFriday: All Day Budwiseer $1.00\nSaturday: 9 - 11 Well drinks $2.00\nSunday: All day Miller Light Mug $1.00</string>
     <string name="centralContact">16749 Route 6 Burlington, PA 18814</string>
     <string name="centralPhone">570.297.2337</string>
     <string name="centralSpecials">Monday: Bud $2.25\nTuesday: Coors Light $2.25\nWednesday: Busch Light $2.00\nThursday: Keystone Light $2.00\nFriday: Captain &amp; Coke $3.00\nSaturday: Miller Light $2.25\nSunday: Bloody Mary $3.00</string>
@@ -70,7 +70,7 @@
     <string name="mchalesContact">57 South Bridge St, Corning, NY 14830</string>
     <string name="mchalesHours">Mon-Sat: 6pm-1am\nSun: CLOSED</string>
     <string name="oaksContact">96 W Market Street Corning, NY 14830</string>
-    <string name="oaksPhone">607.936.6367</string>
+    <string name="oaksPhone">607.937.2604</string>
     <string name="oaksSpecials">Monday &amp; Wednesday: Tall 25oz Bud Light &amp; Labatt Blue Light $3.50\nThursday: $3 Bomb Shots\nFriday: Buckets of domestics $15 (5 beers)\nSaturday: Miller Lite 16oz $3</string>
     <string name="oaksHours">Mon-Thurs 11am-11pm\nFri-Sat 12pm-1am\nSun 12pm-11pm</string>
     <string name="oldContact">3591 Route 6, Wellsboro, PA 16901</string>
@@ -79,7 +79,7 @@
     <string name="oldSpecials"/>
     <string name="williesContact">7647 Route 49, Osceola, PA 16942</string>
     <string name="williesPhone">814.258.5761</string>
-    <string name="williesHours">Mon-Sat: 11Am-10pm\nSun 1pm-10pm</string>
+    <string name="williesHours">Mon-Sat: 11am-10pm\nSun 1pm-10pm</string>
     <string name="williesSpecials"/>
     <string name="woodysContact">214 Main St, Towanda, PA 18848</string>
     <string name="woodysPhone">570.265.5787</string>

@@ -42,17 +42,21 @@ public class NoResult extends Activity {
 			specialsHolder = setSpecials;
 		} else if (setSpecials.equals("erwinna")) {
 			specialsHolder = setSpecials;
-		} else {
+		} else if (setSpecials.equals("beamhouse")) {
+			specialsHolder = setSpecials;
+		} else if (setSpecials.equals("captain")) {
+			specialsHolder = setSpecials;
+		}
+
+		else {
 			specialsHolder = "noResults";
 			randPic = (ImageView) findViewById(R.id.randPic);
 			picHolder = "drawable/" + picName;
 			int imageInt = getResources().getIdentifier(picHolder, null, getPackageName());
 			randPic.setImageResource(imageInt);
-		} 
+		}
 
-		
-
-		setHappyHourSpecials = (TextView) findViewById(R.id.happyHourSpecials);
+		setHappyHourSpecials = (TextView) findViewById(R.id.taxiName);
 		String hhsHolder = "@string/" + specialsHolder + "Specials";
 		int textInt1 = getResources().getIdentifier(hhsHolder, null, getPackageName());
 		setHappyHourSpecials.setText(textInt1);
