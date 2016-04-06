@@ -495,7 +495,7 @@ int id barName 0x7f0a0053
 int id barPhone 0x7f0a0052
 int id barPic 0x7f0a0051
 int id beginning 0x7f0a001e
-int id btnFeturedBar 0x7f0a005c
+int id btnFeturedBar 0x7f0a005d
 int id btnSelectBar 0x7f0a0059
 int id btnSpecials 0x7f0a0057
 int id btnTaxi 0x7f0a0054
@@ -516,7 +516,7 @@ int id end 0x7f0a001f
 int id end_padder 0x7f0a0070
 int id expand_activities_button 0x7f0a0025
 int id expanded_menu 0x7f0a0038
-int id featuredBar 0x7f0a005d
+int id featuredBar 0x7f0a005c
 int id home 0x7f0a0000
 int id homeAsUp 0x7f0a000e
 int id icon 0x7f0a0029

@@ -1,6 +1,7 @@
 package com.example.sixth;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Locale;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,7 +13,7 @@ import android.text.format.DateFormat;
  
 public class SplashScreen extends Activity{
 	MediaPlayer player;
-	static String strDate;
+	static String strDate,featureBar;
  
     // Splash screen timer  extends ActiveLocationManagerActivity 
     private static int SPLASH_TIME_OUT = 5500;
@@ -28,6 +29,8 @@ public class SplashScreen extends Activity{
        
         System.out.println(strDate);
         
+        
+        featureSetter();
         player = new MediaPlayer();
         player = MediaPlayer.create(getBaseContext(), R.raw.glug); /*Gets soundfile from res/raw/glug.mp3 */
         player.start(); //Starts your sound
@@ -58,5 +61,26 @@ public class SplashScreen extends Activity{
     {
         player.release();
     }
+    
+    private void featureSetter(){
+    	strDate = strDate.toLowerCase(Locale.US);
+		
+		if (strDate.equals("mon")) {
+			featureBar = "maleys";
+		} else if (strDate.equals("tue")) {
+			featureBar = "oaks";
+		} else if (strDate.equals("wed")) {
+			featureBar = "capn";
+		} else if (strDate.equals("thu")) {
+			featureBar = "central";
+		} else if (strDate.equals("fri")) {
+			featureBar = "changos";
+		} else if (strDate.equals("sat")) {
+			featureBar = "mchales";
+		} else {
+			featureBar = "erwinna";
+		}
+		
+	}
  
 }

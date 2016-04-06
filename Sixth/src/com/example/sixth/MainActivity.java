@@ -15,13 +15,18 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Spinner;
 
 public class MainActivity extends Activity implements OnItemSelectedListener {
 	DBHelper myDB;
-	Button selectBar, featuredBar;
+	Button selectBar;
+	ImageButton featuredBar;
 	Spinner spinner;
-	String pullBar, setBar, name, featureBar;
+	String pullBar, setBar, name;
+	ImageView barPic;
+	String featureBar=SplashScreen.featureBar;
 	static String cityState;
 	public String upperCaseName;
 	String day = SplashScreen.strDate;
@@ -32,7 +37,7 @@ public class MainActivity extends Activity implements OnItemSelectedListener {
 		setContentView(R.layout.activity_main);
 
 		selectBar = (Button) findViewById(R.id.btnSelectBar);
-		featuredBar = (Button) findViewById(R.id.btnFeturedBar);
+		featuredBar = (ImageButton) findViewById(R.id.btnFeturedBar);
 		
 		myDB = new DBHelper(this);
 		// Spinner element
@@ -50,10 +55,15 @@ public class MainActivity extends Activity implements OnItemSelectedListener {
 		} catch (SQLException sqle) {
 			throw sqle;
 		}
+		
+		barPic = (ImageView) findViewById(R.id.btnFeturedBar);
+		String picHolder = "drawable/" + featureBar;
+		int imageInt = getResources().getIdentifier(picHolder, null, getPackageName());
+		barPic.setImageResource(imageInt);
 
 		// Loading spinner data from database
 		loadSpinnerData();
-		featureSetter();
+		
 		
 		selectBar.setOnClickListener(new OnClickListener() {
 			@Override
@@ -141,25 +151,6 @@ public class MainActivity extends Activity implements OnItemSelectedListener {
 
 	}
 	
-	private void featureSetter(){
-		day = day.toLowerCase(Locale.US);
-		
-		if (day.equals("mon")) {
-			featureBar = "maleys";
-		} else if (day.equals("tue")) {
-			featureBar = "oaks";
-		} else if (day.equals("wed")) {
-			featureBar = "capn";
-		} else if (day.equals("thu")) {
-			featureBar = "central";
-		} else if (day.equals("fri")) {
-			featureBar = "changos";
-		} else if (day.equals("sat")) {
-			featureBar = "mchales";
-		} else {
-			featureBar = "erwinna";
-		}
-		
-	}
+	
 
 }

@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     android:background="#3F4040"
     tools:context=".MainActivity"
-    tools:ignore="HardcodedText" >
+    tools:ignore="HardcodedText"
+    android:screenOrientation="portrait" >
 
     <Button
         android:id="@+id/btnSelectBar"
@@ -38,16 +39,6 @@
         android:textColor="#ffffff"
         android:textSize="40sp" />
 
-    <ImageButton
-        android:id="@+id/btnFeturedBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="32dp"
-        android:gravity="center"
-        android:src="@drawable/old" />
-
     <TextView
         android:id="@+id/featuredBar"
         android:layout_width="wrap_content"
@@ -59,5 +50,15 @@
         android:text="@string/featuredBar"
         android:textColor="#ffffff"
         android:textSize="30sp" />
+
+    <ImageButton
+        android:id="@+id/btnFeturedBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:src="@drawable/old" />
 
 </RelativeLayout>
