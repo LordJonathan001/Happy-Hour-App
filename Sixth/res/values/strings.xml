@@ -104,6 +104,7 @@
     <string name="thatHours">Wed: 6pm-12am\nTh: 5pm-12am\nFri: 5pm-1am\nSat:6pm-1am</string>
     <string name="thatContact">1 W Pulteney St, Corning, NY 14830</string>
     <string name="thatPhone">N/A</string>
+    <string name="featuredBar">Click the picture below for the featured bar!</string>
    
 
 </resources>

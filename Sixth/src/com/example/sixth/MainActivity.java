@@ -1,4 +1,5 @@
 package com.example.sixth;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
@@ -16,30 +17,29 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
-
-public class MainActivity extends Activity implements
-OnItemSelectedListener {
+public class MainActivity extends Activity implements OnItemSelectedListener {
 	DBHelper myDB;
-	Button selectBar;	
-    Spinner spinner;
-     String pullBar,setBar,name; 
-     static String cityState;
-    public String upperCaseName;
-    
-  // static  List<String> beer, beerLables;
+	Button selectBar, featuredBar;
+	Spinner spinner;
+	String pullBar, setBar, name, featureBar;
+	static String cityState;
+	public String upperCaseName;
+	String day = SplashScreen.strDate;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-					
-		Button selectBar = (Button)findViewById(R.id.btnSelectBar);
+
+		selectBar = (Button) findViewById(R.id.btnSelectBar);
+		featuredBar = (Button) findViewById(R.id.btnFeturedBar);
+		
 		myDB = new DBHelper(this);
-		 // Spinner element
-        spinner = (Spinner) findViewById(R.id.spinner);
-     // Spinner click listener
-        spinner.setOnItemSelectedListener(this);
-    
+		// Spinner element
+		spinner = (Spinner) findViewById(R.id.spinner);
+		// Spinner click listener
+		spinner.setOnItemSelectedListener(this);
+
 		try {
 			myDB.createDataBase();
 		} catch (IOException ioe) {
@@ -51,54 +51,65 @@ OnItemSelectedListener {
 			throw sqle;
 		}
 
-		
 		// Loading spinner data from database
-        loadSpinnerData();
-        
-        selectBar.setOnClickListener(new OnClickListener() {
+		loadSpinnerData();
+		featureSetter();
+		
+		selectBar.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				pullBar = String.valueOf(spinner.getSelectedItem());
-				String[] parts = pullBar.split(" "); //returns an array with the 2 parts
+				String[] parts = pullBar.split(" "); // returns an array with
+														// the 2 parts
 				name = parts[0];
-			
-				String nlast = parts[parts.length-2];
-				String last = parts[parts.length-1];
-				
-				cityState =  nlast+ " " + last;
-				upperCaseName=name.toUpperCase(Locale.US);
+
+				String nlast = parts[parts.length - 2];
+				String last = parts[parts.length - 1];
+
+				cityState = nlast + " " + last;
+				upperCaseName = name.toUpperCase(Locale.US);
 				setBar = name.toLowerCase(Locale.US);
-				System.out.println("Works to the set bar button");
-											 
-				 Intent i = (new Intent(MainActivity.this, Bar.class));
-				 i.putExtra("bar",setBar);
-				 i.putExtra("upper",upperCaseName);
-				startActivity(i); 			
+				
+				Intent i = (new Intent(MainActivity.this, Bar.class));
+				i.putExtra("bar", setBar);
+				i.putExtra("upper", upperCaseName);
+				startActivity(i);
 			}
-			
-		});	
+
+		});
+		
+		
+		featuredBar.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				
+				System.out.println("Works to the featured bar button");
+
+				Intent i = (new Intent(MainActivity.this, Bar.class));
+				i.putExtra("bar", featureBar);
+				startActivity(i);
+			}
+
+		});
 	}
 
-	
-	 private void loadSpinnerData() {
-	        // database handler
-	        DBHelper db = new DBHelper(getApplicationContext());
-	 
-	        // Spinner Drop down elements
-	        List<String> lables = db.getAllLabels();
-	 
-	        // Creating adapter for spinner
-	        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
-	                R.layout.spinner_item, lables);
-	 
-	        // Drop down layout style - list view with radio button
-	        dataAdapter
-	                .setDropDownViewResource(R.layout.spinner_drop_down);
-	 
-	        // attaching data adapter to spinner
-	        spinner.setAdapter(dataAdapter);
-	    }
-	
+	private void loadSpinnerData() {
+		// database handler
+		DBHelper db = new DBHelper(getApplicationContext());
+
+		// Spinner Drop down elements
+		List<String> lables = db.getAllLabels();
+
+		// Creating adapter for spinner
+		ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, R.layout.spinner_item, lables);
+
+		// Drop down layout style - list view with radio button
+		dataAdapter.setDropDownViewResource(R.layout.spinner_drop_down);
+
+		// attaching data adapter to spinner
+		spinner.setAdapter(dataAdapter);
+	}
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
@@ -118,17 +129,36 @@ OnItemSelectedListener {
 		return super.onOptionsItemSelected(item);
 	}
 
-
 	@Override
 	public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 		// TODO Auto-generated method stub
-		
-	}
 
+	}
 
 	@Override
 	public void onNothingSelected(AdapterView<?> parent) {
 		// TODO Auto-generated method stub
+
+	}
+	
+	private void featureSetter(){
+		day = day.toLowerCase(Locale.US);
+		
+		if (day.equals("mon")) {
+			featureBar = "maleys";
+		} else if (day.equals("tue")) {
+			featureBar = "oaks";
+		} else if (day.equals("wed")) {
+			featureBar = "capn";
+		} else if (day.equals("thu")) {
+			featureBar = "central";
+		} else if (day.equals("fri")) {
+			featureBar = "changos";
+		} else if (day.equals("sat")) {
+			featureBar = "mchales";
+		} else {
+			featureBar = "erwinna";
+		}
 		
 	}
 

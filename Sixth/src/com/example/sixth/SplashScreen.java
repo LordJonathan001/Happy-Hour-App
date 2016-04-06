@@ -12,6 +12,7 @@ import android.text.format.DateFormat;
  
 public class SplashScreen extends Activity{
 	MediaPlayer player;
+	static String strDate;
  
     // Splash screen timer  extends ActiveLocationManagerActivity 
     private static int SPLASH_TIME_OUT = 5500;
@@ -21,9 +22,11 @@ public class SplashScreen extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         Calendar c = Calendar.getInstance();
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String strDate = sdf.format(c.getTime());
-        
+       
+        SimpleDateFormat sdf = new SimpleDateFormat("EEE");
+        strDate = sdf.format(c.getTime());
+       
+        System.out.println(strDate);
         
         player = new MediaPlayer();
         player = MediaPlayer.create(getBaseContext(), R.raw.glug); /*Gets soundfile from res/raw/glug.mp3 */

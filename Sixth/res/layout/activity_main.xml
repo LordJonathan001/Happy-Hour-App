@@ -2,10 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    tools:ignore="HardcodedText" 
     android:background="#3F4040"
-    >
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText" >
 
     <Button
         android:id="@+id/btnSelectBar"
@@ -15,8 +14,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="52dp"
         android:text="@string/set_city"
-        android:textSize="30sp"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
 
     <Spinner
         android:id="@+id/spinner"
@@ -36,7 +35,29 @@
         android:layout_marginTop="69dp"
         android:gravity="center"
         android:text="@string/select_bar"
-        android:textSize="40sp"
-        android:textColor="#ffffff" />
-   
+        android:textColor="#ffffff"
+        android:textSize="40sp" />
+
+    <ImageButton
+        android:id="@+id/btnFeturedBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:src="@drawable/old" />
+
+    <TextView
+        android:id="@+id/featuredBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnFeturedBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:gravity="center"
+        android:text="@string/featuredBar"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
 </RelativeLayout>
