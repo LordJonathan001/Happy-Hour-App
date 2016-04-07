@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#3F4040"
+    android:screenOrientation="portrait"
+    >
+
+    <TextView
+        android:id="@+id/taxiName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:gravity="center"
+        android:text="@string/changos"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/randPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/taxiName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp"
+        android:contentDescription="cutePic" />
+
+</RelativeLayout>

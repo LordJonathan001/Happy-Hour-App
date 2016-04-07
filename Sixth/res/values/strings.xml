@@ -7,7 +7,7 @@
     <string-array name="locations">
         
     </string-array>
-    <string name="select_bar">Click the name of the bar below to view a list of available bars.</string>
+    <string name="select_bar">Click the bar below to view a list of bars.</string>
     <string name="set_city">Choose this Bar!</string>
     <string name="viewAll">View All Drinks</string>
     <string name="landosContact">41 South Bridge St, Corning, NY</string>
@@ -34,7 +34,7 @@
     <string name="setBarTester"/>
     <string name="Hours">Hours:</string>
     <string name="PicHolder">Pic of Bar</string>
-    <string name="changosSpecials">Monday: Purple Haze Bottles $2.50\nTuesday: Hand Grenades $3.00\nWednesday: Platinum Pounders $2.50\nThursday: Miller High Life Draft $2.00\nFriday: Sex on the Beach $3.00\nSaturday: Captain &amp; Pepsi $3.00\n Sunday: Bud Light Draft $2.00</string>
+    <string name="changosSpecials">Monday:\nPurple Haze Bottles $2.50\n\nTuesday:\nHand Grenades $3.00\n\nWednesday:\nPlatinum Pounders $2.50\n\nThursday:\nMiller High Life Draft $2.00\n\nFriday:\nSex on the Beach $3.00\n\nSaturday:\nCaptain &amp; Pepsi $3.00\n\nSunday:\nBud Light Draft $2.00</string>
     <string name="landosSpecials">Landos Happy Hour Specials</string>
     <string name="anthonysSpecials">Anthonys Happy Hour Specials</string>
     <string name="beamhousePhone">814. 258.5608</string>
@@ -44,18 +44,18 @@
     <string name="capnHours">Mon-Th 11am-11pm\nFri 11am-1am\nSat 12pm-1am\nSun 12pm-11pm</string>
     <string name="capnContact">36 Bridge Street Corning, NY 14830</string>
     <string name="capnPhone">607.962.1616</string>
-    <string name="capnSpecials">Monday: $3 Molson Canadian bottle, $2.50 Molson Canadian drafts\nWednesday: Wing night and $2.50 Yuengling Drafts\nFriday Happy hour 4-7 $4 Well Drinks, $5 Glass of Wine, $4 Craft Beers</string>
+    <string name="capnSpecials">Monday:\n$3 Molson Canadian bottle\n$2.50 Molson Canadian drafts\n\nWednesday:\n$2.50 Yuengling Drafts\n\nFriday:\nHappy hour 4-7\n$4 Well Drinks\n$5 Glass of Wine\n$4 Craft Beers</string>
     <string name="captainContact">616 Main St, Towanda, PA 18848</string>
     <string name="captainHours">Sun-Th 11am-1:30am\nFri-Sat 11am-2:30am</string>
     <string name="captainPhone">570.265.1329</string>
-    <string name="captainSpecials">Monday: 5 - 7 Beer Pitcher $6.00\nTuesday 5 - 7 Pint $1.00\nWednesday: All Day Yuengling mug $1.00\nThursday: 7 - 9 Pint $1.00\nFriday: All Day Budwiseer $1.00\nSaturday: 9 - 11 Well drinks $2.00\nSunday: All day Miller Light Mug $1.00</string>
+    <string name="captainSpecials">Monday:\n5 - 7 Beer Pitcher $6.00\n\nTuesday:\n 5 - 7 Pint $1.00\n\nWednesday:\nAll Day Yuengling mug $1.00\n\nThursday:\n7 - 9 Pint $1.00\n\nFriday:\nAll Day Budwiseer $1.00\n\nSaturday:\n9 - 11 Well drinks $2.00\n\nSunday:\nAll day Miller Light Mug $1.00</string>
     <string name="centralContact">16749 Route 6 Burlington, PA 18814</string>
     <string name="centralPhone">570.297.2337</string>
-    <string name="centralSpecials">Monday: Bud $2.25\nTuesday: Coors Light $2.25\nWednesday: Busch Light $2.00\nThursday: Keystone Light $2.00\nFriday: Captain &amp; Coke $3.00\nSaturday: Miller Light $2.25\nSunday: Bloody Mary $3.00</string>
+    <string name="centralSpecials">Monday:\nBud $2.25\n\nTuesday:\nCoors Light $2.25\n\nWednesday:\nBusch Light $2.00\n\nThursday:\nKeystone Light $2.00\n\nFriday:\nCaptain &amp; Coke $3.00\n\nSaturday:\nMiller Light $2.25\n\nSunday:\nBloody Mary $3.00</string>
     <string name="centralHours">Mon-Thur: 11am-12am\nFri-Sat: 11am-1am\nSun: 12:30pm-12am</string>
     <string name="erwinnaContact">820 Addison Rd, Painted Post, NY 14870</string>
     <string name="erwinnaPhone">607.654.7343</string>
-    <string name="erwinnaSpecials">Monday - Friday:\n 2:30 - 4:30\n$.25 off all Beer\nChill Hour Monday - Thursday:\n11pm-1am\n$.25 off all drinks </string>
+    <string name="erwinnaSpecials">Monday - Friday:\n 2:30 - 4:30\n$.25 off all Beer\n\nChill Hour Monday - Thursday:\n11pm-1am\n$.25 off all drinks </string>
     <string name="erwinnaHours">Mon-Sat: 9am-1am\nSun: 12pm-12am</string>
     <string name="gaslightContact">35 Main St, Wellsboro, PA 16901</string>
     <string name="gaslightPhone">570.724.1031</string>
@@ -71,7 +71,7 @@
     <string name="mchalesHours">Mon-Sat: 6pm-1am\nSun: CLOSED</string>
     <string name="oaksContact">96 W Market Street Corning, NY 14830</string>
     <string name="oaksPhone">607.937.2604</string>
-    <string name="oaksSpecials">Monday &amp; Wednesday: Tall 25oz Bud Light &amp; Labatt Blue Light $3.50\nThursday: $3 Bomb Shots\nFriday: Buckets of domestics $15 (5 beers)\nSaturday: Miller Lite 16oz $3</string>
+    <string name="oaksSpecials">Monday &amp; Wednesday:\nTall 25oz Bud Light &amp; Labatt Blue Light $3.50\n\nThursday:\n$3 Bomb Shots\n\nFriday:\nBuckets of domestics $15 (5 beers)\n\nSaturday:\nMiller Lite 16oz $3</string>
     <string name="oaksHours">Mon-Thurs 11am-11pm\nFri-Sat 12pm-1am\nSun 12pm-11pm</string>
     <string name="oldContact">3591 Route 6, Wellsboro, PA 16901</string>
     <string name="oldPhone">814.435.6300</string>
@@ -104,7 +104,7 @@
     <string name="thatHours">Wed: 6pm-12am\nTh: 5pm-12am\nFri: 5pm-1am\nSat:6pm-1am</string>
     <string name="thatContact">1 W Pulteney St, Corning, NY 14830</string>
     <string name="thatPhone">N/A</string>
-    <string name="featuredBar">Click the picture below for the featured bar!</string>
+    <string name="featuredBar">Click the picture for the featured bar!</string>
    
 
 </resources>
