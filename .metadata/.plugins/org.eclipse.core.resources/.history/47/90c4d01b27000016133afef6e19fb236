@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F4040"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText"
+    android:screenOrientation="portrait" >
+
+    <TextView
+        android:id="@+id/featuredBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnFeturedBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:gravity="center"
+        android:text="@string/featuredBar"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/select_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:gravity="center"
+        android:text="@string/select_bar"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/select_location"
+        android:layout_marginTop="20dp"
+        android:entries="@array/locations" />
+
+    <ImageButton
+        android:id="@+id/btnFeturedBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:gravity="center"
+        android:src="@drawable/old" />
+
+    <Button
+        android:id="@+id/btnSelectBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/featuredBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:text="@string/set_city"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

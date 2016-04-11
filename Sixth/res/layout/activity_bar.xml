@@ -53,17 +53,6 @@
         android:textColor="#ffffff"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <Button
-        android:id="@+id/btnTaxi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="46dp"
-        android:gravity="center"
-        android:textColor="#ffffff"
-        android:text="@string/taxi" />
-
     <TextView
         android:id="@+id/barHours"
         android:layout_width="wrap_content"
@@ -80,22 +69,10 @@
         android:id="@+id/btnviewAll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btnSpecials"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="23dp"
         android:gravity="center"
-        android:textColor="#ffffff"
-        android:text="@string/viewAll" />
-
-    <Button
-        android:id="@+id/btnSpecials"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btnTaxi"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="21dp"
-        android:gravity="center"
-        android:textColor="#ffffff"
-        android:text="@string/specials" />
+        android:text="@string/viewAll"
+        android:textColor="#ffffff" />
 
 </RelativeLayout>

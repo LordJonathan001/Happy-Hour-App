@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#003300"
+    android:screenOrientation="portrait"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText" >
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/select_location"
+        android:layout_marginTop="20dp"
+        android:entries="@array/locations" />
+
+    <TextView
+        android:id="@+id/select_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/select_bar"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:id="@+id/btnFeturedBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:gravity="center"
+        android:src="@drawable/old" />
+
+    <TextView
+        android:id="@+id/featuredBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnFeturedBar"
+        android:layout_alignLeft="@+id/select_location"
+        android:gravity="center"
+        android:text="@string/featuredBar"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnSelectBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:text="@string/set_city"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</RelativeLayout>

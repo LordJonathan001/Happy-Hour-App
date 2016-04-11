@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#3F4040"
+    android:screenOrientation="portrait"
+    >
+
+    <TextView
+        android:id="@+id/barContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barPic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:text="@string/changosContact"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/barPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barContact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="@string/changosPhone"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/barPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:contentDescription="@string/PicHolder"
+        android:gravity="center"
+        android:maxHeight="3dp"
+        android:src="@drawable/changos" />
+
+    <TextView
+        android:id="@+id/barName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/changos"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btnTaxi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:text="@string/taxi" />
+
+    <TextView
+        android:id="@+id/barHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnviewAll"
+        android:layout_below="@+id/barPhone"
+        android:layout_marginTop="33dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:text="@string/changosHours"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btnSpecials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnTaxi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:text="@string/specials" />
+
+    <Button
+        android:id="@+id/btnviewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/barContact"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/viewAll"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
