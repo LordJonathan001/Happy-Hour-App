@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3F4040"
+    android:background="#660066"
     android:screenOrientation="portrait"
     tools:context=".MainActivity"
     tools:ignore="HardcodedText" >
@@ -17,16 +17,7 @@
         android:layout_marginTop="52dp"
         android:text="@string/set_city"
         android:textColor="#ffffff"
-        android:textSize="40sp" />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/select_location"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
-        android:entries="@array/locations" />
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/featuredBar"
@@ -38,7 +29,7 @@
         android:gravity="center"
         android:text="@string/featuredBar"
         android:textColor="#ffffff"
-        android:textSize="30sp" />
+        android:textSize="25sp" />
 
     <ImageButton
         android:id="@+id/btnFeturedBar"
@@ -56,10 +47,19 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="24dp"
         android:gravity="center"
         android:text="@string/select_bar"
         android:textColor="#ffffff"
-        android:textSize="40sp" />
+        android:textSize="25sp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/select_location"
+        android:layout_marginTop="25dp"
+        android:entries="@array/locations" />
 
 </RelativeLayout>
